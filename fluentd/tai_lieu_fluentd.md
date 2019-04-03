@@ -15,9 +15,9 @@ Fluentd được viết bằng C và Ruby nên sử dụng ít tài nguyên, kh�
 ## 3. Cài đặt Fluentd với Docker
 Mục này sẽ hướng dẫn cài đặt Fluentd bằng Docker để tiếp nhận các record từ http, sau đó output tới stdout.
 
-- Tạo file `/tmp/fluentd.conf`
+- Tạo file `/tmp/fluent.conf`
 ```
-$ vi /tmp/fluentd.conf
+$ vi /tmp/fluent.conf
 <source>
   @type http
   port 9880
