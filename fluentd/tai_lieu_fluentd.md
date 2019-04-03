@@ -7,12 +7,15 @@ Fluentd xử lí các log về định dạng JSON, cho phép Fluentd thống nh
 
 Fluentd được viết bằng C và Ruby nên sử dụng ít tài nguyên, khả năng scale tốt.
 
-![]](./images/fluentd-overview.png)
+![](./images/fluentd-overview.png)
 
 ## 2. Kiến trúc tổng quan của Fluentd
 
 
 ## 3. Cài đặt Fluentd với Docker
+Mục này sẽ hướng dẫn cài đặt Fluentd bằng Docker để thu thập syslog từ máy host.   
+
+[Collect syslog](./lab/syslog/README.md)
 
 ## 4. Cấu hình của Fluentd
 

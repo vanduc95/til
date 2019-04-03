@@ -6,5 +6,6 @@ Add the following lines to `/etc/rsyslog.conf`:
 ```
 Run docker compose
 ```
+$ cd syslog
 $ docker-compose up
 ```
