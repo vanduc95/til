@@ -1,4 +1,4 @@
-# Logging với Fluentd
+# Logging với Fluentd verison v1.x
 
 ## 1. Fluentd là gì?
 Fluentd là một open-source và free cho phép thu thập và xử lý dữ log hiệu quả.
@@ -13,9 +13,44 @@ Fluentd được viết bằng C và Ruby nên sử dụng ít tài nguyên, kh�
 
 
 ## 3. Cài đặt Fluentd với Docker
-Mục này sẽ hướng dẫn cài đặt Fluentd bằng Docker để thu thập syslog từ máy host.   
+Mục này sẽ hướng dẫn cài đặt Fluentd bằng Docker để tiếp nhận các record từ http, sau đó output tới stdout.
 
-[Collect syslog](./lab/syslog/README.md)
+- Tạo file `/tmp/fluentd.conf`
+```
+$ vi /tmp/fluentd.conf
+<source>
+  @type http
+  port 9880
+  bind 0.0.0.0
+</source>
+<match **>
+  @type stdout
+</match>
+```
+- Cài Fluentd với câu lệnh `docker run`. Version của fluentd stable là v1.3.2
+```
+$ docker run -p 9880:9880 -v /tmp:/fluentd/etc fluent/fluentd:stable
+2019-04-03 15:49:29 +0000 [info]: parsing config file is succeeded path="/fluentd/etc/fluent.conf"
+2019-04-03 15:49:29 +0000 [info]: using configuration file: <ROOT>
+  <source>
+    @type http
+    port 9880
+    bind "0.0.0.0"
+  </source>
+  <match **>
+    @type stdout
+  </match>
+</ROOT>
+
+```
+- Đẩy một sample log thông qua HTTP để verify
+```
+$ curl -X POST -d 'json={"json":"message"}' http://localhost:9880/sample.test
+```
+- Kết quả trong docker log
+```
+2019-04-03 15:49:54.361742463 +0000 sample.test: {"json":"message"}
+```
 
 ## 4. Cấu hình của Fluentd
 

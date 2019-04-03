@@ -4,6 +4,4 @@ services:
     image: fluent/fluentd:stable
     volumes:
       - ./conf:/fluentd/etc
-    ports:
-      - 24224:24224
     network_mode: "host"
