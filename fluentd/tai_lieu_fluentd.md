@@ -2,11 +2,11 @@
 
 ## 1. Fluentd là gì?
 
-##2.Kiến trúc tổng quan của Fluentd
+## 2. Kiến trúc tổng quan của Fluentd
 
-##3.Cài đặt Fluentd với Docker
+## 3. Cài đặt Fluentd với Docker
 
-##4.Cấu hình của Fluentd
+## 4. Cấu hình của Fluentd
 
 ### Cấu trúc thư mục cấu hình cơ bản
 
@@ -22,7 +22,7 @@
 
 
 
-## 5.Tìm hiểu về Input Plugins cơ bản.
+## 5. Tìm hiểu về Input Plugins cơ bản.
 
 
 ### Tổng quan
@@ -33,7 +33,7 @@
 
 
 
-## 6.Tìm hiểu về Output Plugins cơ bản.
+## 6. Tìm hiểu về Output Plugins cơ bản.
 
 
 ### Tổng quan
@@ -58,7 +58,7 @@
 ### filter_parser
 
 
-## 8.Tìm hiểu về Parser Plugins cơ bản
+## 8. Tìm hiểu về Parser Plugins cơ bản
 
 
 ### Tổng quan
@@ -69,7 +69,7 @@
 
 
 
-## 9.Tìm hiểu về Buffer Plugins
+## 9. Tìm hiểu về Buffer Plugins
 
 
 ### Tổng quan (Phần này quan trọng vì cần để tuning performace sau này)
@@ -80,6 +80,6 @@
 
 
 
-## 10.Trouble Shooting
+## 10. Trouble Shooting
 
 ### Tối ưu hóa hiệu năng
