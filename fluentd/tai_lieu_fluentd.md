@@ -1,8 +1,16 @@
 # Logging với Fluentd
 
 ## 1. Fluentd là gì?
+Fluentd là một open-source và free cho phép thu thập và xử lý dữ log hiệu quả.
+
+Fluentd xử lí các log về định dạng JSON, cho phép Fluentd thống nhất các thao tác trong việc xử lí dữ liệu log: collecting (thu thập), lọc (filtering), ghi vào bộ nhớ đệm (buffering) và xuất dữ liệu (outputting) ra nhiều destination khác nhau.
+
+Fluentd được viết bằng C và Ruby nên sử dụng ít tài nguyên, khả năng scale tốt.
+
+![]](./images/fluentd-overview.png)
 
 ## 2. Kiến trúc tổng quan của Fluentd
+
 
 ## 3. Cài đặt Fluentd với Docker
 
