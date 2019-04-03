@@ -1,83 +1,85 @@
-# 1. Fluentd là gì?
+# Logging với Fluentd
 
-# 2.Kiến trúc tổng quan của Fluentd
+## 1. Fluentd là gì?
 
-# 3.Cài đặt Fluentd với Docker
+##2.Kiến trúc tổng quan của Fluentd
 
-# 4.Cấu hình của Fluentd
+##3.Cài đặt Fluentd với Docker
 
-## Cấu trúc thư mục cấu hình cơ bản
+##4.Cấu hình của Fluentd
 
-## Routing event
+### Cấu trúc thư mục cấu hình cơ bản
 
-## Config: Các tham số thông dụng
+### Routing event
 
-## Config: Parse Section
+### Config: Các tham số thông dụng
 
-## Config: Buffer Section
+### Config: Parse Section
 
-## Config: Format Section
+### Config: Buffer Section
 
-
-
-# 5.Tìm hiểu về Input Plugins cơ bản.
-
-
-## Tổng quan
-
-## in_tail
-
-## in_syslog
+### Config: Format Section
 
 
 
-# 6.Tìm hiểu về Output Plugins cơ bản.
+## 5.Tìm hiểu về Input Plugins cơ bản.
 
 
-## Tổng quan
+### Tổng quan
 
-## out_file
+### in_tail
 
-## out_copy
-
-## out_elasticsearch
-
-
-
-# 7. Tìm hiểu về Filter Plugins cơ bản.
-
-
-## Tổng quan
-
-## filter_record_transformer
-
-## filter_grep
-
-## filter_parser
-
-
-# 8.Tìm hiểu về Parser Plugins cơ bản
-
-
-## Tổng quan
-
-## parser_regexp
-
-## parser_syslog
+### in_syslog
 
 
 
-# 9.Tìm hiểu về Buffer Plugins
+## 6.Tìm hiểu về Output Plugins cơ bản.
 
 
-## Tổng quan (Phần này quan trọng vì cần để tuning performace sau này)
+### Tổng quan
 
-## buf_memory
+### out_file
 
-## buf_file
+### out_copy
+
+### out_elasticsearch
 
 
 
-# 10.Trouble Shooting
+## 7. Tìm hiểu về Filter Plugins cơ bản.
 
-## Tối ưu hóa hiệu năng
+
+### Tổng quan
+
+### filter_record_transformer
+
+### filter_grep
+
+### filter_parser
+
+
+## 8.Tìm hiểu về Parser Plugins cơ bản
+
+
+### Tổng quan
+
+### parser_regexp
+
+### parser_syslog
+
+
+
+## 9.Tìm hiểu về Buffer Plugins
+
+
+### Tổng quan (Phần này quan trọng vì cần để tuning performace sau này)
+
+### buf_memory
+
+### buf_file
+
+
+
+## 10.Trouble Shooting
+
+### Tối ưu hóa hiệu năng
