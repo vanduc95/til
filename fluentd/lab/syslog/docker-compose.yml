@@ -1,7 +1,8 @@
 version: '3'
 services:
   fluentd:
-    image: fluent/fluentd:stable
+    image: fluent/fluentd:v1.3-debian
+    container_name: fluentd
     volumes:
       - ./conf:/fluentd/etc
     network_mode: "host"
