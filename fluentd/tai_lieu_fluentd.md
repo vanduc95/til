@@ -27,9 +27,9 @@ $ vi /tmp/fluent.conf
   @type stdout
 </match>
 ```
-- Cài Fluentd với câu lệnh `docker run`. Version của fluentd stable là v1.3.2
+- Cài Fluentd với câu lệnh `docker run`. 
 ```
-$ docker run -p 9880:9880 -v /tmp:/fluentd/etc fluent/fluentd:stable
+$ docker run -p 9880:9880 -v /tmp:/fluentd/etc fluent/fluentd:v1.3-debian
 2019-04-03 15:49:29 +0000 [info]: parsing config file is succeeded path="/fluentd/etc/fluent.conf"
 2019-04-03 15:49:29 +0000 [info]: using configuration file: <ROOT>
   <source>
