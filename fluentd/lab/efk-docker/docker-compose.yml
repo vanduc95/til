@@ -1,5 +1,5 @@
 ---
-version: '2.4'
+version: '3.2'
 services:
     elasticsearch:
         image: ${ELASTICSEARCH_IMAGE}
@@ -18,14 +18,14 @@ services:
               target: /usr/share/elasticsearch/data
         networks:
             - net
-        logging:
-            driver: fluentd
-            options:
-                fluentd-address: localhost:24224
-                fluentd-async-connect: 'true'
-                fluentd-retry-wait: '1s'
-                fluentd-max-retries: '30'
-                tag: ${LOG_OPT_TAG_PREFIX}.efk.elasticsearch
+#        logging:
+#            driver: fluentd
+#            options:
+#                fluentd-address: localhost:24224
+#                fluentd-async-connect: 'true'
+#                fluentd-retry-wait: '1s'
+#                fluentd-max-retries: '30'
+#                tag: ${LOG_OPT_TAG_PREFIX}.efk.elasticsearch
 
     kibana:
         image: ${KIBANA_IMAGE}
@@ -36,14 +36,14 @@ services:
             - net
         depends_on:
             - elasticsearch
-        logging:
-            driver: fluentd
-            options:
-                fluentd-address: localhost:24224
-                fluentd-async-connect: 'true'
-                fluentd-retry-wait: '1s'
-                fluentd-max-retries: '30'
-                tag: ${LOG_OPT_TAG_PREFIX}.efk.kibana
+#        logging:
+#            driver: fluentd
+#            options:
+#                fluentd-address: localhost:24224
+#                fluentd-async-connect: 'true'
+#                fluentd-retry-wait: '1s'
+#                fluentd-max-retries: '30'
+#                tag: ${LOG_OPT_TAG_PREFIX}.efk.kibana
 
     fluentd:
         image: ${FLUENTD_IMAGE}
@@ -79,14 +79,14 @@ services:
             - net
         depends_on:
             - kibana
-        logging:
-            driver: fluentd
-            options:
-                fluentd-address: localhost:24224
-                fluentd-async-connect: 'true'
-                fluentd-retry-wait: '1s'
-                fluentd-max-retries: '30'
-                tag: ${LOG_OPT_TAG_PREFIX}.efk.nginx
+#        logging:
+#            driver: fluentd
+#            options:
+#                fluentd-address: localhost:24224
+#                fluentd-async-connect: 'true'
+#                fluentd-retry-wait: '1s'
+#                fluentd-max-retries: '30'
+#                tag: ${LOG_OPT_TAG_PREFIX}.efk.nginx
 networks:
     net:
         driver: bridge
