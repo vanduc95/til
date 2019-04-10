@@ -49,7 +49,7 @@ services:
         image: ${FLUENTD_IMAGE}
         ports:
             - 127.0.0.1:24224:24224
-#            - 24224:24224/udp
+            - 5140:5140/udp
         volumes:
             - ./fluentd/etc:/fluentd/etc
             - ./fluentd/data:/fluentd/log
