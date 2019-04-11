@@ -55,11 +55,11 @@ services:
             - ./fluentd/data:/fluentd/log
         networks:
             - net
-        logging:
-            driver: "json-file"
-            options:
-                max-size: "1G"
-                max-file: "2"
+#        logging:
+#            driver: "json-file"
+#            options:
+#                max-size: "1G"
+#                max-file: "2"
 
     nginx:
         image: ${NGINX_IMAGE}
