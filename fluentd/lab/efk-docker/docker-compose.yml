@@ -46,10 +46,11 @@ services:
 #                tag: ${LOG_OPT_TAG_PREFIX}.efk.kibana
 
     fluentd:
-        image: ${FLUENTD_IMAGE}
+        # image: ${FLUENTD_IMAGE}
+        build: .
         ports:
             - 127.0.0.1:24224:24224
-            - 5140:5140/udp
+            - 0.0.0.0:5140:5140/udp
         volumes:
             - ./fluentd/etc:/fluentd/etc
             - ./fluentd/data:/fluentd/log
