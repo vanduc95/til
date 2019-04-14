@@ -1,5 +1,24 @@
 #!/bin/bash
 # Simple script to create and append log line by line simulately
+# trap ctrl-c and ctrl_c()
+
+#trap ctrl_c INT
+#
+#function ctrl_c() {
+#    rm -f ./vsmart-logs/fake_catalina.log
+#    exit 0
+#}
+
+while IFS= read -r line;do
+    sleep 1
+    echo "$line" >> ./fluentd/data/example.log
+done < ./vsmart-logs/catalina.out
 
 
-for ((i=1;i<=1000;i++)); do  echo "Welcome $i times" >> ./fluentd/data/tail.log; sleep 1; done
+#while IFS= read -r line;do
+#    sleep 2
+#    echo "$line" >> ./fluentd/data/example.log
+#done < ./vsmart-logs/ActionLogVsmart.log.2018-07-02-02
+
+
+

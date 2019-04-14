@@ -1,0 +1,1783 @@
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+Started GET "/users/123/" for 127.0.0.1
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+Time: 2018-07-13 00:01:00,607 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:378)
+                    Message: Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@3071b889] on IDLE CHECK. 
+ 
+Time: 2018-07-13 00:01:00,607 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:378)
+                    Message: Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5469a7fe] on IDLE CHECK. 
+ 
+Time: 2018-07-13 00:01:00,607 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:378)
+                    Message: Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5acffe0a] on IDLE CHECK. 
+ 
+Time: 2018-07-13 00:01:00,611 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 48; checked out: 0; num connections: 3; num keys: 48 
+ 
+Time: 2018-07-13 00:01:00,612 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 48; checked out: 0; num connections: 3; num keys: 48 
+ 
+Time: 2018-07-13 00:01:00,612 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:382)
+                    Message: Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@3071b889] on IDLE CHECK has SUCCEEDED. 
+ 
+Time: 2018-07-13 00:01:00,612 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 48; checked out: 0; num connections: 3; num keys: 48 
+ 
+Time: 2018-07-13 00:01:00,612 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:382)
+                    Message: Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5469a7fe] on IDLE CHECK has SUCCEEDED. 
+ 
+Time: 2018-07-13 00:01:00,613 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:382)
+                    Message: Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5acffe0a] on IDLE CHECK has SUCCEEDED. 
+ 
+Time: 2018-07-13 00:01:00,613 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:378)
+                    Message: Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@321f35e4] on IDLE CHECK. 
+ 
+Time: 2018-07-13 00:01:00,613 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:378)
+                    Message: Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1a602acd] on IDLE CHECK. 
+ 
+Time: 2018-07-13 00:01:00,616 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 48; checked out: 0; num connections: 3; num keys: 48 
+ 
+Time: 2018-07-13 00:01:00,616 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:382)
+                    Message: Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1a602acd] on IDLE CHECK has SUCCEEDED. 
+ 
+Time: 2018-07-13 00:01:00,617 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 48; checked out: 0; num connections: 3; num keys: 48 
+ 
+Time: 2018-07-13 00:01:00,617 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:382)
+                    Message: Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@321f35e4] on IDLE CHECK has SUCCEEDED. 
+ 
+Time: 2018-07-13 00:01:58,434 INFO  
+                    Location: com.viettel.qlctkt.Util.SynchSessionMap.removeSessionId(SynchSessionMap.java:53)
+                    Message:  Remove Session ! Session count 10 
+ 
+token=9e0bdf46b39de1ccd4c8e178b32853bcc828f1abaea5c8eb550a36e374d33ee779afa58de597b2c387660e55eb9c5239
+Time: 2018-07-13 00:02:03,852 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.validateToken(UserTokenVsmart.java:30)
+                    Message: token decrypt: 19122#hoangdq#12-07-2018 07:44:34 
+ 
+Time: 2018-07-13 00:02:03,855 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.compareDate(UserTokenVsmart.java:90)
+                    Message: dateInToken=12-07-2018[nowDate]13-07-2018 
+ 
+ ValidateForm vf {"result":0,"message":"[VSMART]Giá trị token không còn hiệu lực"}
+Time: 2018-07-13 00:02:03,856 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:179)
+                    Message: /notificationController/getNotification 
+ 
+Time: 2018-07-13 00:02:03,857 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:291)
+                    Message: start_action|VSMART|2018/07/13 00:02:03:852|hoangdq|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/notificationController/getNotification||com.viettel.qlctkt.controller.NotificationMessageController.getNotification|4|[SessionID=19122_867309032645167_201807130002032960_363][Account=null][RequestContent=9e0bdf46b39de1ccd4c8e178b32853bcc828f1abaea5c8eb550a36e374d33ee779afa58de597b2c387660e55eb9c5239;token:492d0791-3c02-4d0a-abfe-27a86e14d48a;userAssignId:19122;type:1;isRead:-1]|A4D3F420B394705D9E00CA081EAA8073_1531414923852|19122_867309032645167_201807130002032960_363 
+ 
+Time: 2018-07-13 00:02:03,858 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:310)
+                    Message: end_action|VSMART|2018/07/13 00:02:03:857|hoangdq|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/notificationController/getNotification||com.viettel.qlctkt.controller.NotificationMessageController.getNotification|4|[SessionID=19122_867309032645167_201807130002032960_363][Account=null][ResponeContent=]|A4D3F420B394705D9E00CA081EAA8073_1531414923852|19122_867309032645167_201807130002032960_363 
+ 
+token=9e0bdf46b39de1ccd4c8e178b32853bcc828f1abaea5c8eb550a36e374d33ee779afa58de597b2c387660e55eb9c5239
+Time: 2018-07-13 00:02:04,048 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.validateToken(UserTokenVsmart.java:30)
+                    Message: token decrypt: 19122#hoangdq#12-07-2018 07:44:34 
+ 
+Time: 2018-07-13 00:02:04,048 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.compareDate(UserTokenVsmart.java:90)
+                    Message: dateInToken=12-07-2018[nowDate]13-07-2018 
+ 
+ ValidateForm vf {"result":0,"message":"[VSMART]Giá trị token không còn hiệu lực"}
+Time: 2018-07-13 00:02:04,049 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:179)
+                    Message: /notificationController/getNotification 
+ 
+Time: 2018-07-13 00:02:04,051 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:291)
+                    Message: start_action|VSMART|2018/07/13 00:02:04:047|hoangdq|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/notificationController/getNotification||com.viettel.qlctkt.controller.NotificationMessageController.getNotification|3|[SessionID=19122_867309032645167_201807130002034180_780][Account=null][RequestContent=9e0bdf46b39de1ccd4c8e178b32853bcc828f1abaea5c8eb550a36e374d33ee779afa58de597b2c387660e55eb9c5239;token:492d0791-3c02-4d0a-abfe-27a86e14d48a;userAssignId:19122;type:1;isRead:-1]|A4D3F420B394705D9E00CA081EAA8073_1531414924047|19122_867309032645167_201807130002034180_780 
+ 
+Time: 2018-07-13 00:02:04,052 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:310)
+                    Message: end_action|VSMART|2018/07/13 00:02:04:050|hoangdq|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/notificationController/getNotification||com.viettel.qlctkt.controller.NotificationMessageController.getNotification|3|[SessionID=19122_867309032645167_201807130002034180_780][Account=null][ResponeContent=]|A4D3F420B394705D9E00CA081EAA8073_1531414924047|19122_867309032645167_201807130002034180_780 
+ 
+token=9e0bdf46b39de1ccd4c8e178b32853bcc828f1abaea5c8eb550a36e374d33ee779afa58de597b2c387660e55eb9c5239
+Time: 2018-07-13 00:02:04,101 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.validateToken(UserTokenVsmart.java:30)
+                    Message: token decrypt: 19122#hoangdq#12-07-2018 07:44:34 
+ 
+Time: 2018-07-13 00:02:04,102 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.compareDate(UserTokenVsmart.java:90)
+                    Message: dateInToken=12-07-2018[nowDate]13-07-2018 
+ 
+ ValidateForm vf {"result":0,"message":"[VSMART]Giá trị token không còn hiệu lực"}
+Time: 2018-07-13 00:02:04,103 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:179)
+                    Message: /notificationController/getNotification 
+ 
+Time: 2018-07-13 00:02:04,103 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:291)
+                    Message: start_action|VSMART|2018/07/13 00:02:04:101|hoangdq|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/notificationController/getNotification||com.viettel.qlctkt.controller.NotificationMessageController.getNotification|2|[SessionID=19122_867309032645167_201807130002034180_780][Account=null][RequestContent=9e0bdf46b39de1ccd4c8e178b32853bcc828f1abaea5c8eb550a36e374d33ee779afa58de597b2c387660e55eb9c5239;token:492d0791-3c02-4d0a-abfe-27a86e14d48a;userAssignId:19122;type:1;isRead:-1]|A4D3F420B394705D9E00CA081EAA8073_1531414924101|19122_867309032645167_201807130002034180_780 
+ 
+Time: 2018-07-13 00:02:04,104 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:310)
+                    Message: end_action|VSMART|2018/07/13 00:02:04:103|hoangdq|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/notificationController/getNotification||com.viettel.qlctkt.controller.NotificationMessageController.getNotification|2|[SessionID=19122_867309032645167_201807130002034180_780][Account=null][ResponeContent=]|A4D3F420B394705D9E00CA081EAA8073_1531414924101|19122_867309032645167_201807130002034180_780 
+ 
+token=9e0bdf46b39de1ccd4c8e178b32853bcc828f1abaea5c8eb550a36e374d33ee779afa58de597b2c387660e55eb9c5239
+Time: 2018-07-13 00:02:04,141 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.validateToken(UserTokenVsmart.java:30)
+                    Message: token decrypt: 19122#hoangdq#12-07-2018 07:44:34 
+ 
+Time: 2018-07-13 00:02:04,142 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.compareDate(UserTokenVsmart.java:90)
+                    Message: dateInToken=12-07-2018[nowDate]13-07-2018 
+ 
+ ValidateForm vf {"result":0,"message":"[VSMART]Giá trị token không còn hiệu lực"}
+Time: 2018-07-13 00:02:04,142 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:179)
+                    Message: /notificationController/getNotification 
+ 
+Time: 2018-07-13 00:02:04,143 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:291)
+                    Message: start_action|VSMART|2018/07/13 00:02:04:141|hoangdq|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/notificationController/getNotification||com.viettel.qlctkt.controller.NotificationMessageController.getNotification|2|[SessionID=19122_867309032645167_201807130002034180_780][Account=null][RequestContent=9e0bdf46b39de1ccd4c8e178b32853bcc828f1abaea5c8eb550a36e374d33ee779afa58de597b2c387660e55eb9c5239;token:492d0791-3c02-4d0a-abfe-27a86e14d48a;userAssignId:19122;type:1;isRead:-1]|A4D3F420B394705D9E00CA081EAA8073_1531414924141|19122_867309032645167_201807130002034180_780 
+ 
+Time: 2018-07-13 00:02:04,144 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:310)
+                    Message: end_action|VSMART|2018/07/13 00:02:04:143|hoangdq|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/notificationController/getNotification||com.viettel.qlctkt.controller.NotificationMessageController.getNotification|2|[SessionID=19122_867309032645167_201807130002034180_780][Account=null][ResponeContent=]|A4D3F420B394705D9E00CA081EAA8073_1531414924141|19122_867309032645167_201807130002034180_780 
+ 
+token=9e0bdf46b39de1ccd4c8e178b32853bcc828f1abaea5c8eb550a36e374d33ee779afa58de597b2c387660e55eb9c5239
+Time: 2018-07-13 00:02:04,186 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.validateToken(UserTokenVsmart.java:30)
+                    Message: token decrypt: 19122#hoangdq#12-07-2018 07:44:34 
+ 
+Time: 2018-07-13 00:02:04,187 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.compareDate(UserTokenVsmart.java:90)
+                    Message: dateInToken=12-07-2018[nowDate]13-07-2018 
+ 
+ ValidateForm vf {"result":0,"message":"[VSMART]Giá trị token không còn hiệu lực"}
+Time: 2018-07-13 00:02:04,188 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:179)
+                    Message: /notificationController/getNotification 
+ 
+Time: 2018-07-13 00:02:04,188 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:291)
+                    Message: start_action|VSMART|2018/07/13 00:02:04:186|hoangdq|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/notificationController/getNotification||com.viettel.qlctkt.controller.NotificationMessageController.getNotification|2|[SessionID=19122_867309032645167_201807130002034180_780][Account=null][RequestContent=9e0bdf46b39de1ccd4c8e178b32853bcc828f1abaea5c8eb550a36e374d33ee779afa58de597b2c387660e55eb9c5239;token:492d0791-3c02-4d0a-abfe-27a86e14d48a;userAssignId:19122;type:1;isRead:-1]|A4D3F420B394705D9E00CA081EAA8073_1531414924186|19122_867309032645167_201807130002034180_780 
+ 
+Time: 2018-07-13 00:02:04,189 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:310)
+                    Message: end_action|VSMART|2018/07/13 00:02:04:188|hoangdq|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/notificationController/getNotification||com.viettel.qlctkt.controller.NotificationMessageController.getNotification|2|[SessionID=19122_867309032645167_201807130002034180_780][Account=null][ResponeContent=]|A4D3F420B394705D9E00CA081EAA8073_1531414924186|19122_867309032645167_201807130002034180_780 
+ 
+token=9e0bdf46b39de1ccd4c8e178b32853bcc828f1abaea5c8eb550a36e374d33ee779afa58de597b2c387660e55eb9c5239
+Time: 2018-07-13 00:02:04,236 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.validateToken(UserTokenVsmart.java:30)
+                    Message: token decrypt: 19122#hoangdq#12-07-2018 07:44:34 
+ 
+Time: 2018-07-13 00:02:04,237 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.compareDate(UserTokenVsmart.java:90)
+                    Message: dateInToken=12-07-2018[nowDate]13-07-2018 
+ 
+ ValidateForm vf {"result":0,"message":"[VSMART]Giá trị token không còn hiệu lực"}
+Time: 2018-07-13 00:02:04,237 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:179)
+                    Message: /stationInOutRegController/getListStationComeInOut 
+ 
+Time: 2018-07-13 00:02:04,238 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:291)
+                    Message: start_action|VSMART|2018/07/13 00:02:04:236|hoangdq|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/stationInOutRegController/getListStationComeInOut||nullgetListStationComeInOut|2|[SessionID=19122_867309032645167_201807130002034180_780][Account=null][RequestContent=9e0bdf46b39de1ccd4c8e178b32853bcc828f1abaea5c8eb550a36e374d33ee779afa58de597b2c387660e55eb9c5239;stationCode:;fromDate:12/06/2018 ;typeSearch:2;toDate:12/07/2018 ]|A4D3F420B394705D9E00CA081EAA8073_1531414924236|19122_867309032645167_201807130002034180_780 
+ 
+Time: 2018-07-13 00:02:04,239 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:310)
+                    Message: end_action|VSMART|2018/07/13 00:02:04:238|hoangdq|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/stationInOutRegController/getListStationComeInOut||nullgetListStationComeInOut|2|[SessionID=19122_867309032645167_201807130002034180_780][Account=null][ResponeContent=]|A4D3F420B394705D9E00CA081EAA8073_1531414924236|19122_867309032645167_201807130002034180_780 
+ 
+Time: 2018-07-13 00:02:58,443 INFO  
+                    Location: com.viettel.qlctkt.Util.SynchSessionMap.removeSessionId(SynchSessionMap.java:53)
+                    Message:  Remove Session ! Session count 9 
+ 
+Time: 2018-07-13 00:04:45,615 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:542)
+                    Message: Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@1a602acd 
+ 
+Time: 2018-07-13 00:04:45,615 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.closeAll(GooGooStatementCache.java:343)
+                    Message: ENTER METHOD: closeAll( oracle.jdbc.driver.T4CConnection@4eabb864 )! -- num_connections: 3 
+ 
+Time: 2018-07-13 00:04:45,616 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.closeAll(GooGooStatementCache.java:382)
+                    Message: closeAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 36; checked out: 0; num connections: 2; num keys: 36 
+ 
+Time: 2018-07-13 00:04:45,618 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:606)
+                    Message: com.mchange.v2.c3p0.impl.NewPooledConnection@1a602acd closed by a client. 
+ 
+java.lang.Exception: DEBUG -- CLOSE BY CLIENT STACK TRACE
+     at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:606)
+     at com.mchange.v2.c3p0.impl.NewPooledConnection.closeMaybeCheckedOut(NewPooledConnection.java:239)
+     at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:545)
+     at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:1012)
+     at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:620)
+Time: 2018-07-13 00:04:45,619 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:553)
+                    Message: Successfully destroyed PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@1a602acd 
+ 
+Time: 2018-07-13 00:04:45,659 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 36; checked out: 0; num connections: 2; num keys: 36 
+ 
+Time: 2018-07-13 00:04:45,659 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:235)
+                    Message: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dcf6fda.acquireResource() returning.  
+ 
+token=8a1804004b869641a0ff40a1efe799e2104d1fa1bae25e59e28558b73402fbf078a7882d13055843916f6b4934597126
+Time: 2018-07-13 00:05:32,874 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.validateToken(UserTokenVsmart.java:30)
+                    Message: token decrypt: 83022#vtp_omer.andrade#12-07-2018 23:58:06 
+ 
+Time: 2018-07-13 00:05:32,875 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.compareDate(UserTokenVsmart.java:90)
+                    Message: dateInToken=12-07-2018[nowDate]13-07-2018 
+ 
+ ValidateForm vf {"result":0,"message":"[VSMART]Giá trị token không còn hiệu lực"}
+Time: 2018-07-13 00:05:32,876 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:179)
+                    Message: /notificationController/getNotification 
+ 
+Time: 2018-07-13 00:05:32,876 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:291)
+                    Message: start_action|VSMART|2018/07/13 00:05:32:873|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/notificationController/getNotification||com.viettel.qlctkt.controller.NotificationMessageController.getNotification|3|[SessionID=83022_356397081585663_201807121205291950_798][Account=null][RequestContent=8a1804004b869641a0ff40a1efe799e2104d1fa1bae25e59e28558b73402fbf078a7882d13055843916f6b4934597126;token:fd9368bc-f2a1-4db4-b934-d8d42a18c164;userAssignId:83022;type:1;isRead:-1]|0348D3181B6D57D3B1660A922B105CB2_1531415132873|83022_356397081585663_201807121205291950_798 
+ 
+Time: 2018-07-13 00:05:32,877 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:310)
+                    Message: end_action|VSMART|2018/07/13 00:05:32:876|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/notificationController/getNotification||com.viettel.qlctkt.controller.NotificationMessageController.getNotification|3|[SessionID=83022_356397081585663_201807121205291950_798][Account=null][ResponeContent=]|0348D3181B6D57D3B1660A922B105CB2_1531415132873|83022_356397081585663_201807121205291950_798 
+ 
+token=8a1804004b869641a0ff40a1efe799e2104d1fa1bae25e59e28558b73402fbf078a7882d13055843916f6b4934597126
+Time: 2018-07-13 00:05:41,746 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.validateToken(UserTokenVsmart.java:30)
+                    Message: token decrypt: 83022#vtp_omer.andrade#12-07-2018 23:58:06 
+ 
+Time: 2018-07-13 00:05:41,747 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.compareDate(UserTokenVsmart.java:90)
+                    Message: dateInToken=12-07-2018[nowDate]13-07-2018 
+ 
+ ValidateForm vf {"result":0,"message":"[VSMART]Giá trị token không còn hiệu lực"}
+Time: 2018-07-13 00:05:41,748 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:179)
+                    Message: /notificationController/getNotification 
+ 
+Time: 2018-07-13 00:05:41,749 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:291)
+                    Message: start_action|VSMART|2018/07/13 00:05:41:746|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/notificationController/getNotification||com.viettel.qlctkt.controller.NotificationMessageController.getNotification|2|[SessionID=83022_356397081585663_201807121205385060_332][Account=null][RequestContent=8a1804004b869641a0ff40a1efe799e2104d1fa1bae25e59e28558b73402fbf078a7882d13055843916f6b4934597126;token:fd9368bc-f2a1-4db4-b934-d8d42a18c164;userAssignId:83022;type:2;isRead:-1]|0348D3181B6D57D3B1660A922B105CB2_1531415141746|83022_356397081585663_201807121205385060_332 
+ 
+Time: 2018-07-13 00:05:41,749 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:310)
+                    Message: end_action|VSMART|2018/07/13 00:05:41:749|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/notificationController/getNotification||com.viettel.qlctkt.controller.NotificationMessageController.getNotification|2|[SessionID=83022_356397081585663_201807121205385060_332][Account=null][ResponeContent=]|0348D3181B6D57D3B1660A922B105CB2_1531415141746|83022_356397081585663_201807121205385060_332 
+ 
+token=8a1804004b869641a0ff40a1efe799e2104d1fa1bae25e59e28558b73402fbf078a7882d13055843916f6b4934597126
+Time: 2018-07-13 00:05:44,358 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.validateToken(UserTokenVsmart.java:30)
+                    Message: token decrypt: 83022#vtp_omer.andrade#12-07-2018 23:58:06 
+ 
+Time: 2018-07-13 00:05:44,359 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.compareDate(UserTokenVsmart.java:90)
+                    Message: dateInToken=12-07-2018[nowDate]13-07-2018 
+ 
+ ValidateForm vf {"result":0,"message":"[VSMART]Giá trị token không còn hiệu lực"}
+Time: 2018-07-13 00:05:44,360 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:179)
+                    Message: /notificationController/getNotification 
+ 
+Time: 2018-07-13 00:05:44,361 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:291)
+                    Message: start_action|VSMART|2018/07/13 00:05:44:358|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/notificationController/getNotification||com.viettel.qlctkt.controller.NotificationMessageController.getNotification|2|[SessionID=83022_356397081585663_201807121205386170_646][Account=null][RequestContent=8a1804004b869641a0ff40a1efe799e2104d1fa1bae25e59e28558b73402fbf078a7882d13055843916f6b4934597126;token:fd9368bc-f2a1-4db4-b934-d8d42a18c164;userAssignId:83022;type:1;isRead:-1]|0348D3181B6D57D3B1660A922B105CB2_1531415144358|83022_356397081585663_201807121205386170_646 
+ 
+Time: 2018-07-13 00:05:44,361 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:310)
+                    Message: end_action|VSMART|2018/07/13 00:05:44:360|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/notificationController/getNotification||com.viettel.qlctkt.controller.NotificationMessageController.getNotification|2|[SessionID=83022_356397081585663_201807121205386170_646][Account=null][ResponeContent=]|0348D3181B6D57D3B1660A922B105CB2_1531415144358|83022_356397081585663_201807121205386170_646 
+ 
+token=8a1804004b869641a0ff40a1efe799e2104d1fa1bae25e59e28558b73402fbf078a7882d13055843916f6b4934597126
+Time: 2018-07-13 00:05:48,192 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.validateToken(UserTokenVsmart.java:30)
+                    Message: token decrypt: 83022#vtp_omer.andrade#12-07-2018 23:58:06 
+ 
+Time: 2018-07-13 00:05:48,193 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.compareDate(UserTokenVsmart.java:90)
+                    Message: dateInToken=12-07-2018[nowDate]13-07-2018 
+ 
+ ValidateForm vf {"result":0,"message":"[VSMART]Giá trị token không còn hiệu lực"}
+Time: 2018-07-13 00:05:48,194 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:179)
+                    Message: /gnocWOController/getWOSummaryInfobyUser 
+ 
+Time: 2018-07-13 00:05:48,195 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:291)
+                    Message: start_action|VSMART|2018/07/13 00:05:48:192|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/gnocWOController/getWOSummaryInfobyUser||nullgetWOSummaryInfobyUser|3|[SessionID=83022_356397081585663_201807121205413320_91][Account=null][RequestContent=8a1804004b869641a0ff40a1efe799e2104d1fa1bae25e59e28558b73402fbf078a7882d13055843916f6b4934597126;username:vtp_omer.andrade;token:fd9368bc-f2a1-4db4-b934-d8d42a18c164;cdId:;searchType:1]|0348D3181B6D57D3B1660A922B105CB2_1531415148192|83022_356397081585663_201807121205413320_91 
+ 
+Time: 2018-07-13 00:05:48,196 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:310)
+                    Message: end_action|VSMART|2018/07/13 00:05:48:195|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/gnocWOController/getWOSummaryInfobyUser||nullgetWOSummaryInfobyUser|3|[SessionID=83022_356397081585663_201807121205413320_91][Account=null][ResponeContent=]|0348D3181B6D57D3B1660A922B105CB2_1531415148192|83022_356397081585663_201807121205413320_91 
+ 
+token=8a1804004b869641a0ff40a1efe799e2104d1fa1bae25e59e28558b73402fbf078a7882d13055843916f6b4934597126
+Time: 2018-07-13 00:05:59,045 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.validateToken(UserTokenVsmart.java:30)
+                    Message: token decrypt: 83022#vtp_omer.andrade#12-07-2018 23:58:06 
+ 
+Time: 2018-07-13 00:05:59,046 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.compareDate(UserTokenVsmart.java:90)
+                    Message: dateInToken=12-07-2018[nowDate]13-07-2018 
+ 
+ ValidateForm vf {"result":0,"message":"[VSMART]Giá trị token không còn hiệu lực"}
+Time: 2018-07-13 00:05:59,047 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:179)
+                    Message: /gnocWOController/getWOSummaryInfobyUser 
+ 
+Time: 2018-07-13 00:05:59,048 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:291)
+                    Message: start_action|VSMART|2018/07/13 00:05:59:044|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/gnocWOController/getWOSummaryInfobyUser||nullgetWOSummaryInfobyUser|3|[SessionID=83022_356397081585663_201807121205555440_203][Account=null][RequestContent=8a1804004b869641a0ff40a1efe799e2104d1fa1bae25e59e28558b73402fbf078a7882d13055843916f6b4934597126;username:vtp_omer.andrade;token:fd9368bc-f2a1-4db4-b934-d8d42a18c164;cdId:;searchType:1]|0348D3181B6D57D3B1660A922B105CB2_1531415159044|83022_356397081585663_201807121205555440_203 
+ 
+Time: 2018-07-13 00:05:59,048 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:310)
+                    Message: end_action|VSMART|2018/07/13 00:05:59:047|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/gnocWOController/getWOSummaryInfobyUser||nullgetWOSummaryInfobyUser|3|[SessionID=83022_356397081585663_201807121205555440_203][Account=null][ResponeContent=]|0348D3181B6D57D3B1660A922B105CB2_1531415159044|83022_356397081585663_201807121205555440_203 
+ 
+Time: 2018-07-13 00:06:00,608 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:378)
+                    Message: Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1a916508] on IDLE CHECK. 
+ 
+Time: 2018-07-13 00:06:00,608 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:378)
+                    Message: Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5acffe0a] on IDLE CHECK. 
+ 
+Time: 2018-07-13 00:06:00,608 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:378)
+                    Message: Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@3071b889] on IDLE CHECK. 
+ 
+Time: 2018-07-13 00:06:00,612 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 36; checked out: 0; num connections: 2; num keys: 36 
+ 
+Time: 2018-07-13 00:06:00,613 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 36; checked out: 0; num connections: 2; num keys: 36 
+ 
+Time: 2018-07-13 00:06:00,613 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 36; checked out: 0; num connections: 2; num keys: 36 
+ 
+Time: 2018-07-13 00:06:00,613 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:382)
+                    Message: Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5acffe0a] on IDLE CHECK has SUCCEEDED. 
+ 
+Time: 2018-07-13 00:06:00,613 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:382)
+                    Message: Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@3071b889] on IDLE CHECK has SUCCEEDED. 
+ 
+Time: 2018-07-13 00:06:00,613 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:382)
+                    Message: Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@1a916508] on IDLE CHECK has SUCCEEDED. 
+ 
+Time: 2018-07-13 00:06:00,614 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:378)
+                    Message: Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@321f35e4] on IDLE CHECK. 
+ 
+Time: 2018-07-13 00:06:00,614 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:378)
+                    Message: Testing PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5469a7fe] on IDLE CHECK. 
+ 
+Time: 2018-07-13 00:06:00,615 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:542)
+                    Message: Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@321f35e4 
+ 
+Time: 2018-07-13 00:06:00,616 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.closeAll(GooGooStatementCache.java:343)
+                    Message: ENTER METHOD: closeAll( oracle.jdbc.driver.T4CConnection@3acf59db )! -- num_connections: 2 
+ 
+Time: 2018-07-13 00:06:00,617 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.closeAll(GooGooStatementCache.java:382)
+                    Message: closeAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 36; checked out: 0; num connections: 2; num keys: 36 
+ 
+Time: 2018-07-13 00:06:00,617 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 36; checked out: 0; num connections: 2; num keys: 36 
+ 
+Time: 2018-07-13 00:06:00,617 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:382)
+                    Message: Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@5469a7fe] on IDLE CHECK has SUCCEEDED. 
+ 
+Time: 2018-07-13 00:06:00,619 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:606)
+                    Message: com.mchange.v2.c3p0.impl.NewPooledConnection@321f35e4 closed by a client. 
+ 
+java.lang.Exception: DEBUG -- CLOSE BY CLIENT STACK TRACE
+     at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:606)
+     at com.mchange.v2.c3p0.impl.NewPooledConnection.closeMaybeCheckedOut(NewPooledConnection.java:239)
+     at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:545)
+     at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:1012)
+     at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:620)
+Time: 2018-07-13 00:06:00,619 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:553)
+                    Message: Successfully destroyed PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@321f35e4 
+ 
+Time: 2018-07-13 00:06:00,619 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 36; checked out: 0; num connections: 2; num keys: 36 
+ 
+Time: 2018-07-13 00:06:00,619 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:382)
+                    Message: Test of PooledConnection [com.mchange.v2.c3p0.impl.NewPooledConnection@321f35e4] on IDLE CHECK has SUCCEEDED. 
+ 
+Time: 2018-07-13 00:06:00,665 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 36; checked out: 0; num connections: 2; num keys: 36 
+ 
+Time: 2018-07-13 00:06:00,665 DEBUG 
+                    Location: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:235)
+                    Message: com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@6dcf6fda.acquireResource() returning.  
+ 
+Time: 2018-07-13 00:06:09,790 INFO  
+                    Location: com.viettel.qlctkt.Util.SynchSessionMap.addSessionId(SynchSessionMap.java:40)
+                    Message:  Add Session ! Session count 10 
+ 
+
+
+***********************************************************************
+*                               WARNING!!!                            *
+*                                                                     *
+* >>> FilterDispatcher <<< is deprecated! Please use the new filters! *
+*                                                                     *
+*           This can be a source of unpredictable problems!           *
+*                                                                     *
+*              Please refer to the docs for more details!             *
+*            http://struts.apache.org/2.x/docs/webxml.html            *
+*                                                                     *
+***********************************************************************
+
+
+token=8a1804004b869641a0ff40a1efe799e2104d1fa1bae25e59e28558b73402fbf078a7882d13055843916f6b4934597126
+Time: 2018-07-13 00:06:10,004 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.validateToken(UserTokenVsmart.java:30)
+                    Message: token decrypt: 83022#vtp_omer.andrade#12-07-2018 23:58:06 
+ 
+Time: 2018-07-13 00:06:10,004 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.compareDate(UserTokenVsmart.java:90)
+                    Message: dateInToken=12-07-2018[nowDate]13-07-2018 
+ 
+ ValidateForm vf {"result":0,"message":"[VSMART]Giá trị token không còn hiệu lực"}
+Time: 2018-07-13 00:06:10,005 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:179)
+                    Message: /gnocWOController/getWOSummaryInfobyUser 
+ 
+Time: 2018-07-13 00:06:10,006 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:291)
+                    Message: start_action|VSMART|2018/07/13 00:06:10:003|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/gnocWOController/getWOSummaryInfobyUser||nullgetWOSummaryInfobyUser|3|[SessionID=83022_356397081585663_201807121206067670_727][Account=null][RequestContent=8a1804004b869641a0ff40a1efe799e2104d1fa1bae25e59e28558b73402fbf078a7882d13055843916f6b4934597126;username:vtp_omer.andrade;token:fd9368bc-f2a1-4db4-b934-d8d42a18c164;cdId:;searchType:1]|0348D3181B6D57D3B1660A922B105CB2_1531415170003|83022_356397081585663_201807121206067670_727 
+ 
+Time: 2018-07-13 00:06:10,007 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:310)
+                    Message: end_action|VSMART|2018/07/13 00:06:10:006|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/gnocWOController/getWOSummaryInfobyUser||nullgetWOSummaryInfobyUser|3|[SessionID=83022_356397081585663_201807121206067670_727][Account=null][ResponeContent=]|0348D3181B6D57D3B1660A922B105CB2_1531415170003|83022_356397081585663_201807121206067670_727 
+ 
+token=8a1804004b869641a0ff40a1efe799e2104d1fa1bae25e59e28558b73402fbf078a7882d13055843916f6b4934597126
+Time: 2018-07-13 00:06:15,853 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.validateToken(UserTokenVsmart.java:30)
+                    Message: token decrypt: 83022#vtp_omer.andrade#12-07-2018 23:58:06 
+ 
+Time: 2018-07-13 00:06:15,854 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.compareDate(UserTokenVsmart.java:90)
+                    Message: dateInToken=12-07-2018[nowDate]13-07-2018 
+ 
+ ValidateForm vf {"result":0,"message":"[VSMART]Giá trị token không còn hiệu lực"}
+Time: 2018-07-13 00:06:15,855 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:179)
+                    Message: /gnocWOController/getWOSummaryInfobyUser 
+ 
+Time: 2018-07-13 00:06:15,856 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:291)
+                    Message: start_action|VSMART|2018/07/13 00:06:15:853|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/gnocWOController/getWOSummaryInfobyUser||nullgetWOSummaryInfobyUser|2|[SessionID=83022_356397081585663_201807121206125240_689][Account=null][RequestContent=8a1804004b869641a0ff40a1efe799e2104d1fa1bae25e59e28558b73402fbf078a7882d13055843916f6b4934597126;username:vtp_omer.andrade;token:fd9368bc-f2a1-4db4-b934-d8d42a18c164;cdId:;searchType:2]|0348D3181B6D57D3B1660A922B105CB2_1531415175853|83022_356397081585663_201807121206125240_689 
+ 
+Time: 2018-07-13 00:06:15,856 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:310)
+                    Message: end_action|VSMART|2018/07/13 00:06:15:856|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/gnocWOController/getWOSummaryInfobyUser||nullgetWOSummaryInfobyUser|2|[SessionID=83022_356397081585663_201807121206125240_689][Account=null][ResponeContent=]|0348D3181B6D57D3B1660A922B105CB2_1531415175853|83022_356397081585663_201807121206125240_689 
+ 
+token=8a1804004b869641a0ff40a1efe799e2104d1fa1bae25e59e28558b73402fbf078a7882d13055843916f6b4934597126
+Time: 2018-07-13 00:06:21,268 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.validateToken(UserTokenVsmart.java:30)
+                    Message: token decrypt: 83022#vtp_omer.andrade#12-07-2018 23:58:06 
+ 
+Time: 2018-07-13 00:06:21,269 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.compareDate(UserTokenVsmart.java:90)
+                    Message: dateInToken=12-07-2018[nowDate]13-07-2018 
+ 
+ ValidateForm vf {"result":0,"message":"[VSMART]Giá trị token không còn hiệu lực"}
+Time: 2018-07-13 00:06:21,270 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:179)
+                    Message: /gnocWOController/getWOSummaryInfobyUser 
+ 
+Time: 2018-07-13 00:06:21,271 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:291)
+                    Message: start_action|VSMART|2018/07/13 00:06:21:268|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/gnocWOController/getWOSummaryInfobyUser||nullgetWOSummaryInfobyUser|2|[SessionID=83022_356397081585663_201807121206178250_808][Account=null][RequestContent=8a1804004b869641a0ff40a1efe799e2104d1fa1bae25e59e28558b73402fbf078a7882d13055843916f6b4934597126;username:vtp_omer.andrade;token:fd9368bc-f2a1-4db4-b934-d8d42a18c164;cdId:;searchType:1]|0348D3181B6D57D3B1660A922B105CB2_1531415181268|83022_356397081585663_201807121206178250_808 
+ 
+Time: 2018-07-13 00:06:21,272 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:310)
+                    Message: end_action|VSMART|2018/07/13 00:06:21:271|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/gnocWOController/getWOSummaryInfobyUser||nullgetWOSummaryInfobyUser|2|[SessionID=83022_356397081585663_201807121206178250_808][Account=null][ResponeContent=]|0348D3181B6D57D3B1660A922B105CB2_1531415181268|83022_356397081585663_201807121206178250_808 
+ 
+token=8a1804004b869641a0ff40a1efe799e2104d1fa1bae25e59e28558b73402fbf078a7882d13055843916f6b4934597126
+Time: 2018-07-13 00:06:27,822 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.validateToken(UserTokenVsmart.java:30)
+                    Message: token decrypt: 83022#vtp_omer.andrade#12-07-2018 23:58:06 
+ 
+Time: 2018-07-13 00:06:27,823 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.compareDate(UserTokenVsmart.java:90)
+                    Message: dateInToken=12-07-2018[nowDate]13-07-2018 
+ 
+ ValidateForm vf {"result":0,"message":"[VSMART]Giá trị token không còn hiệu lực"}
+Time: 2018-07-13 00:06:27,824 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:179)
+                    Message: /notificationController/getNotification 
+ 
+Time: 2018-07-13 00:06:27,825 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:291)
+                    Message: start_action|VSMART|2018/07/13 00:06:27:822|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/notificationController/getNotification||com.viettel.qlctkt.controller.NotificationMessageController.getNotification|2|[SessionID=83022_356397081585663_201807121206247410_418][Account=null][RequestContent=8a1804004b869641a0ff40a1efe799e2104d1fa1bae25e59e28558b73402fbf078a7882d13055843916f6b4934597126;token:fd9368bc-f2a1-4db4-b934-d8d42a18c164;userAssignId:83022;type:2;isRead:-1]|0348D3181B6D57D3B1660A922B105CB2_1531415187822|83022_356397081585663_201807121206247410_418 
+ 
+Time: 2018-07-13 00:06:27,825 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:310)
+                    Message: end_action|VSMART|2018/07/13 00:06:27:824|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/notificationController/getNotification||com.viettel.qlctkt.controller.NotificationMessageController.getNotification|2|[SessionID=83022_356397081585663_201807121206247410_418][Account=null][ResponeContent=]|0348D3181B6D57D3B1660A922B105CB2_1531415187822|83022_356397081585663_201807121206247410_418 
+ 
+pass token: OK#POST#/authen/login
+Time: 2018-07-13 00:06:31,452 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:166)
+                    Message: passToken: true 
+ 
+Time: 2018-07-13 00:06:31,456 INFO  
+                    Location: com.viettel.qlctkt.controller.AuthenController.onLogin(AuthenController.java:162)
+                    Message: Login Session Id 0348D3181B6D57D3B1660A922B105CB2 
+ 
+Time: 2018-07-13 00:06:31,457 INFO  
+                    Location: com.viettel.qlctkt.controller.AuthenController.onLogin(AuthenController.java:176)
+                    Message: Session Count 10 
+ 
+Start create connect VSA WS 
+End create connect VSA WS: 0
+Validate924
+parseXML7
+authenticate successful [username=vtp46848259]
+Time: 2018-07-13 00:06:32,390 INFO  
+                    Location: com.viettel.oss.common.log.CommonLogger.log(CommonLogger.java:23)
+                    Message: RequestId: 0348D3181B6D57D3B1660A922B105CB2_1531415191452 || Action: validate || Time taken: 932 ms || Content: USERNAME::vtp46848259 ||  
+ 
+Time: 2018-07-13 00:06:32,394 INFO  
+                    Location: com.viettel.oss.common.log.CommonLogger.log(CommonLogger.java:23)
+                    Message: RequestId: 0348D3181B6D57D3B1660A922B105CB2_1531415191452 || Action: Get session || Time taken: 3 ms || Content: USERNAME::vtp46848259 ||  
+ 
+Get session == 0
+Hibernate: 
+    select
+        this_.USER_ID as USER1_15_0_,
+        this_.CAT_WORK_TYPE_ID as CAT2_15_0_,
+        this_.check_emm as check3_15_0_,
+        this_.DEPARTMENT_ID as DEPARTMENT4_15_0_,
+        this_.DEPLOY_CODE as DEPLOY5_15_0_,
+        this_.DESCRIPTION as DESCRIPT6_15_0_,
+        this_.EMAIL as EMAIL15_0_,
+        this_.FULLNAME as FULLNAME15_0_,
+        this_.identity_card as identity9_15_0_,
+        this_.log_vsmart as log10_15_0_,
+        this_.PHONE as PHONE15_0_,
+        this_.ROLE_ID as ROLE12_15_0_,
+        this_.STATUS as STATUS15_0_,
+        this_.USERNAME as USERNAME15_0_,
+        this_.VSA_SYN_STATUS as VSA15_15_0_,
+        this_.V_SMART_ONLY as V16_15_0_ 
+    from
+        SYS_USERS this_ 
+    where
+        (
+            lower(this_.USERNAME)=? 
+            or lower(this_.DEPLOY_CODE)=?
+        ) 
+        and this_.STATUS=?
+Time: 2018-07-13 00:06:32,396 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.assimilateNewCheckedOutStatement(GooGooStatementCache.java:463)
+                    Message: cxnStmtMgr.statementSet( oracle.jdbc.driver.T4CConnection@26805278 ).size(): 1 
+ 
+Time: 2018-07-13 00:06:32,397 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 37; checked out: 1; num connections: 3; num keys: 37 
+ 
+Time: 2018-07-13 00:06:32,401 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 37; checked out: 0; num connections: 3; num keys: 37 
+ 
+Time: 2018-07-13 00:06:32,402 INFO  
+                    Location: com.viettel.oss.common.log.CommonLogger.log(CommonLogger.java:23)
+                    Message: RequestId: 0348D3181B6D57D3B1660A922B105CB2_1531415191452 || Action: get  user BO || Time taken: 8 ms || Content: USERNAME::vtp46848259 ||  
+ 
+Hibernate: 
+    select
+        this_.DEPARTMENT_ID as DEPARTMENT1_27_0_,
+        this_.DEPARTMENT_LEVEL as DEPARTMENT2_27_0_,
+        this_.DEPT_CODE as DEPT3_27_0_,
+        this_.DEPT_FULL as DEPT4_27_0_,
+        this_.DEPT_NAME as DEPT5_27_0_,
+        this_.DESCRIPTION as DESCRIPT6_27_0_,
+        this_.ID as ID27_0_,
+        this_.LOCATION_ID as LOCATION8_27_0_,
+        this_.PARENT_ID as PARENT9_27_0_ 
+    from
+        V_DEPT_FULL this_ 
+    where
+        this_.DEPARTMENT_ID=?
+Time: 2018-07-13 00:06:32,404 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.assimilateNewCheckedOutStatement(GooGooStatementCache.java:463)
+                    Message: cxnStmtMgr.statementSet( oracle.jdbc.driver.T4CConnection@26805278 ).size(): 2 
+ 
+Time: 2018-07-13 00:06:32,404 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 38; checked out: 1; num connections: 3; num keys: 38 
+ 
+Time: 2018-07-13 00:06:32,417 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 38; checked out: 0; num connections: 3; num keys: 38 
+ 
+Time: 2018-07-13 00:06:32,417 INFO  
+                    Location: com.viettel.oss.common.log.CommonLogger.log(CommonLogger.java:23)
+                    Message: RequestId: 0348D3181B6D57D3B1660A922B105CB2_1531415191452 || Action: get  user department BO || Time taken: 15 ms || Content: USERNAME::vtp46848259 ||  
+ 
+Hibernate: 
+    select
+        catlocatio0_.LOCATION_ID as LOCATION1_1_0_,
+        catlocatio0_.DESCRIPTION as DESCRIPT2_1_0_,
+        catlocatio0_.LEVEL_ID as LEVEL3_1_0_,
+        catlocatio0_.LOCATION_CODE as LOCATION4_1_0_,
+        catlocatio0_.LOCATION_NAME as LOCATION5_1_0_,
+        catlocatio0_.PARENT_CODE as PARENT6_1_0_,
+        catlocatio0_.PARENT_ID as PARENT7_1_0_,
+        catlocatio0_.TERRAIN as TERRAIN1_0_ 
+    from
+        CAT_LOCATION catlocatio0_ 
+    where
+        catlocatio0_.LOCATION_ID=?
+Time: 2018-07-13 00:06:32,419 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.assimilateNewCheckedOutStatement(GooGooStatementCache.java:463)
+                    Message: cxnStmtMgr.statementSet( oracle.jdbc.driver.T4CConnection@26805278 ).size(): 3 
+ 
+Time: 2018-07-13 00:06:32,419 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 39; checked out: 1; num connections: 3; num keys: 39 
+ 
+Time: 2018-07-13 00:06:32,423 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 39; checked out: 0; num connections: 3; num keys: 39 
+ 
+Time: 2018-07-13 00:06:32,424 INFO  
+                    Location: com.viettel.oss.common.log.CommonLogger.log(CommonLogger.java:23)
+                    Message: RequestId: 0348D3181B6D57D3B1660A922B105CB2_1531415191452 || Action: get  location BO || Time taken: 6 ms || Content: USERNAME::vtp46848259 ||  
+ 
+Time: 2018-07-13 00:06:32,424 INFO  
+                    Location: com.viettel.oss.common.log.CommonLogger.log(CommonLogger.java:23)
+                    Message: RequestId: 0348D3181B6D57D3B1660A922B105CB2_1531415191452 || Action: getSysUsersBO || Time taken: 30 ms || Content: USERNAME::vtp46848259 ||  
+ 
+Hibernate: 
+    select
+        sysusersto0_.USER_ID as USER1_220_0_,
+        sysusersto0_.IPADDRESS as IPADDRESS220_0_,
+        sysusersto0_.LAST_ACCESS as LAST3_220_0_,
+        sysusersto0_.lock_time as lock4_220_0_,
+        sysusersto0_.login_failure_count as login5_220_0_,
+        sysusersto0_.TOKEN as TOKEN220_0_,
+        sysusersto0_.USERNAME as USERNAME220_0_ 
+    from
+        SYS_USERS_TOKEN sysusersto0_ 
+    where
+        sysusersto0_.USER_ID=?
+Time: 2018-07-13 00:06:32,431 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.assimilateNewCheckedOutStatement(GooGooStatementCache.java:463)
+                    Message: cxnStmtMgr.statementSet( oracle.jdbc.driver.T4CConnection@26805278 ).size(): 4 
+ 
+Time: 2018-07-13 00:06:32,431 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 40; checked out: 1; num connections: 3; num keys: 40 
+ 
+Time: 2018-07-13 00:06:32,435 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 40; checked out: 0; num connections: 3; num keys: 40 
+ 
+Time: 2018-07-13 00:06:32,436 INFO  
+                    Location: com.viettel.oss.common.log.CommonLogger.log(CommonLogger.java:23)
+                    Message: RequestId: 0348D3181B6D57D3B1660A922B105CB2_1531415191452 || Action: get SysUsersTokenBO || Time taken: 11 ms || Content: USERNAME::vtp46848259 ||  
+ 
+Hibernate: 
+    select
+        catmajorty0_.CAT_WORK_TYPE_ID as CAT1_3_0_,
+        catmajorty0_.CODE as CODE3_0_,
+        catmajorty0_.DESCRIPTION as DESCRIPT3_3_0_,
+        catmajorty0_.NAME as NAME3_0_ 
+    from
+        CAT_MAJOR_TYPE catmajorty0_ 
+    where
+        catmajorty0_.CAT_WORK_TYPE_ID=?
+Time: 2018-07-13 00:06:32,437 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.assimilateNewCheckedOutStatement(GooGooStatementCache.java:463)
+                    Message: cxnStmtMgr.statementSet( oracle.jdbc.driver.T4CConnection@26805278 ).size(): 5 
+ 
+Time: 2018-07-13 00:06:32,438 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 41; checked out: 1; num connections: 3; num keys: 41 
+ 
+Time: 2018-07-13 00:06:32,441 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 41; checked out: 0; num connections: 3; num keys: 41 
+ 
+Hibernate: 
+    select
+        this_.GROUP_TEAM_STAFF_ID as GROUP1_265_0_,
+        this_.CREATED_DATE as CREATED2_265_0_,
+        this_.DEPT_ID as DEPT3_265_0_,
+        this_.DESCRIPTION as DESCRIPT4_265_0_,
+        this_.PARENT_TEAM as PARENT5_265_0_,
+        this_.STATUS as STATUS265_0_,
+        this_.TEAM_CODE as TEAM7_265_0_,
+        this_.TEAM_LEADER as TEAM8_265_0_,
+        this_.TEAM_NAME as TEAM9_265_0_,
+        this_.TEAM_TYPE as TEAM10_265_0_ 
+    from
+        GROUP_TEAM_STAFF this_ 
+    where
+        this_.TEAM_LEADER=? 
+        and this_.STATUS=?
+Time: 2018-07-13 00:06:32,443 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.assimilateNewCheckedOutStatement(GooGooStatementCache.java:463)
+                    Message: cxnStmtMgr.statementSet( oracle.jdbc.driver.T4CConnection@26805278 ).size(): 6 
+ 
+Time: 2018-07-13 00:06:32,444 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 42; checked out: 1; num connections: 3; num keys: 42 
+ 
+Time: 2018-07-13 00:06:32,450 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 42; checked out: 0; num connections: 3; num keys: 42 
+ 
+Time: 2018-07-13 00:06:32,451 INFO  
+                    Location: com.viettel.oss.common.log.CommonLogger.log(CommonLogger.java:23)
+                    Message: RequestId: 0348D3181B6D57D3B1660A922B105CB2_1531415191452 || Action: get GroupTeamStaffBO || Time taken: 14 ms || Content: USERNAME::vtp46848259 ||  
+ 
+Hibernate: 
+    delete 
+    from
+        cat_authen_otp 
+    where
+        USER_ID = ? 
+        and TIME_EXPIRED < sysdate
+Time: 2018-07-13 00:06:32,454 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.assimilateNewCheckedOutStatement(GooGooStatementCache.java:463)
+                    Message: cxnStmtMgr.statementSet( oracle.jdbc.driver.T4CConnection@26805278 ).size(): 7 
+ 
+Time: 2018-07-13 00:06:32,455 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 43; checked out: 1; num connections: 3; num keys: 43 
+ 
+Time: 2018-07-13 00:06:32,458 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 43; checked out: 0; num connections: 3; num keys: 43 
+ 
+Time: 2018-07-13 00:06:32,458 INFO  
+                    Location: com.viettel.qlctkt.authen.otp.CheckOtpCode.deleteOtpOld(CheckOtpCode.java:98)
+                    Message: row delete 83022 - 0 
+ 
+Time: 2018-07-13 00:06:32,459 INFO  
+                    Location: com.viettel.qlctkt.authen.otp.GenerateOtp.createOtpCode(GenerateOtp.java:48)
+                    Message: send sms otp to user: 
+ 
+512270
+Hibernate: 
+    select
+        dp.dept_code deptCode                     
+    from
+        QLCTKT.cat_department dp                      
+    where
+        dp.parent_id is null                      start with dp.department_id = (
+            select
+                department_id 
+            from
+                QLCTKT.SYS_USERS 
+            where
+                user_id = ?
+        )                     connect 
+    by
+        prior dp.parent_id = dp.department_id
+Time: 2018-07-13 00:06:32,461 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.assimilateNewCheckedOutStatement(GooGooStatementCache.java:463)
+                    Message: cxnStmtMgr.statementSet( oracle.jdbc.driver.T4CConnection@26805278 ).size(): 8 
+ 
+Time: 2018-07-13 00:06:32,462 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 44; checked out: 1; num connections: 3; num keys: 44 
+ 
+Time: 2018-07-13 00:06:32,465 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 44; checked out: 0; num connections: 3; num keys: 44 
+ 
+Hibernate: 
+    select
+        this_.CFG_WS_ID as CFG1_294_0_,
+        this_.CONNECTION_TIMEOUT as CONNECTION2_294_0_,
+        this_.NATION as NATION294_0_,
+        this_.RECEIVE_TIMEOUT as RECEIVE4_294_0_,
+        this_.WS_CODE as WS5_294_0_,
+        this_.WS_DESCRIPTION as WS6_294_0_,
+        this_.WS_PASSWORD as WS7_294_0_,
+        this_.WS_SERVICE_NAME as WS8_294_0_,
+        this_.WS_URL as WS9_294_0_,
+        this_.WS_URL_NAME as WS10_294_0_,
+        this_.WS_USERNAME as WS11_294_0_ 
+    from
+        CFG_WS this_ 
+    where
+        (
+            this_.WS_CODE=? 
+            and this_.NATION=?
+        )
+Time: 2018-07-13 00:06:32,467 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.assimilateNewCheckedOutStatement(GooGooStatementCache.java:463)
+                    Message: cxnStmtMgr.statementSet( oracle.jdbc.driver.T4CConnection@26805278 ).size(): 9 
+ 
+Time: 2018-07-13 00:06:32,496 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 45; checked out: 1; num connections: 3; num keys: 45 
+ 
+Time: 2018-07-13 00:06:32,501 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 45; checked out: 0; num connections: 3; num keys: 45 
+ 
+Time: 2018-07-13 00:06:32,503 INFO  
+                    Location: com.viettel.qlctkt.task.webservice.QLCTKT_ServiceVTGWS_PortFactory.getWsPort(QLCTKT_ServiceVTGWS_PortFactory.java:117)
+                    Message: borrow QLCTKT VTGWS Service object from pool ... 
+ 
+Time: 2018-07-13 00:06:34,055 INFO  
+                    Location: com.viettel.qlctkt.task.webservice.CallQLCTKT_ServiceVTG.sendSmsWsVTG(CallQLCTKT_ServiceVTG.java:43)
+                    Message: Finish sendSmsToSmsGateWayVtg. 
+ 
+512270
+Hibernate: 
+    select
+        MESSAGE_SEQ.nextval 
+    from
+        dual
+Time: 2018-07-13 00:06:34,059 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.assimilateNewCheckedOutStatement(GooGooStatementCache.java:463)
+                    Message: cxnStmtMgr.statementSet( oracle.jdbc.driver.T4CConnection@26805278 ).size(): 10 
+ 
+Time: 2018-07-13 00:06:34,060 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 46; checked out: 1; num connections: 3; num keys: 46 
+ 
+Time: 2018-07-13 00:06:34,063 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 46; checked out: 0; num connections: 3; num keys: 46 
+ 
+Hibernate: 
+    select
+        CAT_AUTHEN_OTP_SEQ.nextval 
+    from
+        dual
+Time: 2018-07-13 00:06:34,065 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.assimilateNewCheckedOutStatement(GooGooStatementCache.java:463)
+                    Message: cxnStmtMgr.statementSet( oracle.jdbc.driver.T4CConnection@26805278 ).size(): 11 
+ 
+Time: 2018-07-13 00:06:34,065 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 47; checked out: 1; num connections: 3; num keys: 47 
+ 
+Time: 2018-07-13 00:06:34,068 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 47; checked out: 0; num connections: 3; num keys: 47 
+ 
+Hibernate: 
+    insert 
+    into
+        MESSAGE
+        (CONTENT, CREATE_DATE, ERROR_MSG, RECEIVER_ID, SENDER_ID, SENT_TIME, STATUS, MESSAGE_ID) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Time: 2018-07-13 00:06:34,070 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.assimilateNewCheckedOutStatement(GooGooStatementCache.java:463)
+                    Message: cxnStmtMgr.statementSet( oracle.jdbc.driver.T4CConnection@26805278 ).size(): 12 
+ 
+Time: 2018-07-13 00:06:34,071 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 48; checked out: 1; num connections: 3; num keys: 48 
+ 
+Time: 2018-07-13 00:06:34,073 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 48; checked out: 0; num connections: 3; num keys: 48 
+ 
+Hibernate: 
+    insert 
+    into
+        CAT_AUTHEN_OTP
+        (OTP_CODE, TIME_EXPIRED, USER_ID, CAT_AUTHEN_OTP_ID) 
+    values
+        (?, ?, ?, ?)
+Time: 2018-07-13 00:06:34,074 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.assimilateNewCheckedOutStatement(GooGooStatementCache.java:463)
+                    Message: cxnStmtMgr.statementSet( oracle.jdbc.driver.T4CConnection@26805278 ).size(): 13 
+ 
+Time: 2018-07-13 00:06:34,075 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 49; checked out: 1; num connections: 3; num keys: 49 
+ 
+Time: 2018-07-13 00:06:34,078 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 49; checked out: 0; num connections: 3; num keys: 49 
+ 
+Time: 2018-07-13 00:06:34,080 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 49; checked out: 0; num connections: 3; num keys: 49 
+ 
+Time: 2018-07-13 00:06:34,081 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 49; checked out: 0; num connections: 3; num keys: 49 
+ 
+Time: 2018-07-13 00:06:34,088 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:291)
+                    Message: start_action|VSMART|2018/07/13 00:06:31:452|vtp46848259|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/authen/login||com.viettel.qlctkt.controller.AuthenController.login|2635|[SessionID=vtp46848259_356397081585663_1531415188361][Account=null][RequestContent=;username:vtp46848259;imeiMoblie:356397081585663;password:179a60a9fa4a050bbd3d94bfab87ad2a]|0348D3181B6D57D3B1660A922B105CB2_1531415191452|vtp46848259_356397081585663_1531415188361 
+ 
+Time: 2018-07-13 00:06:34,089 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:310)
+                    Message: end_action|VSMART|2018/07/13 00:06:34:088|vtp46848259|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/authen/login||com.viettel.qlctkt.controller.AuthenController.login|2635|[SessionID=vtp46848259_356397081585663_1531415188361][Account=null][ResponeContent={"userToken":"8a1804004b869641a0ff40a1efe799e2e1eecad53603abd7387854803f47aeeb0b289952c90993e193516a0ec2064744"&3"lstMenu":&1{"childObjects":&1{"childObjects":&1&2&3"ord":1&3"parentId":20422&3"status":1&3"objectId":20424&3"objectType":0&3"description":"menu.stationInfo"&3"objectName":"Thông tin trạm"&3"objectUrl":"/AssignStationAction.do"}&2&3"ord":1&3"parentId":-1&3"status":1&3"objectId":20422&3"objectType":0&3"description":"menu.infraInfoMng"&3"objectName":"Quản lý thông tin tài nguyên"&3"objectUrl":"#"}&3{"childObjects":&1{"childObjects":&1&2&3"ord":0&3"parentId":20419&3"status":1&3"objectId":21625&3"objectType":0&3"description":"menu.administratorUserManagement"&3"objectName":"Quản lý người dùng"&3"objectUrl":"/UserAction.do"}&2&3"ord":4&3"parentId":-1&3"status":1&3"objectId":20419&3"objectType":0&3"description":"menu.sysMng"&3"objectName":"Quản trị hệ thống"&3"objectUrl":"#"}&3{"childObjects":&1{"childObjects":&1&2&3"ord":21&3"parentId":20421&3"status":1&3"objectId":35122&3"objectType":0&3"description":"Báo cáo thông tin đăng ký ra vào nhà trạm"&3"objectName":"Báo cáo thông tin đăng ký ra vào nhà trạm"&3"objectUrl":"/inocAdmFuncListAction!onSearchForm.do?functionCode=IN_OUT_STATION&typePage=fullPage"}&2&3"ord":6&3"parentId":-1&3"status":1&3"objectId":20421&3"objectType":0&3"description":""&3"objectName":"Báo cáo thống kê"&3"objectUrl":"#"}&3{"childObjects":&1{"childObjects":&1&2&3"ord":0&3"parentId":21886&3"status":1&3"objectId":21887&3"objectType":0&3"description":""&3"objectName":"Tra cứu người dùng"&3"objectUrl":"/ViewUserAction.do"}&2&3"ord":7&3"parentId":-1&3"status":1&3"objectId":21886&3"objectType":0&3"description":""&3"objectName":"Tra cứu"&3"objectUrl":"#"}&3{"childObjects":&1{"childObjects":&1{"childObjects":&1&2&3"ord":1&3"parentId":35460&3"status":1&3"objectId":35461&3"objectType":0&3"description":""&3"objectName":"Tổng hợp báo cáo kiểm tra ảnh"&3"objectUrl":"MnReportCheckImageDAO!reportCheckImage.do"}&3{"childObjects":&1&2&3"ord":2&3"parentId":35460&3"status":1&3"objectId":35419&3"objectType":0&3"description":""&3"objectName":"Tổng hợp lỗi theo đầu việc cấp 3"&3"objectUrl":"MnReportErrorWorkLevel3DAO!reportErrorWorkLevel3.do"}&3{"childObjects":&1&2&3"ord":3&3"parentId":35460&3"status":1&3"objectId":35420&3"objectType":0&3"description":""&3"objectName":"Tổng hợp báo cáo theo đầu việc cấp 1 và đầu việc cấp 2"&3"objectUrl":"MnReportWorkLevel12DAO!reportWorkLevel12.do"}&3{"childObjects":&1&2&3"ord":4&3"parentId":35460&3"status":1&3"objectId":35421&3"objectType":0&3"description":""&3"objectName":"Chi tiết lỗi trạm theo đầu việc cấp 3"&3"objectUrl":"MnReportErrorStationWorkLevel3DAO!reportDetailErrorStationWorkLevel3.do"}&3{"childObjects":&1&2&3"ord":5&3"parentId":35460&3"status":1&3"objectId":35422&3"objectType":0&3"description":""&3"objectName":"Chi tiết trạm khác phục lỗi theo đầu việc cấp 3"&3"objectUrl":"MnReportResolveErrorWorkLevel3DAO!reportResolveErrorWorkLevel3.do"}&3{"childObjects":&1&2&3"ord":6&3"parentId":35460&3"status":1&3"objectId":35423&3"objectType":0&3"description":""&3"objectName":"Tổng hợp số ảnh lỗi"&3"objectUrl":"MnReportImageNotRequiredDAO!reportImageNotRequired.do"}&3{"childObjects":&1&2&3"ord":7&3"parentId":35460&3"status":1&3"objectId":35424&3"objectType":0&3"description":""&3"objectName":"Chi tiết số ảnh lỗi theo đầu trạm"&3"objectUrl":"MnReportImageNotRequiredStationDAO!ReportImageNotRequiredStation.do"}&3{"childObjects":&1&2&3"ord":8&3"parentId":35460&3"status":1&3"objectId":35425&3"objectType":0&3"description":""&3"objectName":"Báo cáo chi tiết số trạm giao lại Wo"&3"objectUrl":"MnReportHandoverImageStationDetailDAO!reportHandoverImageStationDetail.do"}&2&3"ord":15&3"parentId":27807&3"status":1&3"objectId":35460&3"objectType":0&3"description":"Các báo cáo liên quan đến việc hậu kiểm ảnh"&3"objectName":"Báo cáo hậu kiểm ảnh bảo dưỡng"&3"objectUrl":"#"}&2&3"ord":8&3"parentId":-1&3"status":1&3"objectId":27807&3"objectType":0&3"description":"menu.nnQlctktMonitor"&3"objectName":"Giám sát nề nếp QLCTKT"&3"objectUrl":"#"}&3{"childObjects":&1&2&3"ord":15&3"parentId":-1&3"status":1&3"objectId":20423&3"objectType":0&3"description":""&3"objectName":"Quản lý công việc"&3"objectUrl":"#"}&3{"childObjects":&1&2&3"ord":18&3"parentId":-1&3"status":1&3"objectId":31923&3"objectType":0&3"description":"VSMART_ic_ql_cv"&3"objectName":"Quản lý công việc (WO)"&3"objectUrl":"1000"}&3{"childObjects":&1{"childObjects":&1&2&3"ord":-1&3"parentId":31944&3"status":1&3"objectId":32262&3"objectType":0&3"description":"VSMART_ic_qos"&3"objectName":"Tra cứu chi tiết cảnh báo"&3"objectUrl":"2002"}&3{"childObjects":&1&2&3"ord":-1&3"parentId":31944&3"status":1&3"objectId":32248&3"objectType":0&3"description":"VSMART_ic_qos"&3"objectName":"Dashboard Giám sát tổng hợp cảnh báo"&3"objectUrl":"2001"}&2&3"ord":19&3"parentId":-1&3"status":1&3"objectId":31944&3"objectType":0&3"description":"VSMART_ic_qos"&3"objectName":"Giám sát chủ động"&3"objectUrl":"2000"}&3{"childObjects":&1{"childObjects":&1&2&3"ord":-1&3"parentId":31977&3"status":1&3"objectId":35118&3"objectType":0&3"description":""&3"objectName":"Đăng kí ra vào nhà trạm"&3"objectUrl":"6019"}&3{"childObjects":&1&2&3"ord":-1&3"parentId":31977&3"status":1&3"objectId":32933&3"objectType":0&3"description":"VSMART_ic_chuyen_ket_cuoi"&3"objectName":"Tạo công việc kiểm tra"&3"objectUrl":"6005"}&3{"childObjects":&1&2&3"ord":1&3"parentId":31977&3"status":1&3"objectId":31962&3"objectType":0&3"description":"VSMART_ic_chuyen_ket_cuoi"&3"objectName":"Thông tin version"&3"objectUrl":"6003"}&3{"childObjects":&1&2&3"ord":20&3"parentId":31977&3"status":1&3"objectId":35835&3"objectType":0&3"description":"Tạo Trouble Ticket"&3"objectName":"Tạo Trouble Ticket"&3"objectUrl":"6033"}&3{"childObjects":&1&2&3"ord":21&3"parentId":31977&3"status":1&3"objectId":35752&3"objectType":0&3"description":"Tạo WO Kho tàng tài sản"&3"objectName":"Tạo WO Kho tàng tài sản"&3"objectUrl":"6034"}&2&3"ord":23&3"parentId":-1&3"status":1&3"objectId":31977&3"objectType":0&3"description":"VSMART_ic_chuyen_ket_cuoi"&3"objectName":"Tiện ích"&3"objectUrl":"6000"}&2&3"token":"fd9368bc-f2a1-4db4-b934-d8d42a18c164"&3"success":{"phone":"51930482103"&3"departmentId":1500002566&3"fullname":"Omer Andrade Yauri"&3"userId":83022&3"catWorkTypeId":301&3"email":"omer.andrade@bitel.com.pe"&3"username":"vtp_omer.andrade"&3"status":1&3"roleId":0&3"deployCode":"vtp46848259"&3"vsaSynStatus":1&3"vsmartOnly":1&3"catMajorType":"NVL2"&3"departmentCode":"JUN_PICHANAKI"&3"departmentName":"JUN-TEAM PICHANAKI"&3"locationId":1500290900&3"locationCode":"1108"&3"locationName":"CHANCHAMAYO"&3"leader":0&3"levelUser":4&3"identityCard":"vtp46848259"}}]|0348D3181B6D57D3B1660A922B105CB2_1531415191452|vtp46848259_356397081585663_1531415188361 
+ 
+token=8a1804004b869641a0ff40a1efe799e2e1eecad53603abd7387854803f47aeeb0b289952c90993e193516a0ec2064744
+Time: 2018-07-13 00:06:38,384 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.validateToken(UserTokenVsmart.java:30)
+                    Message: token decrypt: 83022#vtp_omer.andrade#13-07-2018 00:06:32 
+ 
+Time: 2018-07-13 00:06:38,385 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.compareDate(UserTokenVsmart.java:90)
+                    Message: dateInToken=13-07-2018[nowDate]13-07-2018 
+ 
+ ValidateForm vf {"result":1,"message":"83022"}
+set userId to ServletRequest: 83022
+Time: 2018-07-13 00:06:38,386 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:166)
+                    Message: passToken: true 
+ 
+Hibernate: 
+    select
+        CONFIG_MANAGEMENT_VALUE 
+    from
+        cat_config_management  
+    where
+        CONFIG_MANAGEMENT_CODE = 'CONFIG_CHECK_OTP'
+Time: 2018-07-13 00:06:38,391 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.assimilateNewCheckedOutStatement(GooGooStatementCache.java:463)
+                    Message: cxnStmtMgr.statementSet( oracle.jdbc.driver.T4CConnection@26805278 ).size(): 14 
+ 
+Time: 2018-07-13 00:06:38,392 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 1; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:38,398 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 0; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:38,399 INFO  
+                    Location: com.viettel.qlctkt.authen.otp.CheckOtpCode.validateOtpCode(CheckOtpCode.java:59)
+                    Message: start validate otpCode: 51227083022 
+ 
+Hibernate: 
+    select
+        CAT_AUTHEN_OTP_ID 
+    from
+        cat_authen_otp 
+    where
+        TIME_EXPIRED > sysdate 
+        and OTP_CODE = ? 
+        and USER_ID = ?
+Time: 2018-07-13 00:06:38,400 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache$Deathmarch.cullNext(GooGooStatementCache.java:745)
+                    Message: CULLING: SELECT A.ID, A.STATION_ID stationId,
+ A.ASSIGN_STATION_REASON_ID assignStationReasonId,
+A.RULE commentRule, 
+A.APPRAISE rate, 
+A.COMMENT_VT commentVtGroup, 
+A.COMMENT_AREA commentArea, 
+A.COMMENT_DISTRICT commentDistrict, 
+A.COMMENT_PROVIN commentProvin,
+ TO_CHAR(A.COME_IN_DATE, 'DD/MM/YYYY hh24:mi:ss') comeInDate,
+ TO_CHAR(A.COME_OUT_DATE, 'DD/MM/YYYY hh24:mi:ss') comeOutDate,
+A.STATUS, A.USER_ID userId, A.WO_CODE woCode, A.REASON reasonIn, A.REASON_OUT reasonOut, B.STATION_CODE stationCode,
+B.ADDRESS stationAddress,
+  C.NAME AS reasonName,
+  US.USERNAME userName,
+  US.FULLNAME fullName,
+  US.PHONE phone
+ FROM 
+ STATION_IN_OUT A
+ INNER JOIN INFRA_STATIONS B
+ ON A.STATION_ID = B.STATION_ID AND (? is null or ?= '' or UPPER(B.STATION_CODE) like ?)
+ LEFT JOIN CAT_COME_STATION_REASON C
+ ON A.ASSIGN_STATION_REASON_ID = C.ID
+ INNER JOIN SYS_USERS US
+ ON A.USER_ID = US.USER_ID
+ WHERE 
+    (A.USER_ID = ? 
+        OR A.station_id IN
+        (SELECT   station_id
+           FROM   station_group_permission
+          WHERE   GROUP_ID IN (SELECT   GROUP_ID
+                                 FROM   groups_users
+                                WHERE   user_id = ?)
+    )
+    )
+ AND TRUNC(A.COME_IN_DATE) >= TO_DATE(?, 'DD/MM/YYYY')
+ AND TRUNC(A.COME_IN_DATE) <= TO_DATE(?, 'DD/MM/YYYY')
+
+ORDER BY STATUS ASC, A.COME_IN_DATE DESC 
+ 
+Time: 2018-07-13 00:06:38,401 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.assimilateNewCheckedOutStatement(GooGooStatementCache.java:463)
+                    Message: cxnStmtMgr.statementSet( oracle.jdbc.driver.T4CConnection@26805278 ).size(): 15 
+ 
+Time: 2018-07-13 00:06:38,401 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 1; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:38,405 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 0; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:38,405 INFO  
+                    Location: com.viettel.qlctkt.authen.otp.CheckOtpCode.validateOtpCode(CheckOtpCode.java:61)
+                    Message: delete otpcode old of user: 83022 
+ 
+Hibernate: 
+    delete 
+    from
+        cat_authen_otp 
+    where
+        USER_ID = ? 
+Time: 2018-07-13 00:06:38,408 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache$Deathmarch.cullNext(GooGooStatementCache.java:745)
+                    Message: CULLING: SELECT   a.id,         a.important_level importantLevel,         a.title,         a.content,         b.is_read isRead,         a.update_time updateTime,         a.from_date fromDate,         a.create_date createDate,         TO_CHAR (a.create_date, 'dd/MM/yyyy hh24:mm:ss') createDateStr,         a.create_by createBy,         c.username userCreate,         TO_CHAR (c.fullname) fullName,         a.article_id articleId,         a.image_path imagePath,         a.image_path_square imagePathSquare,         a.type type,         a.url url  FROM   group_notification_message a,         group_config_receiver_notice b,         sys_users c WHERE       a.id = b.notification_id(+)         AND a.from_date <= TRUNC (SYSDATE)         AND a.TO_DATE >= TRUNC (SYSDATE)         AND a.create_by = c.user_id(+)         AND a.status = 1         AND b.is_read <> 3         AND b.user_id = ?      AND a.TYPE = 2 order by updateTime desc, updateTime desc 
+ 
+Time: 2018-07-13 00:06:38,408 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.assimilateNewCheckedOutStatement(GooGooStatementCache.java:463)
+                    Message: cxnStmtMgr.statementSet( oracle.jdbc.driver.T4CConnection@26805278 ).size(): 16 
+ 
+Time: 2018-07-13 00:06:38,409 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 1; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:38,411 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 0; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:38,412 INFO  
+                    Location: com.viettel.qlctkt.authen.otp.CheckOtpCode.deleteOtpAllOld(CheckOtpCode.java:106)
+                    Message: row delete 83022 - 1 
+ 
+Time: 2018-07-13 00:06:38,414 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 0; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:38,416 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 0; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:38,419 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:291)
+                    Message: start_action|VSMART|2018/07/13 00:06:38:384|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/authen/checkOtpCode||com.viettel.qlctkt.controller.AuthenController.checkOtpCode|34|[SessionID=83022_356397081585663_201807121206343280_367][Account=null][RequestContent=8a1804004b869641a0ff40a1efe799e2e1eecad53603abd7387854803f47aeeb0b289952c90993e193516a0ec2064744;token:fd9368bc-f2a1-4db4-b934-d8d42a18c164;userId:83022;imeiMobile:356397081585663;otpCode:512270]|0348D3181B6D57D3B1660A922B105CB2_1531415198384|83022_356397081585663_201807121206343280_367 
+ 
+Time: 2018-07-13 00:06:38,419 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:310)
+                    Message: end_action|VSMART|2018/07/13 00:06:38:418|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/authen/checkOtpCode||com.viettel.qlctkt.controller.AuthenController.checkOtpCode|34|[SessionID=83022_356397081585663_201807121206343280_367][Account=null][ResponeContent={"result":"success"}]|0348D3181B6D57D3B1660A922B105CB2_1531415198384|83022_356397081585663_201807121206343280_367 
+ 
+token=8a1804004b869641a0ff40a1efe799e2e1eecad53603abd7387854803f47aeeb0b289952c90993e193516a0ec2064744
+Time: 2018-07-13 00:06:40,924 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.validateToken(UserTokenVsmart.java:30)
+                    Message: token decrypt: 83022#vtp_omer.andrade#13-07-2018 00:06:32 
+ 
+Time: 2018-07-13 00:06:40,925 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.compareDate(UserTokenVsmart.java:90)
+                    Message: dateInToken=13-07-2018[nowDate]13-07-2018 
+ 
+ ValidateForm vf {"result":1,"message":"83022"}
+set userId to ServletRequest: 83022
+Time: 2018-07-13 00:06:40,926 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:166)
+                    Message: passToken: true 
+ 
+Hibernate: 
+    select
+        CONFIG_MANAGEMENT_VALUE 
+    from
+        cat_config_management  
+    where
+        CONFIG_MANAGEMENT_CODE = 'CONFIG_CHECK_OTP'
+Time: 2018-07-13 00:06:40,931 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:203)
+                    Message: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache ----> CACHE HIT 
+ 
+Time: 2018-07-13 00:06:40,931 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 1; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:40,934 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 0; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:40,934 INFO  
+                    Location: com.viettel.qlctkt.authen.otp.CheckOtpCode.validateOtpCode(CheckOtpCode.java:59)
+                    Message: start validate otpCode: 51227083022 
+ 
+Hibernate: 
+    select
+        CAT_AUTHEN_OTP_ID 
+    from
+        cat_authen_otp 
+    where
+        TIME_EXPIRED > sysdate 
+        and OTP_CODE = ? 
+        and USER_ID = ?
+Time: 2018-07-13 00:06:40,935 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:203)
+                    Message: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache ----> CACHE HIT 
+ 
+Time: 2018-07-13 00:06:40,936 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 1; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:40,938 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 0; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:40,938 INFO  
+                    Location: com.viettel.qlctkt.authen.otp.CheckOtpCode.validateOtpCode(CheckOtpCode.java:61)
+                    Message: delete otpcode old of user: 83022 
+ 
+Hibernate: 
+    delete 
+    from
+        cat_authen_otp 
+    where
+        USER_ID = ? 
+        and TIME_EXPIRED < sysdate
+Time: 2018-07-13 00:06:40,940 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:203)
+                    Message: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache ----> CACHE HIT 
+ 
+Time: 2018-07-13 00:06:40,941 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 1; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:40,943 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 0; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:40,943 INFO  
+                    Location: com.viettel.qlctkt.authen.otp.CheckOtpCode.deleteOtpOld(CheckOtpCode.java:98)
+                    Message: row delete 83022 - 0 
+ 
+Time: 2018-07-13 00:06:40,945 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 0; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:40,947 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 0; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:40,949 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:291)
+                    Message: start_action|VSMART|2018/07/13 00:06:40:924|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/authen/checkOtpCode||com.viettel.qlctkt.controller.AuthenController.checkOtpCode|24|[SessionID=83022_356397081585663_201807121206367600_658][Account=null][RequestContent=8a1804004b869641a0ff40a1efe799e2e1eecad53603abd7387854803f47aeeb0b289952c90993e193516a0ec2064744;token:fd9368bc-f2a1-4db4-b934-d8d42a18c164;userId:83022;imeiMobile:356397081585663;otpCode:512270]|0348D3181B6D57D3B1660A922B105CB2_1531415200924|83022_356397081585663_201807121206367600_658 
+ 
+Time: 2018-07-13 00:06:40,949 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:310)
+                    Message: end_action|VSMART|2018/07/13 00:06:40:949|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/authen/checkOtpCode||com.viettel.qlctkt.controller.AuthenController.checkOtpCode|24|[SessionID=83022_356397081585663_201807121206367600_658][Account=null][ResponeContent={"result":"&1VSMART&2Mã đăng nhập không đúng"}]|0348D3181B6D57D3B1660A922B105CB2_1531415200924|83022_356397081585663_201807121206367600_658 
+ 
+token=8a1804004b869641a0ff40a1efe799e2e1eecad53603abd7387854803f47aeeb0b289952c90993e193516a0ec2064744
+Time: 2018-07-13 00:06:43,178 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.validateToken(UserTokenVsmart.java:30)
+                    Message: token decrypt: 83022#vtp_omer.andrade#13-07-2018 00:06:32 
+ 
+Time: 2018-07-13 00:06:43,179 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.compareDate(UserTokenVsmart.java:90)
+                    Message: dateInToken=13-07-2018[nowDate]13-07-2018 
+ 
+ ValidateForm vf {"result":1,"message":"83022"}
+set userId to ServletRequest: 83022
+Time: 2018-07-13 00:06:43,180 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:166)
+                    Message: passToken: true 
+ 
+Hibernate: 
+    select
+        CONFIG_MANAGEMENT_VALUE 
+    from
+        cat_config_management  
+    where
+        CONFIG_MANAGEMENT_CODE = 'CONFIG_CHECK_OTP'
+Time: 2018-07-13 00:06:43,185 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:203)
+                    Message: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache ----> CACHE HIT 
+ 
+Time: 2018-07-13 00:06:43,186 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 1; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:43,188 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 0; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:43,189 INFO  
+                    Location: com.viettel.qlctkt.authen.otp.CheckOtpCode.validateOtpCode(CheckOtpCode.java:59)
+                    Message: start validate otpCode: 51227083022 
+ 
+Hibernate: 
+    select
+        CAT_AUTHEN_OTP_ID 
+    from
+        cat_authen_otp 
+    where
+        TIME_EXPIRED > sysdate 
+        and OTP_CODE = ? 
+        and USER_ID = ?
+Time: 2018-07-13 00:06:43,190 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:203)
+                    Message: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache ----> CACHE HIT 
+ 
+Time: 2018-07-13 00:06:43,191 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 1; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:43,193 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 0; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:43,194 INFO  
+                    Location: com.viettel.qlctkt.authen.otp.CheckOtpCode.validateOtpCode(CheckOtpCode.java:61)
+                    Message: delete otpcode old of user: 83022 
+ 
+Hibernate: 
+    delete 
+    from
+        cat_authen_otp 
+    where
+        USER_ID = ? 
+        and TIME_EXPIRED < sysdate
+Time: 2018-07-13 00:06:43,196 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:203)
+                    Message: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache ----> CACHE HIT 
+ 
+Time: 2018-07-13 00:06:43,197 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 1; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:43,199 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 0; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:43,199 INFO  
+                    Location: com.viettel.qlctkt.authen.otp.CheckOtpCode.deleteOtpOld(CheckOtpCode.java:98)
+                    Message: row delete 83022 - 0 
+ 
+Time: 2018-07-13 00:06:43,201 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 0; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:43,202 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 0; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:43,205 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:291)
+                    Message: start_action|VSMART|2018/07/13 00:06:43:178|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/authen/checkOtpCode||com.viettel.qlctkt.controller.AuthenController.checkOtpCode|26|[SessionID=83022_356397081585663_201807121206378810_152][Account=null][RequestContent=8a1804004b869641a0ff40a1efe799e2e1eecad53603abd7387854803f47aeeb0b289952c90993e193516a0ec2064744;token:fd9368bc-f2a1-4db4-b934-d8d42a18c164;userId:83022;imeiMobile:356397081585663;otpCode:512270]|0348D3181B6D57D3B1660A922B105CB2_1531415203178|83022_356397081585663_201807121206378810_152 
+ 
+Time: 2018-07-13 00:06:43,205 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:310)
+                    Message: end_action|VSMART|2018/07/13 00:06:43:204|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/authen/checkOtpCode||com.viettel.qlctkt.controller.AuthenController.checkOtpCode|26|[SessionID=83022_356397081585663_201807121206378810_152][Account=null][ResponeContent={"result":"&1VSMART&2Mã đăng nhập không đúng"}]|0348D3181B6D57D3B1660A922B105CB2_1531415203178|83022_356397081585663_201807121206378810_152 
+ 
+token=8a1804004b869641a0ff40a1efe799e2e1eecad53603abd7387854803f47aeeb0b289952c90993e193516a0ec2064744
+Time: 2018-07-13 00:06:43,667 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.validateToken(UserTokenVsmart.java:30)
+                    Message: token decrypt: 83022#vtp_omer.andrade#13-07-2018 00:06:32 
+ 
+Time: 2018-07-13 00:06:43,668 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.compareDate(UserTokenVsmart.java:90)
+                    Message: dateInToken=13-07-2018[nowDate]13-07-2018 
+ 
+ ValidateForm vf {"result":1,"message":"83022"}
+set userId to ServletRequest: 83022
+Time: 2018-07-13 00:06:43,669 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:166)
+                    Message: passToken: true 
+ 
+Hibernate: 
+    select
+        CONFIG_MANAGEMENT_VALUE 
+    from
+        cat_config_management  
+    where
+        CONFIG_MANAGEMENT_CODE = 'CONFIG_CHECK_OTP'
+Time: 2018-07-13 00:06:43,674 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:203)
+                    Message: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache ----> CACHE HIT 
+ 
+Time: 2018-07-13 00:06:43,674 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 1; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:43,677 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 0; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:43,677 INFO  
+                    Location: com.viettel.qlctkt.authen.otp.CheckOtpCode.validateOtpCode(CheckOtpCode.java:59)
+                    Message: start validate otpCode: 51227083022 
+ 
+Hibernate: 
+    select
+        CAT_AUTHEN_OTP_ID 
+    from
+        cat_authen_otp 
+    where
+        TIME_EXPIRED > sysdate 
+        and OTP_CODE = ? 
+        and USER_ID = ?
+Time: 2018-07-13 00:06:43,678 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:203)
+                    Message: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache ----> CACHE HIT 
+ 
+Time: 2018-07-13 00:06:43,679 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 1; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:43,681 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 0; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:43,681 INFO  
+                    Location: com.viettel.qlctkt.authen.otp.CheckOtpCode.validateOtpCode(CheckOtpCode.java:61)
+                    Message: delete otpcode old of user: 83022 
+ 
+Hibernate: 
+    delete 
+    from
+        cat_authen_otp 
+    where
+        USER_ID = ? 
+        and TIME_EXPIRED < sysdate
+Time: 2018-07-13 00:06:43,683 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:203)
+                    Message: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache ----> CACHE HIT 
+ 
+Time: 2018-07-13 00:06:43,684 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkoutStatement(GooGooStatementCache.java:220)
+                    Message: checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 1; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:43,686 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinStatement(GooGooStatementCache.java:295)
+                    Message: checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 0; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:43,686 INFO  
+                    Location: com.viettel.qlctkt.authen.otp.CheckOtpCode.deleteOtpOld(CheckOtpCode.java:98)
+                    Message: row delete 83022 - 0 
+ 
+Time: 2018-07-13 00:06:43,688 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 0; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:43,690 DEBUG 
+                    Location: com.mchange.v2.c3p0.stmt.GooGooStatementCache.checkinAll(GooGooStatementCache.java:321)
+                    Message: checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 50; checked out: 0; num connections: 3; num keys: 50 
+ 
+Time: 2018-07-13 00:06:43,691 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:291)
+                    Message: start_action|VSMART|2018/07/13 00:06:43:666|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/authen/checkOtpCode||com.viettel.qlctkt.controller.AuthenController.checkOtpCode|25|[SessionID=83022_356397081585663_201807121206378810_152][Account=null][RequestContent=8a1804004b869641a0ff40a1efe799e2e1eecad53603abd7387854803f47aeeb0b289952c90993e193516a0ec2064744;token:fd9368bc-f2a1-4db4-b934-d8d42a18c164;userId:83022;imeiMobile:356397081585663;otpCode:512270]|0348D3181B6D57D3B1660A922B105CB2_1531415203666|83022_356397081585663_201807121206378810_152 
+ 
+Time: 2018-07-13 00:06:43,692 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:310)
+                    Message: end_action|VSMART|2018/07/13 00:06:43:691|vtp_omer.andrade|10.60.105.251|10.60.105.180:9299|/QLCTKT/rest/authen/checkOtpCode||com.viettel.qlctkt.controller.AuthenController.checkOtpCode|25|[SessionID=83022_356397081585663_201807121206378810_152][Account=null][ResponeContent={"result":"&1VSMART&2Mã đăng nhập không đúng"}]|0348D3181B6D57D3B1660A922B105CB2_1531415203666|83022_356397081585663_201807121206378810_152 
+ 
+token=8a1804004b869641a0ff40a1efe799e2e1eecad53603abd7387854803f47aeeb0b289952c90993e193516a0ec2064744
+Time: 2018-07-13 00:06:44,093 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.validateToken(UserTokenVsmart.java:30)
+                    Message: token decrypt: 83022#vtp_omer.andrade#13-07-2018 00:06:32 
+ 
+Time: 2018-07-13 00:06:44,093 INFO  
+                    Location: com.viettel.qlctkt.common.util.UserTokenVsmart.compareDate(UserTokenVsmart.java:90)
+                    Message: dateInToken=13-07-2018[nowDate]13-07-2018 
+ 
+ ValidateForm vf {"result":1,"message":"83022"}
+set userId to ServletRequest: 83022
+Time: 2018-07-13 00:06:44,094 INFO  
+                    Location: com.viettel.qlctkt.filter.LogActionFilter.doFilter(LogActionFilter.java:166)
+                    Message: passToken: true 
+ 
+Time: 2018-07-13 00:06:44,098 INFO  
+                    Location: com.viettel.qlctkt.common.util.GetUserId.getUserIdFromReq(GetUserId.java:29)
+                    Message: user id get from HttpServletRequest: 83022 
+ 
+Time: 2018-07-13 00:06:44,098 INFO  
+                    Location: com.viettel.qlctkt.common.util.GetUserId.getUserIdFromReq(GetUserId.java:31)
+                    Message: user id get from HttpServletRequest: 83022 
+ 
