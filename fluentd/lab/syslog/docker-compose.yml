@@ -2,8 +2,6 @@ version: '3'
 services:
 
   fluentd:
-#    image: fluent/fluentd:v1.3-debian
-#    image: fluent/fluentd:stable
     build: . 
     container_name: fluentd
     volumes:

@@ -11,21 +11,18 @@ $ sudo systemctl restart rsyslog.service
 Run docker compose
 ```
 $ cd syslog
-$ docker-compose up
+$ docker-compose up -d
 ```
 
 # Test
-1. Test `in_tail` 
+Run command with user `root` or `ssh`. Example
 ```
-$ cd data
-## Run script 
-$ for ((i=1;i<=100;i++)); do  echo "Welcome $i times" >> tail.log; sleep 1; done
-```
-
-2. Test `in_syslog`
-Run command with user root. Example
-```
-$ sudo apt update
+$ ssh <user>@<ip>
 ## or
 $ sudo su
+```
+Verify with `docker logs`
+```
+$ docker logs --tail 50 -f fluentd
+
 ```
