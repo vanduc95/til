@@ -12,13 +12,18 @@
 while IFS= read -r line;do
     sleep 1
     echo "$line" >> ./fluentd/data/example.log
-done < ./vsmart-logs/catalina.out
+done < ./sample-logs/example.log
 
+while IFS= read -r line;do
+    sleep 1
+    echo "$line" >> ./fluentd/data/rails.log
+done < ./sample-logs/rails.log
 
-#while IFS= read -r line;do
-#    sleep 2
-#    echo "$line" >> ./fluentd/data/example.log
-#done < ./vsmart-logs/ActionLogVsmart.log.2018-07-02-02
+while IFS= read -r line;do
+    sleep 1
+    echo "$line" >> ./fluentd/data/java.log
+done < ./sample-logs/java.log
+
 
 
 

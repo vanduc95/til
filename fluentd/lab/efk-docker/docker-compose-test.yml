@@ -3,6 +3,7 @@ version: '3.2'
 services:
     elasticsearch:
         image: ${ELASTICSEARCH_IMAGE}
+        container_name: elasticsearch
         restart: always
         environment:
             - 'node.name=HEYJUDE'
@@ -11,43 +12,42 @@ services:
             - 'ES_JAVA_OPTS=-Xms256m -Xmx256m'
         ports:
             - 9200:9200
+#            - 9300:9300
         volumes:
             - type: bind
               source: /var/lib/elasticsearch
               target: /usr/share/elasticsearch/data
-
-
-    # kibana:
-    #     image: ${KIBANA_IMAGE}
-    #     restart: always
-    #     depends_on:
-    #         - elasticsearch
+        networks:
+            - net
+#        logging:
+#            driver: fluentd
+#            options:
+#                fluentd-address: localhost:24224
+#                fluentd-async-connect: 'true'
+#                fluentd-retry-wait: '1s'
+#                fluentd-max-retries: '30'
+#                tag: ${LOG_OPT_TAG_PREFIX}.efk.elasticsearch
 
 
     fluentd:
+        # image: ${FLUENTD_IMAGE}
         build: .
+        container_name: fluentd
         ports:
             - 127.0.0.1:24224:24224
             - 0.0.0.0:5140:5140/udp
         volumes:
             - ./fluentd/etc:/fluentd/etc
             - ./fluentd/data:/fluentd/log
+        networks:
+            - net
+#        logging:
+#            driver: "json-file"
+#            options:
+#                max-size: "1G"
+#                max-file: "2"
 
 
-    # nginx:
-    #     image: ${NGINX_IMAGE}
-    #     restart: always
-    #     ports:
-    #         - 80:80
-    #     volumes:
-    #         - type: bind
-    #           source: ./nginx/nginx.conf
-    #           target: /etc/nginx/nginx.conf
-    #           read_only: true
-    #         - type: bind
-    #           source: ./nginx/conf.d
-    #           target: /etc/nginx/conf.d
-    #           read_only: true
-    #     depends_on:
-    #         - kibana
-
+networks:
+    net:
+        driver: bridge

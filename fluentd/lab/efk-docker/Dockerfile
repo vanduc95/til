@@ -1,4 +1,3 @@
-#FROM fluent/fluentd:v1.3-debian
 FROM fluent/fluentd:v1.2
 
 RUN apk add --update --virtual .build-deps \

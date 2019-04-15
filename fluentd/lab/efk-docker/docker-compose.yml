@@ -3,6 +3,7 @@ version: '3.2'
 services:
     elasticsearch:
         image: ${ELASTICSEARCH_IMAGE}
+        container_name: elasticsearch
         restart: always
         environment:
             - 'node.name=HEYJUDE'
@@ -29,6 +30,7 @@ services:
 
     kibana:
         image: ${KIBANA_IMAGE}
+        container_name: kibana
         restart: always
 #        ports:
 #            - 5601:5601
@@ -48,6 +50,7 @@ services:
     fluentd:
         # image: ${FLUENTD_IMAGE}
         build: .
+        container_name: fluentd
         ports:
             - 127.0.0.1:24224:24224
             - 0.0.0.0:5140:5140/udp
@@ -64,6 +67,7 @@ services:
 
     nginx:
         image: ${NGINX_IMAGE}
+        container_name: nginx
         restart: always
         ports:
             - 80:80
