@@ -61,7 +61,7 @@ Xem thêm các cách cài đặt khác [tại đây](https://docs.fluentd.org/v1
 Tất cả quá trình xử lý này đều có thể được định nghĩa trong các file cấu hình. Đối với trường hợp fluentd phức tạp (nhiều source, filter và destination), một best practice có thể được áp dụng như sau:
 
 ```
-├── etc
+├── etc 
 │   ├── filter
 │   │   ├── 00-parse-syslog.conf
 │   │   ├── ...
@@ -86,7 +86,7 @@ Ví dụ về file `fluent.conf`:
 ```
 Như vậy, khi chạy, fluentd sẽ đọc cấu hình từ file `fluent.conf` theo thứ tự từ trên xuống inpute --> filter --> output. Đầu tiên sẽ đọc cấu hình từ folder `input`, để xác định các resource cần tổng hợp log. Sau đó là folder `filter` cho việc xử lý log, nơi chứa các rule filter, rule parser. Và cuối cùng, folder `output` là các destination cần gửi output log sau khi được xử lý.
 
-Xem  ví dụ mẫu  [tại đây](fa)
+Xem  ví dụ mẫu  [tại đây](./lab/efk-docker/fluentd/etc)
 
 ## 5. Tìm hiểu về Input Plugins cơ bản.
 
