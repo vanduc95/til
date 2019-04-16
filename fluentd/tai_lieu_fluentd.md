@@ -52,6 +52,7 @@ $ docker logs --tail 50 -f fluentd
 2019-04-03 15:49:54.361742463 +0000 sample.test: {"json":"message"}
 ```
 Xem thêm cài đặt Fluentd bằng Docker [tại đây](https://hub.docker.com/r/fluent/fluentd/) 
+
 Xem thêm các cách cài đặt khác [tại đây](https://docs.fluentd.org/v1.0/categories/installation) 
 
 
@@ -175,7 +176,8 @@ Giải thích tham số:
 ## 6. Tìm hiểu về Output Plugins cơ bản.
 
 ### Tổng quan
-Tiếp theo, ta sẽ đi tìm hiểu một số out  plugin hay sử dụng
+Sau khi event log đi qua `input` và được `filter`, chúng sẽ được gửi đến các destination khác nhau. Các destination này được định nghĩa tại output.
+Ta sẽ đi tìm hiểu một số out  plugin hay sử dụng
 
 ### out_elasticsearch
 Plugin `out_elasticsearch` cho phép Fluentd ghi các event log tới Elasticsearch.  Plugin này không có sẵn, ta cần cài thêm khi sử dụng với Dockerfile.
