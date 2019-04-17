@@ -317,32 +317,43 @@ start_action|VSMART|2018/07/02 02:05:56:831|hoav|10.60.106.251|10.60.106.88:8090
 }
 ```
 
-### ### parser_multiline
-Đối với những event log có nhiều hơn một dòng cho một sự kiện, ta có thể sử dụng `parser_multiline' như sau:
+### parser_multiline
+Đối với những event log có nhiều hơn một dòng cho một sự kiện, ta có thể sử dụng `parser_multiline` với tham số `formatN`. `format_firstline` sẽ phát hiện ra dòng bắt đầu trong đoạn multi log cần parse. Trình `parser` sẽ bỏ qua cho đến khi gặp được line thỏa mãn `format_firstline`. Các `formatN` (N=1,2,3...) sẽ bắt đầu parse dựa trên regexp patterns.  
+
+Ta có ví dụ sau:
 
 ```
 <parse>
   @type multiline
-  format_firstline /\d{4}-\d{1,2}-\d{1,2}/
-  format1 /^(?<time>\d{4}-\d{1,2}-\d{1,2} \d{1,2}:\d{1,2}:\d{1,2}) \[(?<thread>.*)\] (?<level>[^\s]+)(?<message>.*)/
+  format_firstline /^Started/
+  format1 /Started (?<method>[^ ]+) "(?<path>[^"]+)" for (?<host>[^ ]+) at (?<time>[^ ]+ [^ ]+ [^ ]+)\n/
+  format2 /Processing by (?<controller>[^\u0023]+)\u0023(?<controller_method>[^ ]+) as (?<format>[^ ]+?)\n/
+  format3 /(  Parameters: (?<parameters>[^ ]+)\n)?/
+  format4 /  Rendered (?<template>[^ ]+) within (?<layout>.+) \([\d\.]+ms\)\n/
+  format5 /Completed (?<code>[^ ]+) [^ ]+ in (?<runtime>[\d\.]+)ms \(Views: (?<view_runtime>[\d\.]+)ms \| ActiveRecord: (?<ar_runtime>[\d\.]+)ms\)/
 </parse>
 ```
 
 Khi đó đoạn log:
 ```
-2013-3-03 14:27:33 [main] INFO  Main - Start
-2013-3-03 14:27:33 [main] ERROR Main - Exception
-javax.management.RuntimeErrorException: null
-    at Main.main(Main.java:16) ~[bin/:na]
-2013-3-03 14:27:33 [main] INFO  Main - End
+Started GET "/users/123/" for 127.0.0.1 at 2013-06-14 12:00:11 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"user_id"=>"123"}
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
 ```
 
 sẽ được parse thành:
 ```
 {
-  "thread" :"main",
-  "level"  :"ERROR",
-  "message":" Main - Exception\njavax.management.RuntimeErrorException: null\n    at Main.main(Main.java:16) ~[bin/:na]"
+  "method"           :"GET",
+  "path"             :"/users/123/",
+  "host"             :"127.0.0.1",
+  "controller"       :"UsersController",
+  "controller_method":"show",
+  "format"           :"HTML",
+  "parameters"       :"{ \"user_id\":\"123\"}",
+  ...
 }
 ```
 
