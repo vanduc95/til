@@ -1,3 +1,4 @@
+
 # Logging với Fluentd verison v1.x
 
 ## 1. Fluentd là gì?
@@ -38,7 +39,7 @@ $ vi /tmp/fluent.conf
   @type stdout
 </match>
 ```
-- Cài Fluentd với câu lệnh `docker run`. 
+- Chạy Fluentd với câu lệnh `docker run`. 
 ```
 $ docker run -d --name fluentd -p 9880:9880 -v /tmp:/fluentd/etc fluent/fluentd:stable
 ```
@@ -87,7 +88,7 @@ Ví dụ về file `fluent.conf`:
 ```
 Như vậy, khi chạy, fluentd sẽ đọc cấu hình từ file `fluent.conf` theo thứ tự từ trên xuống inpute --> filter --> output. Đầu tiên sẽ đọc cấu hình từ folder `input`, để xác định các resource cần tổng hợp log. Sau đó là folder `filter` cho việc xử lý log, nơi chứa các rule filter, rule parser. Và cuối cùng, folder `output` là các destination cần gửi output log sau khi được xử lý.
 
-Xem  ví dụ mẫu  [tại đây](./lab/efk-docker/fluentd/etc)
+Xem ví dụ mẫu [tại đây](./lab/efk-docker/fluentd/etc)
 
 ## 5. Tìm hiểu về Input Plugins cơ bản.
 
@@ -198,7 +199,7 @@ Xem ví dụ dưới đây:
 </match>
 ```
 Giải thích cấu hình:
-- Fluentd sẽ ghi tất cả các event log có tag thỏa mãn `*.log` như `java.log`, `example.log` ... tới Elasticsearch ở `host` và `port` tương ứng.
+- Fluentd sẽ ghi tất cả các event log có tag thỏa mãn `*.log` như `java.log`, `rails.log` ... tới Elasticsearch ở `host` và `port` tương ứng.
 - Khi set `logstash_format = false`, các event log được ghi lên Elasticsearch sẽ có `index_name` mặc định là `fluentd`. Nếu set  `logstash_format = true`, index_name sẽ được fomat theo định dạng `logstash_prefix-logstash_dateformat`. Tương ứng sẽ là **example_log-2019-04-14**
 
 ### out_copy
@@ -223,22 +224,93 @@ Với plugin `out_copy`, `store` tương ứng với một output. Nếu một `
 
 
 ### Tổng quan
+Filter thực hiện các chức năng sau:
+- Lọc ra các event log bằng cách grep với giá trị của một hoặc một số trường.
+- Thêm một số trường mới cho event.
+- Loại bỏ hoặc sửa đổi một số trường của event log
+
+Ta sẽ tìm hiểu một số `filter` plugin hay dùng
 
 ### filter_record_transformer
-
-### filter_grep
-
+Dưới đây là một ví dụ mà sử dụng `filter_record_transformer` plugin để thêm/sửa/xóa các event.	
+```
+<filter syslog_ssh_disconnect>
+    @type record_transformer
+    <record>
+        message ${record["pid"]}|disconnect|${record["message"]}
+    </record>
+</filter>
+```
+Filter trên sẽ sửa lai trường `message` trong event log như sau: 
+```
+{"host":"DELL","ident":"sshd","pid":"2625","message":"Disconnected from user ducnv 10.61.127.94 port 46714","log_level":"info","Hostname":"localhost"}
+```
+sẽ được chuyển thành
+```
+{"host":"DELL","ident":"sshd","pid":"6526","message":"6526|disconnect|Disconnected from user ducnv 10.61.127.94 port 46732","log_level":"info","Hostname":"localhost"}
+```
 ### filter_parser
+`filter_parser` plugin cho phép phân tích cú pháp các trường trong event log. 
 
+```
+<filter syslog_ssh_disconnect>
+    @type parser
+    key_name message
+    <parse>
+        @type regexp
+        expression ^(?<pid>[0-9]+)\|(?<action>[connect|disconnect]+)\|Disconnected from user (?<user>[^ ]+) (?<client_ip>[^ ]+) port (?<client_port>\d{1,5}).*?$
+    </parse>
+</filter>
+```
+
+Tiếp nối ví dụ trước, sau khi đi qua `record_transformer` filter, ta tiếp tục cho đi qua `parser` filter để phân tích cú pháp các giá trị trong trường `message` được quy định qua `key_name`.  Sử dụng biểu thức chính quy quy định trong `expression` để maching log. Có thể tham khảo regex cheat sheet [tại đây]([https://www.rexegg.com/regex-quickstart.html](https://www.rexegg.com/regex-quickstart.html)) và công cụ test regex của fluentd [tại đây](http://fluentular.herokuapp.com/)
+
+Kết quả như sau:
+```
+{"pid":"6526","action":"disconnect","user":"ducnv","client_ip":"10.61.127.94","client_port":"46732"}
+```
 
 ## 8. Tìm hiểu về Parser Plugins cơ bản
-
 
 ### Tổng quan
 
 ### parser_regexp
 
-### parser_syslog
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

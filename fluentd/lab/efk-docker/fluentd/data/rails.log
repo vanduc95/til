@@ -1,733 +1,102 @@
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-rocessing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
+Started GET "/users/1/" for 127.0.0.1
 Processing by UsersController#show as HTML
   Parameters: {"user_id"=>"123"}
   Rendered users/show.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
 
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
+Started GET "/users/2/" for 127.0.0.1
 Processing by UsersController#show as HTML
   Parameters: {"user_id"=>"123"}
   Rendered users/show.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
 
-Started GET "/users/123/" for 127.0.0.1
+Started GET "/users/3/" for 127.0.0.1
 Processing by UsersController#show as HTML
   Parameters: {"user_id"=>"123"}
   Rendered users/show.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
 
-Started GET "/users/123/" for 127.0.0.1
+Started GET "/users/4/" for 127.0.0.1
 Processing by UsersController#show as HTML
   Parameters: {"user_id"=>"123"}
   Rendered users/show.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
+Started GET "/users/1/" for 127.0.0.1
 Processing by UsersController#show as HTML
   Parameters: {"user_id"=>"123"}
   Rendered users/show.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
 
-Started GET "/users/123/" for 127.0.0.1
+Started GET "/users/2/" for 127.0.0.1
 Processing by UsersController#show as HTML
   Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+#Started GET "/users/1/" for 127.0.0.1
+#Processing by UsersController#show as HTML
+#  Parameters: {"user_id"=>"123"}
+#  Rendered users/show.html.erb within layouts/application (0.3ms)
+#Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+#
+#Started GET "/users/2/" for 127.0.0.1
+#Processing by UsersController#show as HTML
+#  Parameters: {"user_id"=>"123"}
+#  Rendered users/show.html.erb within layouts/application (0.3ms)
+#Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+#
+#Started GET "/users/3/" for 127.0.0.1
+#Processing by UsersController#show as HTML
+#  Parameters: {"user_id"=>"123"}
+#  Rendered users/show.html.erb within layouts/application (0.3ms)
+#Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+#
+#Started GET "/users/4/" for 127.0.0.1
+#Processing by UsersController#show as HTML
+#  Parameters: {"user_id"=>"123"}
+#  Rendered users/show.html.erb within layouts/application (0.3ms)
+#Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+#
+#Started GET "/users/5/" for 127.0.0.1
+#Processing by UsersController#show as HTML
+#  Parameters: {"user_id"=>"123"}
+#  Rendered users/show.html.erb within layouts/application (0.3ms)
+#Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
 
-Started GET "/users/123/" for 127.0.0.1
+Started GET "/users/6/" for 127.0.0.1
 Processing by UsersController#show as HTML
   Parameters: {"user_id"=>"123"}
   Rendered users/show.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
 
-Started GET "/users/123/" for 127.0.0.1
+Started GET "/users/7/" for 127.0.0.1
 Processing by UsersController#show as HTML
   Parameters: {"user_id"=>"123"}
   Rendered users/show.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
 
-Started GET "/users/123/" for 127.0.0.1
+Started GET "/users/8/" for 127.0.0.1
 Processing by UsersController#show as HTML
-  Parameters: {"user_id"=>"123"}
-  Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
 Started GET "/users/123/" for 127.0.0.1
 Processing by UsersController#show as HTML
   Parameters: {"user_id"=>"123"}
   Rendered users/show.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
 
-Started GET "/users/123/" for 127.0.0.1
+Started GET "/users/9/" for 127.0.0.1
 Processing by UsersController#show as HTML
   Parameters: {"user_id"=>"123"}
   Rendered users/show.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
 
-Started GET "/users/123/" for 127.0.0.1
+Started GET "/users/10/" for 127.0.0.1
 Processing by UsersController#show as HTML
   Parameters: {"user_id"=>"123"}
   Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
+Started GET "/users/1/" for 127.0.0.1
 Processing by UsersController#show as HTML
   Parameters: {"user_id"=>"123"}
   Rendered users/show.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
 
-Started GET "/users/123/" for 127.0.0.1
+Started GET "/users/2/" for 127.0.0.1
 Processing by UsersController#show as HTML
   Parameters: {"user_id"=>"123"}
   Rendered users/show.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-Started GET "/users/123/" for 127.0.0.1
-Processing by UsersController#show as HTML
