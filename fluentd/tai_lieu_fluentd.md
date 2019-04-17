@@ -122,6 +122,7 @@ Dưới đây là ví dụ sử dụng `in_tail` plugin:
     pos_file /fluentd/log/rails.out.pos
     read_lines_limit 700
     rotate_wait 5
+    read_from_head true
     tag rails_log
     <parse>
         @type multiline
@@ -141,7 +142,7 @@ Giải thích tham số:
 - `pos_file`: ghi lại vị trí cuối cùng mà `in_tail` input đọc trong file.
 - `read_line_limit`:  quy định số dòng sẽ đọc cho mỗi IO.
 - `rotate_wait`: rotate là tiến trình tạo một file log mới, còn file log cũ sẽ được xử lí theo các quy định cấu hình như xóa/nén. Tham số này quy định khoảng thời gian giữ một tham chiếu tới file log cũ trước khi chuyển sang file log mới.
-- `refresh_interval`: 
+- read_from_head: giá trị mặc định `false` sẽ đọc log từ vị trí cuối của file, khi set bằng `true` nó sẽ đọc từ đầu file log.
 - `tag`: quy định tag, giúp phân loại các event log khác nhau. Được sử dụng trong `filter` và `output`
 - `<parse>` section : giúp định dạng, phân tích cú pháp log. Fluentd sẽ dựa vào `parse` section để match, chỉ những đoạn log thỏa mãn mới được gắn tag và đươc xử lí tiếp. Chúng ta sẽ tìm hiểu kĩ hơn các `parse` plugin trong phần sau.
 
@@ -263,7 +264,7 @@ sẽ được chuyển thành
 </filter>
 ```
 
-Tiếp nối ví dụ trước, sau khi đi qua `record_transformer` filter, ta tiếp tục cho đi qua `parser` filter để phân tích cú pháp các giá trị trong trường `message` được quy định qua `key_name`.  Sử dụng biểu thức chính quy quy định trong `expression` để maching log. Có thể tham khảo regex cheat sheet [tại đây]([https://www.rexegg.com/regex-quickstart.html](https://www.rexegg.com/regex-quickstart.html)) và công cụ test regex của fluentd [tại đây](http://fluentular.herokuapp.com/)
+Tiếp nối ví dụ trước, sau khi đi qua `record_transformer` filter, ta tiếp tục cho đi qua `parser` filter để phân tích cú pháp các giá trị trong trường `message` được quy định qua `key_name`. Sử dụng biểu thức chính quy quy định trong `expression` để maching log. Có thể tham khảo regex cheat sheet [tại đây]([https://www.rexegg.com/regex-quickstart.html](https://www.rexegg.com/regex-quickstart.html)) và công cụ test regex của fluentd [tại đây](http://fluentular.herokuapp.com/)
 
 Kết quả như sau:
 ```
@@ -273,46 +274,77 @@ Kết quả như sau:
 ## 8. Tìm hiểu về Parser Plugins cơ bản
 
 ### Tổng quan
+Như đã đề cập trong phần `in_tail` plugin, phần này ta sẽ có một số ví dụ để hiểu hơn về  `parser` plugin. Chúng cho phép phân tích cú pháp cho input log đầu vào để trích xuất ra các giá trị cần quan tâm. 
+
+Fluentd có  các `parser` plugin có sẵn phục vụ cho các loại log hay dùng như:
+- [parser_apache2](https://docs.fluentd.org/v1.0/articles/parser_apache2)
+- [parser_nginx](https://docs.fluentd.org/v1.0/articles/parser_nginx)
+- [parser_syslog](https://docs.fluentd.org/v1.0/articles/parser_syslog)
+- [parse_json](https://docs.fluentd.org/v1.0/articles/parser_json)
+- ...
+
+Ngoài ra, đối với các log phức tạp hoặc các log do người dùng tự định nghĩa, ta có thể  tự parse log thông qua `parser_regexp` plugin.
 
 ### parser_regexp
+Ta có ví dụ sau:
+```
+<parse>
+	@type regexp
+	expression /^(?<action>[^\|]*)\|(?<appCode>[^\|]*)\|(?<timestamp>[^\|]* [^\|]*)\|(?<userName>[^\|]*)\|(?<ipRemote>[^\|]*)\|(?<path>[^\|]*)\|(?<uri>[^\|]*)\|(?<param>[^\|]*)\|(?<className>[^\|]*)\|(?<duration>[^\|]*)\|(?<descriptionStart>[^\|]*)\|(?<requestId>[^\|]*)\|(?<requestClientId>[^\|]*)?$/
+</parse>
+```
 
+Trong ví dụ trên, khi event log :
+```
+start_action|VSMART|2018/07/02 02:05:56:831|hoav|10.60.106.251|10.60.106.88:8090|/QLCTKT/rest/authen/checkVersionUpdate||com.viettel.qlctkt.controller.AuthenController.checkVersionUpdate|7|[SessionID=68952_868346020671911_201807020205509590_93][Account=null][RequestContent=;]|null_1530471956831|68952_868346020671911_201807020205509590_93
+```
 
+đi qua `parser`sẽ có kết quả sau:
+```
+{
+  "action":"start_action",
+  "appCode":"VSMART",
+  "timestamp":"2018/07/02 02:05:56:831",
+  "userName":"hoav",
+  "ipRemote":"10.60.106.251",
+  "path":"10.60.106.88:8090",
+  "uri":"/QLCTKT/rest/authen/checkVersionUpdate",
+  "param":"",
+  "className":"com.viettel.qlctkt.controller.AuthenController.checkVersionUpdate",
+  "duration":"7",
+  "descriptionStart":"[SessionID=68952_868346020671911_201807020205509590_93][Account=null][RequestContent=;]","requestId":"null_1530471956831",
+  "requestClientId":"68952_868346020671911_201807020205509590_93"
+}
+```
 
+### ### parser_multiline
+Đối với những event log có nhiều hơn một dòng cho một sự kiện, ta có thể sử dụng `parser_multiline' như sau:
 
+```
+<parse>
+  @type multiline
+  format_firstline /\d{4}-\d{1,2}-\d{1,2}/
+  format1 /^(?<time>\d{4}-\d{1,2}-\d{1,2} \d{1,2}:\d{1,2}:\d{1,2}) \[(?<thread>.*)\] (?<level>[^\s]+)(?<message>.*)/
+</parse>
+```
 
+Khi đó đoạn log:
+```
+2013-3-03 14:27:33 [main] INFO  Main - Start
+2013-3-03 14:27:33 [main] ERROR Main - Exception
+javax.management.RuntimeErrorException: null
+    at Main.main(Main.java:16) ~[bin/:na]
+2013-3-03 14:27:33 [main] INFO  Main - End
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+sẽ được parse thành:
+```
+{
+  "thread" :"main",
+  "level"  :"ERROR",
+  "message":" Main - Exception\njavax.management.RuntimeErrorException: null\n    at Main.main(Main.java:16) ~[bin/:na]"
+}
+```
 
 ## 9. Tìm hiểu về Buffer Plugins
 
