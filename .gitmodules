@@ -1,0 +1,3 @@
+[submodule "prometheus/example"]
+	path = prometheus/example
+	url = https://github.com/prometheus-up-and-running/examples.git
