@@ -1,0 +1,122 @@
+- name: CTL | Create nova_api database 
+  mysql_db:
+    name: nova_api
+    state: present
+    login_host: "{{ DB1_IP_NIC2 }}"
+    login_user: root
+    login_password: "{{ PASS_DATABASE_ROOT }}"
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Create nova database 
+  mysql_db:
+    name: nova
+    state: present
+    login_host: "{{ DB1_IP_NIC2 }}"
+    login_user: root
+    login_password: "{{ PASS_DATABASE_ROOT }}"
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | GRANT ALL PRIVILEGES ON nova_api.* TO 'nova'@'localhost' and 'nova'@'%' IDENTIFIED BY {{ PASS_DATABASE_NOVA_API }}
+  mysql_user:
+    name: nova
+    password: "{{ PASS_DATABASE_NOVA_API }}"
+    priv: 'nova_api.*:ALL'
+    state: present
+    host: "{{ item }}"
+    login_host: "{{ DB1_IP_NIC2 }}"
+    login_user: root
+    login_password: "{{ PASS_DATABASE_ROOT }}"
+  with_items:
+    - localhost
+    - '%'
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | GRANT ALL PRIVILEGES ON nova.* TO 'nova'@'localhost' and 'nova'@'%' IDENTIFIED BY {{ PASS_DATABASE_NOVA }}
+  mysql_user:
+    name: nova
+    password: "{{ PASS_DATABASE_NOVA }}"
+    priv: 'nova.*:ALL'
+    append_privs: yes
+    state: present
+    host: "{{ item }}"
+    login_host: "{{ DB1_IP_NIC2 }}"
+    login_user: root
+    login_password: "{{ PASS_DATABASE_ROOT }}"
+  with_items:
+    - localhost
+    - '%'
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | FlUSH PRIVILEGES
+  command: mysql -uroot -p'{{ PASS_DATABASE_ROOT }}' -h'{{ DB1_IP_NIC2 }}' --execute='FLUSH PRIVILEGES;'
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Create nova user endpoint
+  shell: ". /root/admin-openrc && {{ item }}"
+  with_items:
+    - 'openstack user create  nova --domain default --password {{ NOVA_PASS }}'
+    - 'openstack role add --project service --user nova admin'
+    - 'openstack service create --name nova --description "OpenStack Compute" compute'
+    - 'openstack endpoint create --region RegionOne compute public http://{{ IP_VIP_API }}:8774/v2.1/%\(tenant_id\)s'
+    - 'openstack endpoint create --region RegionOne compute internal http://{{ IP_VIP_API }}:8774/v2.1/%\(tenant_id\)s'
+    - 'openstack endpoint create --region RegionOne compute admin http://{{ IP_VIP_API }}:8774/v2.1/%\(tenant_id\)s'
+  when: ansible_hostname == CTL1_HOSTNAME
+  
+- name: CTL | Install the Nova packages necessary for the controller node
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - openstack-nova-api
+    - openstack-nova-conductor
+    - openstack-nova-console
+    - openstack-nova-novncproxy 
+    - openstack-nova-scheduler
+
+- name: CTL | copy config file /etc/nova/nova.conf to /etc/nova/nova.conf.orig
+  copy:
+    src: /etc/nova/nova.conf
+    dest: /etc/nova/nova.conf.orig
+    owner: root
+    group: root
+    mode: 0644
+    remote_src: True
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Configuration /etc/nova/nova.conf file on all controller
+  template:
+    src: nova.conf.j2
+    dest: /etc/nova/nova.conf
+
+- name: CTL | Ensure nova database has been synced
+  sudo_user: nova
+  command: /usr/bin/nova-manage api_db sync
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Ensure nova-api database has been synced
+  sudo_user: nova
+  command: /usr/bin/nova-manage db sync
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Enable all nova service
+  service:
+    name: "{{ item }}"
+    enabled: True
+  with_items:
+    - openstack-nova-api
+    - openstack-nova-consoleauth
+    - openstack-nova-scheduler
+    - openstack-nova-conductor
+    - openstack-nova-novncproxy
+
+- name: CTL | Start all nova service
+  service:
+    name: "{{ item }}"
+    state: started
+  with_items:
+    - openstack-nova-api
+    - openstack-nova-consoleauth
+    - openstack-nova-scheduler
+    - openstack-nova-conductor
+    - openstack-nova-novncproxy
+

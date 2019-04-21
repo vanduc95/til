@@ -1,0 +1,101 @@
+- name: CTL | Create database neutron
+  mysql_db:
+    name: neutron
+    state: present
+    login_host: "{{ DB1_IP_NIC2 }}"
+    login_user: root
+    login_password: "{{ PASS_DATABASE_ROOT }}"
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | GRANT ALL PRIVILEGES ON neutron.* TO 'neutron'@'localhost' and 'neutron'@'%' IDENTIFIED BY '$PASS_DATABASE_NEUTRON';
+  mysql_user:
+    name: neutron
+    password: "{{ PASS_DATABASE_NEUTRON }}"
+    priv: 'neutron.*:ALL'
+    state: present
+    host: "{{ item }}"
+    login_host: "{{ DB1_IP_NIC2 }}"
+    login_user: root
+    login_password: "{{ PASS_DATABASE_ROOT }}"
+  with_items:
+    - localhost
+    - '%'
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | FlUSH PRIVILEGES database
+  command: mysql -uroot -p'{{ PASS_DATABASE_ROOT }}' -h'{{ DB1_IP_NIC2 }}' --execute='FLUSH PRIVILEGES;'
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Create neutron endpoint
+  shell: ". /root/admin-openrc && {{ item }}"
+  with_items:
+    - openstack user create  neutron --domain default --password {{ NEUTRON_PASS }}
+    - openstack role add --project service --user neutron admin
+    - openstack service create --name neutron --description "OpenStack Networking" network
+    - openstack endpoint create --region RegionOne network public http://{{ IP_VIP_API }}:9696
+    - openstack endpoint create --region RegionOne network internal  http://{{ IP_VIP_API }}:9696
+    - openstack endpoint create --region RegionOne network admin  http://{{ IP_VIP_API }}:9696
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | upgrade all packages
+  yum:
+    name: '*'
+    state: latest
+
+- name: CTL | Install neutron packages neccessary for Controller nodes
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - openstack-neutron 
+    - openstack-neutron-ml2 
+    - openstack-neutron-linuxbridge 
+    - ebtables
+
+- name: CTL | Copy neutron config files to temporary files
+  copy:
+    src: "{{ item.PATH_SRC }}"
+    dest: "{{ item.PATH_DEST }}"
+    owner: root
+    group: root
+    mode: 0644
+    remote_src: True
+  with_items:
+    - {PATH_SRC: '/etc/neutron/neutron.conf', PATH_DEST: '/etc/neutron/neutron.conf.orig'}
+    - {PATH_SRC: '/etc/neutron/plugins/ml2/ml2_conf.ini', PATH_DEST: '/etc/neutron/plugins/ml2/ml2_conf.ini.orig'}
+    - {PATH_SRC: '/etc/neutron/plugins/ml2/linuxbridge_agent.ini', PATH_DEST: '/etc/neutron/plugins/ml2/linuxbridge_agent.ini.orig'}
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | config neutron.conf files
+  template:
+    src: neutron.conf.j2
+    dest: /etc/neutron/neutron.conf
+
+- name: CTL | config ml2_conf.ini files
+  template:
+    src: ml2_conf.ini.j2
+    dest: /etc/neutron/plugins/ml2/ml2_conf.ini
+
+- name: CTL | Run command 'ln -s /etc/neutron/plugins/ml2/ml2_conf.ini /etc/neutron/plugin.ini'
+  command: ln -s /etc/neutron/plugins/ml2/ml2_conf.ini /etc/neutron/plugin.ini
+
+- name: CTL | Run command 'chown -R root:neutron /etc/neutron/'
+  command: chown -R root:neutron /etc/neutron/
+
+- name: CTL | Ensure neutron database has been synced
+  sudo_user: neutron
+  command: |
+            /usr/bin/neutron-db-manage --config-file /etc/neutron/neutron.conf \
+            --config-file /etc/neutron/plugins/ml2/ml2_conf.ini upgrade head
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Enable neutron-server service
+  service:
+    name: neutron-server
+    enabled: True
+
+- name: CTL | Start neutron-server service
+  service:
+    name: neutron-server
+    state: started
+  

@@ -1,0 +1,23 @@
+[controller]
+CTL1 ansible_host=192.168.20.219 ansible_ssh_user=root ansible_ssh_pass=Ec0net@!2017 
+CTL2 ansible_host=192.168.20.220 ansible_ssh_user=root ansible_ssh_pass=Ec0net@!2017 
+CTL3 ansible_host=192.168.20.221 ansible_ssh_user=root ansible_ssh_pass=Ec0net@!2017 
+
+[compute]
+COM1 ansible_host=192.168.20.222 ansible_ssh_user=root ansible_ssh_pass=Ec0net@!2017
+COM2 ansible_host=192.168.20.223 ansible_ssh_user=root ansible_ssh_pass=Ec0net@!2017
+COM3 ansible_host=192.168.20.224 ansible_ssh_user=root ansible_ssh_pass=Ec0net@!2017
+
+[group_lb]
+LB1 ansible_host=192.168.20.191 ansible_ssh_user=root ansible_ssh_pass=Ec0net@!2017
+LB2 ansible_host=192.168.20.192 ansible_ssh_user=root ansible_ssh_pass=Ec0net@!2017
+
+[group_mq]
+MQ1 ansible_host=192.168.20.193 ansible_ssh_user=root ansible_ssh_pass=Ec0net@!2017
+MQ2 ansible_host=192.168.20.194 ansible_ssh_user=root ansible_ssh_pass=Ec0net@!2017
+MQ3 ansible_host=192.168.20.215 ansible_ssh_user=root ansible_ssh_pass=Ec0net@!2017
+
+[group_db]
+DB1 ansible_host=192.168.20.195 ansible_ssh_user=root ansible_ssh_pass=Ec0net@!2017
+DB2 ansible_host=192.168.20.196 ansible_ssh_user=root ansible_ssh_pass=Ec0net@!2017
+DB3 ansible_host=192.168.20.218 ansible_ssh_user=root ansible_ssh_pass=Ec0net@!2017

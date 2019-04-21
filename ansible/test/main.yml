@@ -1,0 +1,11 @@
+- name: Test template ansible
+  hosts: localhost
+  vars:
+    list_ip:
+      win_server: ['20.10.10.11','20.10.10.12','20.10.10.13','20.10.10.14']
+      centos7: ['10.10.10.11','10.10.10.12','10.10.10.13','10.10.10.14']
+  tasks:
+    - name: Ansible Template Example
+      template:
+        src: filesd.j2
+        dest: filesd.json

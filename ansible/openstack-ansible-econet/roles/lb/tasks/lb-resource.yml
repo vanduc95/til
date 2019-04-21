@@ -1,0 +1,18 @@
+---
+# task for install lb-resource
+
+- name: LB-RESOURCE | Add resource
+  command: '{{ item }}'
+  with_items:
+    - 'pcs resource create Virtual_IP_API ocf:heartbeat:IPaddr2 ip={{ IP_VIP_API }} cidr_netmask=32 op monitor interval=30s'
+    - 'pcs resource create Virtual_IP_DB ocf:heartbeat:IPaddr2 ip={{ IP_VIP_DB }} cidr_netmask=32 op monitor interval=30s'
+    - 'pcs resource create Web_Cluster ocf:heartbeat:nginx configfile=/etc/nginx/nginx.conf status10url op monitor interval=5s'
+    - 'pcs constraint colocation set Web_Cluster Virtual_IP_API Virtual_IP_DB'
+    - 'pcs constraint order set Virtual_IP_API Virtual_IP_DB sequential=false set Web_Cluster'
+  when:
+    - HOST_NAME == LB1_HOSTNAME
+
+- name: LB-RESOURCE | Copy nginx.conf file
+  template:
+    src: "{{ role_path }}/templates/nginx.conf.j2"
+    dest: /etc/nginx/nginx.conf

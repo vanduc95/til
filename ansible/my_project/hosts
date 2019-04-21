@@ -1,0 +1,6 @@
+
+[vm]
+root1 ansible_host=192.168.122.46 ansible_user=root ansible_ssh_pass=abc@123
+ubuntu ansible_host=192.168.122.151 ansible_user=ubuntu ansible_ssh_pass=abc@123
+
+[localhost]

@@ -1,0 +1,127 @@
+---
+# task for install rabbitmq-install
+
+- name: MQ-INSTALL | Copy template config file for rabbitmq
+  template:
+    src: "{{ role_path }}/templates/mq-config.cfg.j2"
+    dest: /root/mq-config.cfg
+    mode: 'u+x'
+
+- name: MQ-INSTALL | Install epel repo
+  yum: name='epel-release' state=installed
+
+- name: MQ-INSTALL | Install sshpass, vim and wget
+  yum: name='{{ item }}' state=installed
+  with_items:
+    - sshpass
+    - vim
+    - wget
+
+- name: MQ-INSTALL | Clean all yum transaction had abort
+  command: 'yum clean all'
+
+- name: MQ-INSTALL | Generate ssh key
+  command: 'ssh-keygen -t rsa -f /root/.ssh/id_rsa -q -P ""'
+
+- name: MQ-INSTALL | Copy ssh key from mq1 to mq2, mq3
+  command: 'sshpass -p "{{ item.PASS }}" ssh-copy-id -o StrictHostKeyChecking=no -i /root/.ssh/id_rsa.pub root@{{ item.IP_NIC2 }}'
+  with_items:
+    - {PASS: '{{ ansible_ssh_pass }}', IP_NIC2: '{{ MQ2_IP_NIC2 }}'}
+    - {PASS: '{{ ansible_ssh_pass }}', IP_NIC2: '{{ MQ3_IP_NIC2 }}'}
+  become: true
+  when: HOST_NAME == MQ1_HOSTNAME
+
+- name: MQ-INSTALL | Install proxy
+  shell: '{{ item }}'
+  with_items:
+    - 'echo "proxy=http://123.30.178.220:3142" >> /etc/yum.conf'
+    - 'yum -y update'
+
+- name: MQ-INSTALL | Install repo newton
+  shell: '{{ item }}'
+  with_items:
+    - 'yum -y install centos-release-openstack-newton'
+    - 'yum -y upgrade'
+
+- name: MQ-INSTALL | Add host name and ip to hosts file
+  shell: '{{ item }}'
+  with_items:
+    - 'source /root/mq-config.cfg'
+    - 'echo "{{ MQ1_IP_NIC2 }} {{ MQ1_HOSTNAME }}" >> /etc/hosts'
+    - 'echo "{{ MQ2_IP_NIC2 }} {{ MQ2_HOSTNAME }}" >> /etc/hosts'
+    - 'echo "{{ MQ3_IP_NIC2 }} {{ MQ3_HOSTNAME }}" >> /etc/hosts'
+
+- name: MQ-INSTALL | Install rabbitmq
+  yum: name='rabbitmq-server' state=installed
+
+- name: MQ-INSTALL | Make sure rabbitmq-server started
+  service: name='rabbitmq-server' state=started
+
+- name: MQ-INSTALL | Enable rabbitmq_management
+  rabbitmq_plugin:
+    names: rabbitmq_management
+    state: enabled
+
+- name: MQ-INSTALL | Restart rabbitmq-server
+  service: name=rabbitmq-server state=restarted
+
+- name: MQ-INSTALL | Curl rabbitmq admin
+  command: '{{ item }}'
+  with_items:
+    - 'curl -O http://localhost:15672/cli/rabbitmqadmin'
+    - 'chmod a+x rabbitmqadmin'
+    - 'mv rabbitmqadmin /usr/sbin/'
+    - 'rabbitmqadmin list users'
+
+- name: MQ-INSTALL | Add user to rabbitmq
+  rabbitmq_user:
+    user: openstack
+    password: '{{ RABBIT_PASS }}'
+    permissions:
+      - vhost: /
+        configure_priv: .*
+        read_priv: .*
+        write_priv: .*
+    tags: administrator
+    state: present
+  when: HOST_NAME == MQ1_HOSTNAME
+
+- name: MQ-INSTALL | Ensure the default vhost contains the HA policy for rabbitmq
+  rabbitmq_policy:
+    name: ha-all
+    pattern: ^(?!amq\.).*
+    tags:
+      ha-mode: all
+  when: HOST_NAME == MQ1_HOSTNAME
+
+- name: MQ-INSTALL | Copy cookie file from mq1 to another mq node
+  command: 'scp /var/lib/rabbitmq/.erlang.cookie root@{{ item }}:/var/lib/rabbitmq/.erlang.cookie'
+  with_items:
+   - '{{ MQ2_IP_NIC2 }}'
+   - '{{ MQ3_IP_NIC2 }}'
+  when: HOST_NAME == MQ1_HOSTNAME
+
+- name: MQ-INSTALL | Start app rabbitmq
+  command: 'rabbitmqctl start_app'
+  when: HOST_NAME == MQ1_HOSTNAME
+
+- name: MQ-INSTALL | Chmod cookie file in another rabbit node difference mq1 node
+  command: '{{ item }}'
+  with_items:
+   - 'chown rabbitmq:rabbitmq /var/lib/rabbitmq/.erlang.cookie'
+   - 'chmod 400 /var/lib/rabbitmq/.erlang.cookie'
+  when: HOST_NAME != MQ1_HOSTNAME
+
+- name: MQ-INSTALL | Restart rabbitmq-server in another rabbit node difference mq1 node
+  service: name=rabbitmq-server state=restarted
+  when: HOST_NAME != MQ1_HOSTNAME
+
+- name: MQ-INSTALL | Join another rabbit node to cluster
+  command: '{{ item }}'
+  with_items:
+    - 'rabbitmqctl stop_app'
+    - 'rabbitmqctl reset'
+    - 'rabbitmqctl join_cluster rabbit@{{ MQ1_HOSTNAME }}'
+    - 'rabbitmqctl start_app'
+    - 'rabbitmqctl cluster_status'
+  when: HOST_NAME != MQ1_HOSTNAME

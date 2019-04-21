@@ -1,0 +1,1 @@
+docker run --name static-site -e AUTHOR="ducnv95" -d -p 8888:80 dockersamples/static-site

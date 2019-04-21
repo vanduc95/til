@@ -1,0 +1,71 @@
+# - hosts: test
+#   remote_user: centos
+#   tasks:
+#     - name: Set variable 'name'
+#       set_fact: 
+#         name: test machine
+#     - name: print var
+#       debug: 
+#         msg: '{{ name }}'
+
+
+#JINJA2 TEMPLATE
+# - hosts: test
+#   tasks:
+#     - name: User template to create file in home directory
+#       template:
+#          src: template.html
+#          dest: /root/index.html
+#          owner: root
+#          group: root
+#          mode: 0644
+
+
+
+# - hosts: test
+#   remote_user: root
+#   tasks:
+#   - name: Create the folders /with XY from 1 to 10
+#     file:
+#       dest: '/root/dir{{ item }}'
+#       state: directory
+#     with_sequence: start=1 end=10
+
+
+
+# - hosts: test
+#   remote_user: root
+#   tasks:
+#     - name: Count processes running on the remote system
+#       shell: ps | wc -l
+#       register: remote_processes_number
+
+#     - name: Print remote running processes
+#       debug:
+#          msg: '{{ remote_processes_number.stdout }}'
+
+#     - name: Count processes running on the local system
+#       shell: touch abc
+#       delegate_to: alert
+#       register: local_processes_number
+
+#     - name: Print local running processes
+#       debug:
+#          msg: '{{ local_processes_number.stdout }}'
+
+
+
+# MODULE COPY
+# - hosts: test
+#   tasks: 
+#     - name: Copy file
+#       copy: >
+#         src=template.html dest=/root/xyz.html owner=root group=root mode=0644
+
+
+
+- hosts: test
+  roles:
+#    - {role: ntp, tags: ['ntp','a']}
+    - {role: php, tags: ['php','a']}
+    - mysql

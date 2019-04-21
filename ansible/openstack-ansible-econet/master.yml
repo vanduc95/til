@@ -1,0 +1,5 @@
+- include: playbooks/hosts/lb.yml
+- include: playbooks/hosts/rabbit_mq.yml
+- include: playbooks/hosts/db.yml
+- include: playbooks/hosts/ctl.yml
+- include: playbooks/hosts/com.yml

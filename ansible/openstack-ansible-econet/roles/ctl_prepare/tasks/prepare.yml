@@ -1,0 +1,159 @@
+- name: CTL | Install proxy
+  lineinfile:
+    path: /etc/yum.conf 
+    line: 'proxy=http://123.30.178.220:3142'
+
+- name: CTL | upgrade all packages
+  yum:
+    name: '*'
+    state: latest
+
+- name: CTL | Create file /etc/yum.repos.d/MariaDB.repo
+  file: 
+    path: /etc/yum.repos.d/MariaDB.repo
+    state: touch
+
+- name: CTL | Install repo galera
+  blockinfile:
+    path: /etc/yum.repos.d/MariaDB.repo
+    block: |
+        [mariadb]
+        name = MariaDB
+        baseurl = http://yum.mariadb.org/10.1/centos7-amd64
+        gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+        gpgcheck=1
+
+- name: CTL | upgrade all packages
+  yum:
+    name: '*'
+    state: latest
+
+- name: CTL | install repo centos-release-openstack-newton
+  yum:
+    name: centos-release-openstack-newton
+    state: present
+
+- name: CTL | upgrade all packages
+  yum:
+    name: '*'
+    state: latest
+
+- name: CTL | install crudini, wget, vim, python-openstackclient, openstack-selinux, mariadb, mariadb-server, python2-PyMySQL
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - crudini
+    - wget
+    - vim
+    - python-openstackclient
+    - openstack-selinux
+    - mariadb
+    - mariadb-server
+    - python2-PyMySQL
+
+- name: CTL | Install declare_host on CTL_IP_NIC3
+  lineinfile:
+    path: /etc/hosts
+    regexp: '^{{ item.CTL_IP_NIC3 }}'
+    line: '{{ item.CTL_IP_NIC3 }}   {{ item.HOST_NAME}}'
+  with_items:
+    - {CTL_IP_NIC3: "{{ CTL1_IP_NIC3 }}" , HOST_NAME: "{{ CTL1_HOSTNAME }}"}
+    - {CTL_IP_NIC3: "{{ CTL2_IP_NIC3 }}" , HOST_NAME: "{{ CTL2_HOSTNAME }}"}
+    - {CTL_IP_NIC3: "{{ CTL3_IP_NIC3 }}" , HOST_NAME: "{{ CTL3_HOSTNAME }}"}
+
+- name: CTL | Install chrony
+  yum:
+    name: chrony
+    state: present
+
+- name: CTL | copy config file /etc/chrony.conf to /etc/chrony.conf.orig
+  copy:
+    src: /etc/chrony.conf
+    dest: /etc/chrony.conf.orig
+    owner: root
+    group: root
+    mode: 0644
+    remote_src: True
+
+- name: CTL | config file /etc/chrony.conf
+  lineinfile:
+    path: /etc/chrony.conf
+    regexp: '^{{ item }}$'
+    line: '#'
+  with_items:
+    - server 0.centos.pool.ntp.org iburst
+    - server 1.centos.pool.ntp.org iburst
+    - server 2.centos.pool.ntp.org iburst
+    - server 3.centos.pool.ntp.org iburst
+    - \#allow 192.168\/16
+
+
+- name: CTL1 | config file /etc/chrony.conf add ntp server
+  lineinfile:
+    path: /etc/chrony.conf
+    line: '{{ item }}'
+  with_items:
+    - server 1.vn.pool.ntp.org iburst
+    - server 0.asia.pool.ntp.org iburst
+    - server 3.asia.pool.ntp.org iburst
+    - allow 192.168.20.0/24
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL2,3 | config file /etc/chrony.config add ntp server
+  lineinfile:
+    path: /etc/chrony.conf
+    line: "server {{ CTL1_IP_NIC3 }} iburst"
+  when: ansible_hostname != CTL1_HOSTNAME
+
+- name: CTL | Enable and start chrony
+  service:
+    name: chronyd
+    enabled: True
+    state: started
+
+- name: CTL | Restart chrony
+  service:
+    name: chronyd
+    state: restarted
+
+- name: CTL | Validate chrony
+  command: chronyc sources
+
+- name: CTL | Install memcache
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - memcached 
+    - python-memcached
+
+- name: CTL | Copy config file /etc/sysconfig/memcached to /etc/sysconfig/memcached.orig
+  copy:
+    src: /etc/sysconfig/memcached
+    dest: /etc/sysconfig/memcached.orig
+    owner: root
+    group: root
+    mode: 0644
+    remote_src: True
+
+- name: CTL | Set face IP_LOCAL
+  shell: 'ip -o -4 addr show dev {{ BOND2_NIC }} | sed "s/.* inet \([^/]*\).*/\1/"'
+  register: IP_LOCAL
+
+- name: CTL | Config file /etc/sysconfig/memcached
+  lineinfile:
+    path: /etc/sysconfig/memcached
+    regexp: '^-l 127.0.0.1,::1$'
+    line: '-l 127.0.0.1,::1,{{ IP_LOCAL.stdout }}'
+
+- name: CTL | Restart server
+  become: yes
+  shell: sleep 2 && /sbin/shutdown -r now "Ansible system package upgraded"
+  async: 1
+  poll: 0
+  ignore_errors: true
+
+- name: CTL | waiting 30 secs for server to come back
+  local_action: wait_for host={{ ansible_default_ipv4.address }} port=22 state=started delay=60 timeout=180
+  become: false

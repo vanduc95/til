@@ -1,0 +1,100 @@
+[DEFAULT]
+enabled_apis = osapi_compute,metadata
+rpc_backend = rabbit
+auth_strategy = keystone
+my_ip = {{ CTL_IP_NIC1 }}
+use_neutron = true
+firewall_driver = nova.virt.firewall.NoopFirewallDriver
+osapi_compute_listen = {{ CTL_IP_NIC1 }}
+metadata_listen = {{ CTL_IP_NIC1 }}
+
+[api_database]
+connection = mysql+pymysql://nova:{{ PASS_DATABASE_NOVA_API }}@{{ IP_VIP_DB }}/nova_api
+[barbican]
+[cache]
+[cells]
+[cinder]
+[cloudpipe]
+[conductor]
+[cors]
+[cors.subdomain]
+[crypto]
+
+[database]
+connection = mysql+pymysql://nova:{{ PASS_DATABASE_NOVA }}@{{ IP_VIP_DB }}/nova
+
+[ephemeral_storage_encryption]
+
+[glance]
+api_servers = http://{{ IP_VIP_API }}:9292
+
+[guestfs]
+[hyperv]
+[image_file_url]
+[ironic]
+[key_manager]
+
+[keystone_authtoken]
+auth_uri = http://{{ IP_VIP_API }}:5000
+auth_url = http://{{ IP_VIP_API }}:35357
+memcached_servers = {{ CTL1_IP_NIC1 }}:11211,{{ CTL2_IP_NIC1 }}:11211,{{ CTL3_IP_NIC1 }}:11211
+auth_type = password
+project_domain_name = Default
+user_domain_name = Default
+project_name = service
+username = nova
+password = {{ NOVA_PASS }}
+
+[libvirt]
+[matchmaker_redis]
+[metrics]
+[mks]
+[neutron]
+url = http://{{ IP_VIP_API }}:9696
+auth_url = http://{{ IP_VIP_API }}:35357
+auth_type = password
+project_domain_name = Default
+user_domain_name = Default
+project_name = service
+username = neutron
+password = {{ NEUTRON_PASS }}
+service_metadata_proxy = True
+metadata_proxy_shared_secret = {{ METADATA_SECRET }}
+
+[osapi_v21]
+[oslo_concurrency]
+lock_path = /var/lib/nova/tmp
+[oslo_messaging_amqp]
+[oslo_messaging_notifications]
+
+[oslo_messaging_rabbit]
+rabbit_hosts = {{ MQ1_IP_NIC1 }}:5672,{{ MQ2_IP_NIC1 }}:5672,{{ MQ3_IP_NIC1 }}:5672
+rabbit_ha_queues = true
+rabbit_retry_interval = 1
+rabbit_retry_backoff = 2
+rabbit_max_retries = 0
+rabbit_durable_queues = true
+rabbit_userid = openstack
+rabbit_password = {{ RABBIT_PASS }}
+
+[oslo_messaging_zmq]
+[oslo_middleware]
+[oslo_policy]
+[placement]
+[placement_database]
+[rdp]
+[remote_debug]
+[serial_console]
+[spice]
+[ssl]
+[trusted_computing]
+[upgrade_levels]
+[vmware]
+[vnc]
+vncserver_listen = {{ CTL_IP_NIC1 }}
+vncserver_proxyclient_address = {{ CTL_IP_NIC1 }}
+novncproxy_host = {{ CTL_IP_NIC1 }}
+[workarounds]
+[wsgi]
+[xenserver]
+[xvp]

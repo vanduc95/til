@@ -1,0 +1,16 @@
+I, cac van de trong convert:
+1. to chuc bien de toi uu hoa code, khong bi lap lai trong qua trinh tao bonding
+giai phap de xuat:
+- su dung ky thuat loop chang han with_items, with_nested
+- luu bien theo group neu su dung chung trong cac cum vi du CTL
+
+2. thay doi ip cua remote host, lam cho inventory file thay doi.
+giai phap de xuat:
+- them vao local_action, add initial_ip voi ten CTL1 vao /etc/hosts.
+- su dung ten CTL1 trong inventory thay vi ip cu the
+
+3. reboot remote host
+giai phap de xuat:
+- su dung local_action, duoc huong dan o 2 link sau:
+    + https://gist.github.com/infernix/a968f23c4f4e1d6723e4
+    + http://www.linuxnix.com/ansible-reboot-server-in-play-book-and-wait-for-it-come-back/

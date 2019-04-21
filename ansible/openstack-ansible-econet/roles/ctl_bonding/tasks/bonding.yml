@@ -1,0 +1,165 @@
+- name: CTL | Set host name
+  hostname:
+    name: "{{ HOST_NAME }}"
+
+- name: CTL | Install epel repo and sshpass
+  yum: 
+    name: '{{ item }}'
+    state: present
+  with_items:
+    - epel-release
+    - sshpass
+
+- name: CTL | Generate ssh key
+  command: 'ssh-keygen -t rsa -f /root/.ssh/id_rsa -q -P ""'
+
+- name: CTL | Copy ssh key from CTL1 to CLT2 and CTL3
+  command: 'sshpass -p {{ item.PASS }} ssh-copy-id -o StrictHostKeyChecking=no -i /root/.ssh/id_rsa.pub root@{{ item.IP_NIC2 }}'
+  with_items:
+    - {PASS: '{{ ansible_ssh_pass }}', IP_NIC2: '{{ CTL2_IP_NIC3 }}'}
+    - {PASS: '{{ ansible_ssh_pass }}', IP_NIC2: '{{ CTL3_IP_NIC3 }}'}
+  when: ansible_hostname == CTL1_HOSTNAME
+  
+- name: install needed network manager libs
+  yum:
+    name: "{{ item }}"
+    state: installed
+  with_items:
+    - NetworkManager-glib
+    - nm-connection-editor.x86_64
+    - libsemanage-python
+    - policycoreutils-python
+
+- name: CTL | add bond0, bond1, bond3
+  nmcli:
+    type: bond
+    conn_name: "{{ item.BOND_NIC }}"
+    ifname: "{{ item.BOND_NIC }}"
+    mode: active-backup
+    autoconnect: yes
+    ip4: "{{ item.BOND_IP }}/{{ BOND_NETMASK }}"
+    state: present
+  with_items:
+    - {BOND_NIC: '{{ BOND0_NIC }}', BOND_IP: "{{ CTL_IP_NIC1 }}"}
+    - {BOND_NIC: '{{ BOND1_NIC }}', BOND_IP: "{{ CTL_IP_NIC2 }}"}
+    - {BOND_NIC: '{{ BOND2_NIC }}', BOND_IP: "{{ CTL_IP_NIC3 }}"}
+    - {BOND_NIC: '{{ BOND3_NIC }}', BOND_IP: "{{ CTL_IP_NIC4 }}"}
+
+- name: CTL | add bond2
+  nmcli:
+    type: bond
+    conn_name: "{{ BOND2_NIC }}"
+    ifname: "{{ BOND2_NIC }}"
+    mode: active-backup
+    autoconnect: yes
+    ip4: "{{ CTL_IP_NIC3 }}/{{ BOND_NETMASK }}"
+    dns4: "{{ BOND2_DNS }}"
+    gw4: "{{ BOND2_DEFAULT_GATEWAY }}"
+    state: present
+
+- name: CTL | Set method for ipv4
+  command: nmcli con modify {{ item }} ipv4.method manual
+  with_items:
+    - '{{ BOND0_NIC }}'
+    - '{{ BOND1_NIC }}'
+    - '{{ BOND2_NIC }}'
+    - '{{ BOND3_NIC }}'
+
+- name: CTL| Ignore ip6
+  command: 'nmcli con modify {{ item }} ipv6.method ignore'
+  with_items:
+    - '{{ BOND0_NIC }}'
+    - '{{ BOND1_NIC }}'
+    - '{{ BOND2_NIC }}'
+    - '{{ BOND3_NIC }}'
+
+- name: CTL | add bond-slave
+  nmcli:
+    type: bond-slave
+    conn_name: "{{ item.BOND_NIC }}-{{ item.INTERFACE }}"
+    ifname: "{{ item.INTERFACE }}"
+    master: "{{ item.BOND_NIC }}" 
+    state: present
+  with_items:
+    - {BOND_NIC: '{{ BOND0_NIC }}', INTERFACE: '{{ INTERFACE1 }}'}
+    - {BOND_NIC: '{{ BOND0_NIC }}', INTERFACE: '{{ INTERFACE2 }}'}
+    - {BOND_NIC: '{{ BOND1_NIC }}', INTERFACE: '{{ INTERFACE3 }}'}
+    - {BOND_NIC: '{{ BOND1_NIC }}', INTERFACE: '{{ INTERFACE4 }}'}
+    - {BOND_NIC: '{{ BOND2_NIC }}', INTERFACE: '{{ INTERFACE5 }}'}
+    - {BOND_NIC: '{{ BOND2_NIC }}', INTERFACE: '{{ INTERFACE6 }}'}
+    - {BOND_NIC: '{{ BOND3_NIC }}', INTERFACE: '{{ INTERFACE7 }}'}
+    - {BOND_NIC: '{{ BOND3_NIC }}', INTERFACE: '{{ INTERFACE8 }}'}
+
+- name: CTL | Set up all bond and interface
+  command: nmcli con up {{ item }}
+  with_items:
+    - "{{ BOND0_NIC }}-{{ INTERFACE1 }}"
+    - "{{ BOND0_NIC }}-{{ INTERFACE2 }}"
+    - "{{ BOND0_NIC }}"
+    - "{{ BOND1_NIC }}-{{ INTERFACE3 }}"
+    - "{{ BOND1_NIC }}-{{ INTERFACE4 }}"
+    - "{{ BOND1_NIC }}"
+    - "{{ BOND2_NIC }}-{{ INTERFACE5 }}"
+    - "{{ BOND2_NIC }}-{{ INTERFACE6 }}"
+    - "{{ BOND2_NIC }}"
+    - "{{ BOND3_NIC }}-{{ INTERFACE7 }}"
+    - "{{ BOND3_NIC }}-{{ INTERFACE8 }}"
+    - "{{ BOND3_NIC }}"
+
+- name: replace config in file config of interfaces
+  replace:
+    path: '/etc/sysconfig/network-scripts/ifcfg-{{ item }}'
+    regexp: 'BONDING_OPTS=mode=active-backup'
+    replace: 'BONDING_OPTS="mode=active-backup miimon=100"'
+  with_items:
+    - '{{ BOND0_NIC }}'
+    - '{{ BOND1_NIC }}'
+    - '{{ BOND2_NIC }}'
+    - '{{ BOND3_NIC }}'
+
+- name: delete 8 interface in nmcli
+  nmcli:
+    conn_name: '{{ item }}'
+    state: absent
+  with_items:
+    - '{{ INTERFACE1 }}'
+    - '{{ INTERFACE2 }}'
+    - '{{ INTERFACE3 }}'
+    - '{{ INTERFACE4 }}'
+    - '{{ INTERFACE5 }}'
+    - '{{ INTERFACE6 }}'
+    - '{{ INTERFACE7 }}'
+    - '{{ INTERFACE8 }}'
+
+- name: replace config selinux
+  replace:
+    path: '/etc{{ item }}'
+    regexp: 'SELINUX=enforcing'
+    replace: 'SELINUX=disabled'
+  with_items:
+    - '/sysconfig/selinux'
+    - '/selinux/config'
+
+- name: stop services firewall and NetworkManager
+  service:
+    name: '{{ item }}'
+    state: stopped
+  with_items:
+    - 'firewalld'
+    - 'NetworkManager'
+
+- name: restart service network
+  service:
+    name: 'network'
+    state: restarted
+
+- name: CTL | Restart server
+  become: yes
+  shell: sleep 2 && /sbin/shutdown -r now "Ansible system package upgraded"
+  async: 1
+  poll: 0
+  ignore_errors: true
+
+- name: CTL | waiting 30 secs for server to come back
+  local_action: wait_for host={{ ansible_default_ipv4.address }} port=22 state=started delay=60 timeout=180
+  become: false

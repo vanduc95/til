@@ -1,0 +1,112 @@
+[DEFAULT]
+
+[cors]
+
+[cors.subdomain]
+
+[database]
+connection = mysql+pymysql://glance:{{ PASS_DATABASE_GLANCE }}@{{ IP_VIP_DB }}/glance
+
+[glance_store]
+stores = file,http
+default_store = file
+filesystem_store_datadir = /var/lib/glance/images/
+
+[image_format]
+
+[keystone_authtoken]
+auth_uri = http://{{ IP_VIP_API }}:5000
+auth_url = http://{{ IP_VIP_API }}:35357
+memcached_servers = {{ CTL1_IP_NIC1 }}:11211,{{ CTL2_IP_NIC1 }}:11211,{{ CTL3_IP_NIC1 }}:11211
+auth_type = password
+project_domain_name = Default
+user_domain_name = Default
+project_name = service
+username = glance
+password = {{ PASS_DATABASE_GLANCE }}
+
+[matchmaker_redis]
+
+[oslo_concurrency]
+
+[oslo_messaging_amqp]
+
+[oslo_messaging_kafka]
+
+[oslo_messaging_notifications]
+
+[oslo_messaging_rabbit]
+
+[oslo_messaging_zmq]
+
+[oslo_middleware]
+
+[oslo_policy]
+
+[paste_deploy]
+flavor = keystone
+[profiler]
+
+[store_type_location_strategy]
+
+[task]
+
+[taskflow_executor]
+
+
+----------------------------------
+
+
+
+[DEFAULT]
+
+
+[database]
+
+connection = mysql+pymysql://glance:{{ PASS_DATABASE_GLANCE }}@{{ IP_VIP_DB }}/glance
+
+[keystone_authtoken]
+
+auth_uri = http://{{ IP_VIP_API }}:5000
+
+auth_url = http://{{ IP_VIP_API }}:35357
+
+memcached_servers = {{ CTL1_IP_NIC1 }}:11211,{{ CTL2_IP_NIC1 }}:11211,{{ CTL3_IP_NIC1 }}:11211
+
+auth_type = password
+
+project_domain_name = Default
+ 
+user_domain_name = Default
+
+project_name = service
+
+username = glance
+
+
+password = {{ PASS_DATABASE_GLANCE }}
+
+
+[matchmaker_redis]
+
+
+[oslo_messaging_amqp]
+
+[oslo_messaging_kafka]
+
+
+[oslo_messaging_notifications]
+
+[oslo_messaging_rabbit]
+
+[oslo_messaging_zmq]
+
+
+[oslo_policy]
+
+
+[paste_deploy]
+
+flavor = keystone
+
+[profiler]

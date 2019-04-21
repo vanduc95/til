@@ -1,0 +1,11 @@
+- name: CTL | Create nova user endpoint
+  shell: ". /root/admin-openrc && {{ item }}"
+  become: True
+  with_items:
+    - 'openstack user create  nova --domain default --password {{ PASS_DATABASE_ROOT }}'
+    - 'openstack role add --project service --user nova admin'
+    - 'openstack service create --name nova --description "OpenStack Compute" compute'
+    - 'openstack endpoint create --region RegionOne compute public http://{{ IP_VIP_API }}:8774/v2.1/%\(tenant_id\)s'
+    - 'openstack endpoint create --region RegionOne compute internal http://{{ IP_VIP_API }}:8774/v2.1/%\(tenant_id\)s'
+    - 'openstack endpoint create --region RegionOne compute admin http://{{ IP_VIP_API }}:8774/v2.1/%\(tenant_id\)s'
+  when: ansible_hostname == 'ctl1'

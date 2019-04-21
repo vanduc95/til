@@ -1,0 +1,5 @@
+---
+# tasks file for db
+
+- include: db-bonding.yml
+- include: db-install.yml

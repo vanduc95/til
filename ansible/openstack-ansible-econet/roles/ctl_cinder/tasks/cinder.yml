@@ -1,0 +1,91 @@
+- name: CTL | Create database cinder
+  mysql_db:
+    name: cinder
+    state: present
+    login_host: "{{ DB1_IP_NIC2 }}"
+    login_user: root
+    login_password: "{{ PASS_DATABASE_ROOT }}"
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | GRANT ALL PRIVILEGES ON cinder.* TO 'cinder'@'localhost' IDENTIFIED BY '$PASS_DATABASE_CINDER';
+  mysql_user:
+    name: cinder
+    password: "{{ PASS_DATABASE_CINDER }}"
+    priv: 'cinder.*:ALL'
+    state: present
+    host: "{{ item }}"
+    login_host: "{{ DB1_IP_NIC2 }}"
+    login_user: root
+    login_password: "{{ PASS_DATABASE_ROOT }}"
+  with_items:
+    - localhost
+    - '%'
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | FlUSH PRIVILEGES
+  command: mysql -uroot -p'{{ PASS_DATABASE_ROOT }}' -h'{{ DB1_IP_NIC2 }}' --execute='FLUSH PRIVILEGES;'
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Create cinder user endpoint
+  shell: ". /root/admin-openrc && {{ item }}"
+  with_items:
+    - openstack user create  cinder --domain default --password {{ CINDER_PASS }}
+    - openstack role add --project service --user cinder admin
+    - openstack service create --name cinder --description "OpenStack Block Storage" volume
+    - openstack service create --name cinderv2 --description "OpenStack Block Storage" volumev2
+    - openstack endpoint create --region RegionOne volume public http://{{ IP_VIP_API }}:8776/v1/%\(tenant_id\)s
+    - openstack endpoint create --region RegionOne volume internal http://{{ IP_VIP_API }}:8776/v1/%\(tenant_id\)s
+    - openstack endpoint create --region RegionOne volume admin http://{{ IP_VIP_API }}:8776/v1/%\(tenant_id\)s
+    - openstack endpoint create --region RegionOne volumev2 public http://{{ IP_VIP_API }}:8776/v2/%\(tenant_id\)s
+    - openstack endpoint create --region RegionOne volumev2 internal http://{{ IP_VIP_API }}:8776/v2/%\(tenant_id\)s
+    - openstack endpoint create --region RegionOne volumev2 admin http://{{ IP_VIP_API }}:8776/v2/%\(tenant_id\)s
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Install cinder packages neccessary for controller nodes
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - openstack-cinder 
+    - targetcli
+
+- name: CTL | Copy cinder config files to temporary files
+  copy:
+    src: /etc/cinder/cinder.conf
+    dest: /etc/cinder/cinder.conf.orig
+    owner: root
+    group: root
+    mode: 0644
+    remote_src: True
+
+- name: CTL | Configuration cinder.conf
+  template:
+    src: cinder.conf.j2
+    dest: /etc/cinder/cinder.conf
+
+- name: CTL | Ensure cinder database has been synced
+  sudo_user: cinder
+  command: /usr/bin/cinder-manage db sync
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Enable cinder services
+  service:
+    name: "{{ item }}"
+    enabled: True
+  with_items:
+    - openstack-cinder-api
+    - openstack-cinder-scheduler
+    - openstack-cinder-backup
+    - openstack-cinder-volume
+    - target
+
+- name: CTL | Start cinder service
+  service:
+    name: "{{ item }}"
+    state: started
+  with_items:
+    - openstack-cinder-api
+    - openstack-cinder-scheduler
+    - openstack-cinder-backup
+    - openstack-cinder-volume
+    - target

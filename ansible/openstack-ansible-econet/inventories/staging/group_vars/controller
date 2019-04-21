@@ -1,0 +1,27 @@
+
+#Khai bao cac bien su dung trong script
+##Bien cho bond0
+INTERFACE1: ens160
+INTERFACE2: ens192
+BOND0_NIC: bond0
+BOND_NETMASK: 24
+
+##Bien cho bond1
+INTERFACE3: ens224
+INTERFACE4: ens256
+BOND1_NIC: bond1
+BOND1_NETMASK: 24
+
+## Bien cho bond2
+INTERFACE5: ens161
+INTERFACE6: ens193
+BOND2_NIC: bond2
+BOND2_NETMASK: 24
+BOND2_DEFAULT_GATEWAY: 192.168.20.254
+BOND2_DNS: 8.8.8.8
+
+##Bien cho bond3
+INTERFACE7: ens225
+INTERFACE8: ens257
+BOND3_NIC: bond3
+BOND3_NETMASK: 24

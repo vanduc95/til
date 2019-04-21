@@ -1,0 +1,4 @@
+- hosts: compute
+  remote_user: root
+  roles:
+    - com

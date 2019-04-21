@@ -1,0 +1,12 @@
+- name: CTL | Enable neutron-server service
+  service:
+    name: neutron-server
+    enabled: True
+  become: True
+
+- name: CTL | Start neutron-server service
+  service:
+    name: neutron-server
+    state: started
+  become: True
+  

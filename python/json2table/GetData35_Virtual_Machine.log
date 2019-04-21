@@ -1,0 +1,31 @@
+{
+    "changed": false,
+    "failed": false,
+    "vms": [
+        {
+            "admin_username": "dieulx",
+            "data_disks": [],
+            "id": "/subscriptions/672d00ff-3b28-4cf9-b4ec-29f08a2a536d/resourceGroups/TC-JPP-DMZ-RG/providers/Microsoft.Compute/virtualMachines/TCJPP-PCS-UFW01",
+            "image": {
+                "offer": "CentOS",
+                "publisher": "OpenLogic",
+                "sku": "7.5",
+                "version": "7.5.20180815"
+            },
+            "location": "japanwest",
+            "name": "TCJPP-PCS-UFW01",
+            "network_interface_names": [
+                "TC-JPP-DMZ-RG-Nic"
+            ],
+            "os_disk_caching": "ReadOnly",
+            "os_type": "Linux",
+            "resource_group": "TC-JPP-DMZ-RG",
+            "state": "present",
+            "storage_account_name": "tcjpppcsufw015589",
+            "storage_blob_name": "TCJPP-PCS-UFW01.vhd",
+            "storage_container_name": "vhds",
+            "tags": null,
+            "vm_size": "Standard_DS1_v2"
+        }
+    ]
+}

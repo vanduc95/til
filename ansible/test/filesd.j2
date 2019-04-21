@@ -1,0 +1,22 @@
+[
+  {
+    "targets": [
+{% for item in list_ip['win_server'] %}
+    "{{ item }}:9182",
+{% endfor %}
+    ],
+    "labels": {
+      "os": "win_server_2012"
+    }
+  },
+  {
+    "targets": [
+{% for item in list_ip['centos7'] %}
+    "{{ item }}:9182",
+{% endfor %}
+    ],
+    "labels": {
+      "os": "centos7"
+    }
+  }
+]

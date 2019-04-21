@@ -1,0 +1,70 @@
+[DEFAULT]
+rpc_backend = rabbit
+auth_strategy = keystone
+control_exchange = cinder
+my_ip = {{ CTL_IP_NIC1 }}
+osapi_volume_listen  = {{ CTL_IP_NIC1 }}
+control_exchange = cinder
+glance_api_servers = http://{{ IP_VIP_API }}:9292
+glance_api_version = 2
+enabled_backends = lvm
+
+[BACKEND]
+
+[BRCD_FABRIC_EXAMPLE]
+
+[CISCO_FABRIC_EXAMPLE]
+
+[COORDINATION]
+
+[FC-ZONE-MANAGER]
+
+[KEYMGR]
+
+[cors]
+
+[cors.subdomain]
+
+[database]
+connection  = mysql+pymysql://cinder:{{ PASS_DATABASE_CINDER }}@{{ IP_VIP_DB }}/cinder
+
+[keystone_authtoken]
+auth_uri = http://{{ IP_VIP_API }}:5000
+auth_url = http://{{ IP_VIP_API }}:35357
+memcached_servers = {{ CTL1_IP_NIC1 }}:11211,{{ CTL2_IP_NIC1 }}:11211,{{ CTL3_IP_NIC1 }}:11211
+auth_type = password
+project_domain_name = Default
+user_domain_name = Default
+project_name = service
+username = cinder
+password = {{ CINDER_PASS }}
+
+[matchmaker_redis]
+
+[oslo_concurrency]
+lock_path = /var/lib/cinder/tmp
+
+[oslo_messaging_amqp]
+
+[oslo_messaging_notifications]
+
+[oslo_messaging_rabbit]
+rabbit_hosts = {{ MQ1_IP_NIC1 }}:5672,{{ MQ2_IP_NIC1 }}:5672,{{ MQ3_IP_NIC1 }}:5672
+rabbit_ha_queues = true
+rabbit_retry_interval = 1
+rabbit_retry_backoff = 2
+rabbit_max_retries = 0
+rabbit_durable_queues = true
+rabbit_userid = openstack
+rabbit_password = {{ RABBIT_PASS }}
+
+[oslo_middleware]
+
+[oslo_policy]
+
+[oslo_reports]
+
+[oslo_versionedobjects]
+
+[ssl]
+

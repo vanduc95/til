@@ -1,0 +1,7 @@
+---
+# tasks file for create-file
+- name: install PHP
+  yum: name={{item}} state=installed update_cache=yes
+  with_items:
+    - php 
+    - php-xml

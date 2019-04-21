@@ -1,0 +1,5 @@
+---
+# tasks file for rabbitmq
+
+- include: rabbitmq-bonding.yml
+- include: rabbitmq-install.yml

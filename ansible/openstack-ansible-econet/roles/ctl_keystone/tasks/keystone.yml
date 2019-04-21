@@ -1,0 +1,168 @@
+- name: CTL | prepare
+  yum:
+    name: MySQL-python
+    state: latest
+
+- name: CTL | Create database keystone on remote database node
+  mysql_db:
+    name: keystone
+    state: present
+    login_host: "{{ DB1_IP_NIC2 }}"
+    login_user: root
+    login_password: "{{ PASS_DATABASE_ROOT }}"
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'localhost' and 'keystone'@'%' IDENTIFIED BY {{ PASS_DATABASE_KEYSTONE }}
+  mysql_user:
+    name: keystone
+    password: "{{ PASS_DATABASE_KEYSTONE }}"
+    priv: 'keystone.*:ALL'
+    state: present
+    host: "{{ item }}"
+    login_host: "{{ DB1_IP_NIC2 }}"
+    login_user: root
+    login_password: "{{ PASS_DATABASE_ROOT }}"
+  with_items:
+    - localhost
+    - '%'
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | FlUSH PRIVILEGES database
+  command: mysql -uroot -p'{{ PASS_DATABASE_ROOT }}' -h'{{ DB1_IP_NIC2 }}' --execute='FLUSH PRIVILEGES;'
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Keystone install
+  yum:
+    name: "{{ item }}"
+  with_items:
+    - openstack-keystone
+    - httpd 
+    - mod_wsgi
+
+- name: CTL | Copy config file /etc/chrony.conf to /etc/chrony.conf.orig
+  copy:
+    src: /etc/keystone/keystone.conf
+    dest: /etc/keystone/keystone.conf.orig
+    owner: root
+    group: root
+    mode: 0644
+    remote_src: True
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Install crudini package for set variable in config file
+  yum:
+    name: crudini
+    state: present
+
+- name: CTL | Change configure keystone.conf
+  command: crudini --set {{ item.FILE_PATH }} {{ item.SECTION }} {{ item.PARAMETER }} {{ item.VALUE }}
+  with_items:
+    - {FILE_PATH: '/etc/keystone/keystone.conf', 
+       SECTION: database, 
+       PARAMETER: connection,
+       VALUE: "mysql+pymysql://keystone:{{ PASS_DATABASE_KEYSTONE }}@{{ IP_VIP_DB }}/keystone"}
+    - {FILE_PATH: '/etc/keystone/keystone.conf', 
+       SECTION: token, 
+       PARAMETER: provider, 
+       VALUE: fernet}
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Ensure keystone database has been synced
+  sudo_user: keystone
+  command: /usr/bin/keystone-manage db_sync
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Initialize Fernet key repositories
+  command: "{{ item }}"
+  with_items:
+    - keystone-manage fernet_setup --keystone-user keystone --keystone-group keystone
+    - keystone-manage credential_setup --keystone-user keystone --keystone-group keystone
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Copy file config from ctl1 to ctl2
+  command: "{{ item }}"
+  with_items:
+    - 'scp /etc/keystone/keystone.conf root@{{ CTL2_IP_NIC3 }}:/etc/keystone/'
+    - 'scp -r /etc/keystone/credential-keys root@{{ CTL2_IP_NIC3 }}:/etc/keystone/'
+    - 'scp -r /etc/keystone/fernet-keys root@{{ CTL2_IP_NIC3 }}:/etc/keystone/'
+    - 'ssh root@{{ CTL2_IP_NIC3 }} "chown -R keystone:keystone /etc/keystone/credential-keys/"'
+    - 'ssh root@{{ CTL2_IP_NIC3 }} "chown -R keystone:keystone /etc/keystone/fernet-keys/"'
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | copy file config from ctl1 to ctl3
+  command: "{{ item }}"
+  with_items:
+    - 'scp /etc/keystone/keystone.conf root@{{ CTL3_IP_NIC3 }}:/etc/keystone/'
+    - 'scp -r /etc/keystone/credential-keys root@{{ CTL3_IP_NIC3 }}:/etc/keystone/'
+    - 'scp -r /etc/keystone/fernet-keys root@{{ CTL3_IP_NIC3 }}:/etc/keystone/'
+    - 'ssh root@{{ CTL3_IP_NIC3 }} "chown -R keystone:keystone /etc/keystone/credential-keys/"'
+    - 'ssh root@{{ CTL3_IP_NIC3 }} "chown -R keystone:keystone /etc/keystone/fernet-keys/"'
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Bootstrap the Identity service
+  command: |
+    keystone-manage bootstrap --bootstrap-password {{ ADMIN_PASS }} \
+          --bootstrap-admin-url http://{{ IP_VIP_API }}:35357/v3/ \
+          --bootstrap-internal-url http://{{ IP_VIP_API }}:5000/v3/ \
+          --bootstrap-public-url http://{{ IP_VIP_API }}:5000/v3/ \
+          --bootstrap-region-id RegionOne
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Keystone config http
+  lineinfile:
+    path: /etc/httpd/conf/httpd.conf
+    line: ServerName "{{ ansible_hostname }}"
+
+- name: CTL | ln -s /usr/share/keystone/wsgi-keystone.conf /etc/httpd/conf.d/
+  command: ln -s /usr/share/keystone/wsgi-keystone.conf /etc/httpd/conf.d/
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Enable httpd
+  service:
+    name: httpd
+    enabled: True
+
+- name: CTL | Start httpd
+  service:
+    name: httpd
+    state: started
+
+- name: CTL | Create adminrc
+  template:
+    src: adminrc_template
+    dest: /root/admin-openrc
+    owner: root
+    group: root
+    mode: 0644
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Enable admin-openrc
+  shell: "{{ item }}"
+  with_items:
+    - chmod +x admin-openrc
+    - cat  admin-openrc >> /etc/profile
+    - source /root/admin-openrc
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Create demorc
+  template:
+    src: demorc_template
+    dest: /root/demo-openrc
+    owner: root
+    group: root
+    mode: 0644
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | chmod +x demo-openrc
+  shell: chmod +x demo-openrc
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Run source admin-openrc and create endpoint
+  shell: ". /root/admin-openrc && {{ item }}"
+  with_items:
+    - openstack project create service --domain default --description "Service Project"
+    - openstack project create demo --domain default --description "Demo Project"
+    - 'openstack user create demo --domain default --password {{ DEMO_PASS }}'
+    - openstack role create user
+    - openstack role add --project demo --user demo user
+  when: ansible_hostname == CTL1_HOSTNAME

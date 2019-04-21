@@ -1,0 +1,4 @@
+- hosts: group_mq
+  roles:
+    - rabbit_mq
+    

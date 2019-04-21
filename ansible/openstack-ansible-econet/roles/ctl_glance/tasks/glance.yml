@@ -1,0 +1,102 @@
+- name: CTL | Create database glance
+  mysql_db:
+    name: glance
+    state: present
+    login_host: "{{ DB1_IP_NIC2 }}"
+    login_user: root
+    login_password: "{{ PASS_DATABASE_ROOT }}"
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'localhost' and 'glance'@'%' IDENTIFIED BY {{ PASS_DATABASE_GLANCE }}
+  mysql_user:
+    name: glance
+    password: "{{ PASS_DATABASE_GLANCE }}"
+    priv: 'glance.*:ALL'
+    state: present
+    host: "{{ item }}"
+    login_host: "{{ DB1_IP_NIC2 }}"
+    login_user: root
+    login_password: "{{ PASS_DATABASE_ROOT }}"
+  with_items:
+    - localhost
+    - '%'
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | FlUSH PRIVILEGES
+  command: mysql -uroot -p'{{ PASS_DATABASE_ROOT }}' -h'{{ DB1_IP_NIC2 }}' --execute='FLUSH PRIVILEGES;'
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Create glance user endpoint
+  shell: ". /root/admin-openrc && {{ item }}"
+  with_items:
+    - 'openstack user create  glance --domain default --password {{ GLANCE_PASS }}'
+    - 'openstack role add --project service --user glance admin'
+    - 'openstack service create --name glance --description "OpenStack Image" image'
+    - 'openstack endpoint create --region RegionOne image public http://{{ IP_VIP_API }}:9292'
+    - 'openstack endpoint create --region RegionOne image internal http://{{ IP_VIP_API }}:9292'
+    - 'openstack endpoint create --region RegionOne image admin http://{{ IP_VIP_API }}:9292'
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Glance install
+  yum:
+    name: openstack-glance
+    state: present
+
+- name: CTL | Copy glance configuration files to temporary file 
+  copy:
+    src: '/etc/glance/{{ item.SOURCE_FILE }}'
+    dest: '/etc/glance/{{ item.DEST_FILE }}'
+    owner: root
+    group: root
+    mode: 0644
+    remote_src: True
+  with_items:
+    - {SOURCE_FILE: 'glance-api.conf', DEST_FILE: 'glance-api.conf.orig'}
+    - {SOURCE_FILE: 'glance-registry.conf', DEST_FILE: 'glance-registry.conf.orig'}
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Configuration glance-api.conf
+  template:
+    src: glance-api.conf.j2
+    dest: /etc/glance/glance-api.conf
+
+- name: CTL | Configuration glance-registry.conf
+  template:
+    src: glance-registry.conf.j2
+    dest: /etc/glance/glance-registry.conf
+
+- name: CTL | Ensure glance database has been synced
+  sudo_user: glance
+  command: /usr/bin/glance-manage db_sync
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Enable openstack-glance-api.service and openstack-glance-registry.service
+  service:
+    name: "{{ item }}"
+    enabled: True
+  with_items:
+    - openstack-glance-api
+    - openstack-glance-registry
+
+- name: CTL | Start openstack-glance-api.service and openstack-glance-registry.service
+  service:
+    name: "{{ item }}"
+    state: started
+  with_items:
+    - openstack-glance-api
+    - openstack-glance-registry   
+
+- name: CTL | Download image cirros
+  get_url: 
+    url: 'http://download.cirros-cloud.net/0.3.4/cirros-0.3.4-x86_64-disk.img' 
+    dest: '/root/cirros-0.3.4-x86_64-disk.img' 
+    timeout: 100
+    mode: 0440
+  when: ansible_hostname == CTL1_HOSTNAME
+
+- name: CTL | Create image glance
+  shell: . /root/admin-openrc && openstack image create "cirros" --file cirros-0.3.4-x86_64-disk.img \
+        --disk-format qcow2 --container-format bare \
+        --public
+  when: ansible_hostname == CTL1_HOSTNAME
+  

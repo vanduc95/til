@@ -1,0 +1,6 @@
+---
+# tasks file for lb
+
+- include: lb-bonding.yml
+- include: lb-install.yml
+- include: lb-resource.yml

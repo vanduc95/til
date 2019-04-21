@@ -1,0 +1,37 @@
+- name: Install MySQL
+  yum: name={{item}} state=installed
+  with_items:
+    - mysql-server
+    - MySQL-python
+
+- name: Generate new root password
+  command: openssl rand -hex 7 creates=/root/.my.cnf
+  register: mysql_new_root_pass
+
+- name: Make sure mysql server start
+  service: name=mysql state=restarted
+
+- name: Remove anonymous users
+  mysql_user: name="" state=absent
+  when: mysql_new_root_pass.changed
+  
+- name: Remove test database
+  mysql_db: name=test state=absent
+  when: mysql_new_root_pass.changed
+  
+- name: Output new root password
+  debug: msg="New root password is {{mysql_new_root_pass.stdout}}"
+  when: mysql_new_root_pass.changed
+
+- name: Update root password
+  mysql_user: name=root host={{item}} password={{mysql_new_root_pass.stdout}}
+  with_items:
+    - "{{ ansible_hostname }}"
+    - 127.0.0.1
+    - ::1
+    - localhost
+  when: mysql_new_root_pass.changed
+ 
+- name: Create file my.cnf
+  template: src=my.cnf dest=/root/.my.cnf
+  when: mysql_new_root_pass.changed

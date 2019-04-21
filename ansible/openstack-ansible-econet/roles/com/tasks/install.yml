@@ -1,0 +1,108 @@
+- name: COM | INSTALL | upgrade all packages
+  yum:
+    name: '*'
+    state: latest
+
+- name: COM | INSTALL | Install compute package neccessary for COMPUTE nodes
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - python-openstackclient
+    - openstack-selinux
+    - openstack-utils
+    - openstack-nova-compute
+
+- name: COM | INSTALL | Copy compute config files to temporary files
+  copy:
+    src: /etc/nova/nova.conf
+    dest: /etc/nova/nova.conf.orig
+    owner: root
+    group: root
+    mode: 0644
+    remote_src: True
+
+- name: COM | INSTALL | Determine whether your compute node supports hardware acceleration
+  shell: egrep -c '(vmx|svm)' /proc/cpuinfo
+  register: VIRT_TYPE
+  ignore_errors: True
+
+- name: COM | INSTALL | SET VIRT_TYPE_NAME to qemu if compute node support hardware acceleration 
+  set_fact:
+    VIRT_TYPE_NAME: qemu
+  when: VIRT_TYPE.stdout == '0'
+
+- name: COM | INSTALL | SET VIRT_TYPE_NAME to kvm if compute node not support hardware acceleration
+  set_fact:
+    VIRT_TYPE_NAME: kvm
+  when: VIRT_TYPE.stdout != '0'
+
+- name: COM | INSTALL | Config nova.conf
+  template:
+    src: nova.conf.j2
+    dest: /etc/nova/nova.conf
+
+- name: COM | INSTALL | Enable and start libvirtd and openstack-nova-compute
+  service:
+    name: "{{ item }}"
+    enabled: True
+    state: started
+  with_items:
+    - libvirtd
+    - openstack-nova-compute
+
+- name: COM | INSTALL | Install neutron on compute nodes
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - openstack-neutron 
+    - openstack-neutron-ml2
+    - openstack-neutron-linuxbridge
+    - ebtables
+    - ipset
+
+- name: COM | INSTALL | Copy file config to temporary file
+  copy:
+    src: "{{ item.SRC_PATH }}"
+    dest: "{{ item.DEST_PATH }}"
+    owner: root
+    group: root
+    mode: 0644
+    remote_src: True
+  with_items:
+    - {SRC_PATH: /etc/neutron/neutron.conf,DEST_PATH: /etc/neutron/neutron.conf.orig}
+    - {SRC_PATH: /etc/neutron/plugins/ml2/ml2_conf.ini,DEST_PATH: /etc/neutron/plugins/ml2/ml2_conf.ini.orig}
+    - {SRC_PATH: /etc/neutron/plugins/ml2/linuxbridge_agent.ini,DEST_PATH: /etc/neutron/plugins/ml2/linuxbridge_agent.ini.orig}
+    - {SRC_PATH: /etc/neutron/dhcp_agent.ini,DEST_PATH: /etc/neutron/dhcp_agent.ini.orig}
+    - {SRC_PATH: /etc/neutron/metadata_agent.ini,DEST_PATH: /etc/neutron/metadata_agent.ini.orig}
+
+- name: COM | INSTALL | Config neutron.conf on compute node
+  template:
+    src: neutron.conf.j2
+    dest: /etc/neutron/neutron.conf
+
+- name: COM | INSTALL | Config linuxbridge_agent.ini on compute node
+  template:
+    src: linuxbridge_agent.ini.j2
+    dest: /etc/neutron/plugins/ml2/linuxbridge_agent.ini
+
+- name: COM | INSTALL | Config metadata_agent.ini on compute node
+  template:
+    src: metadata_agent.ini.j2
+    dest: /etc/neutron/metadata_agent.ini
+
+- name: COM | INSTALL | Config dhcp_agent.ini on compute node
+  template:
+    src: dhcp_agent.ini.j2
+    dest: /etc/neutron/dhcp_agent.ini
+
+- name: COM | INSTALL | Enable and Start neutron services
+  service:
+    name: "{{ item }}"
+    enabled: True
+    state: started
+  with_items:
+    - neutron-linuxbridge-agent
+    - neutron-metadata-agent
+    - neutron-dhcp-agent

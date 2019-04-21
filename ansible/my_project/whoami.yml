@@ -1,0 +1,16 @@
+- name: show return value of command module
+  hosts: localhost
+  gather_facts: True
+
+  vars:
+    enabled_services: keystone, glance, nova, neutron, cinder, heat, gnocchi
+  tasks:
+    # - name: capture output of whoami command
+    #   command: whoami
+    #   # register: login
+    
+    # - debug: msg="{{ ansible_hostname }} is result of command whoami"
+    # - debug: "msg='The debug module will print a message: neat, eh?'"
+
+    # - debug: var=hostvars[inventory_hostname]['ansible_enp0s3']['ipv4']['address']
+    - debug: msg="{{ ansible_default_ipv4.address}} is result of command whoami"

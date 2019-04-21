@@ -1,0 +1,10 @@
+- hosts: controller
+  remote_user: root
+  roles:
+    - ctl_bonding
+    - ctl_prepare
+    - ctl_keystone
+    - ctl_glance
+    - ctl_nova
+    - ctl_neutron
+    - ctl_cinder
