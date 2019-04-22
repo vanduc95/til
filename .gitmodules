@@ -1,3 +1,6 @@
 [submodule "prometheus/example"]
 	path = prometheus/example
 	url = https://github.com/prometheus-up-and-running/examples.git
+[submodule "prometheus/dockprom"]
+	path = prometheus/dockprom
+	url = git@github.com:vanduc95/dockprom.git
