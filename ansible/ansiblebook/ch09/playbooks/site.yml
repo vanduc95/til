@@ -1,5 +1,0 @@
-- name: just a test of the cache
-  hosts: vagrant
-  tasks:
-    - name: just a ping
-      action: ping

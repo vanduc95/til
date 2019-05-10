@@ -4,6 +4,9 @@
     list_ip:
       win_server: ['20.10.10.11','20.10.10.12','20.10.10.13','20.10.10.14']
       centos7: ['10.10.10.11','10.10.10.12','10.10.10.13','10.10.10.14']
+    registries: 
+      - {domain: '10.60.129.132:8890', username: cloud, password: Viettel@123}
+      - {domain: '10.60.129.132:8891', username: cloud, password: Viettel@123}
   tasks:
     - name: Ansible Template Example
       template:

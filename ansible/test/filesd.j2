@@ -20,3 +20,8 @@
     }
   }
 ]
+
+{
+    "insecure-registries" : [{% for item in registries %}"{{ item.domain }}"{% if not loop.last %},{% endif %}{% endfor %}]
+}
+
