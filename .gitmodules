@@ -4,3 +4,6 @@
 [submodule "prometheus/dockprom"]
 	path = prometheus/dockprom
 	url = git@github.com:vanduc95/dockprom.git
+[submodule "ansible/ansiblebook"]
+	path = ansible/ansiblebook
+	url = https://github.com/ansiblebook/ansiblebook.git
