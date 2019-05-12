@@ -1,0 +1,6 @@
+---
+# tasks file for webservers
+- name: Install the latest version of Apache
+  yum: 
+    pkg=httpd
+    state=latest
