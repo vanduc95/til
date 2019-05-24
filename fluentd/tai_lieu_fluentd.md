@@ -31,7 +31,7 @@ Mục này sẽ hướng dẫn cài đặt Fluentd bằng Docker và có một c
 ```
 $ vi /tmp/fluent.conf
 <source>
-  @type http
+  @type httpâ
   port 9880
   bind 0.0.0.0
 </source>
@@ -233,7 +233,7 @@ Filter thực hiện các chức năng sau:
 Ta sẽ tìm hiểu một số `filter` plugin hay dùng
 
 ### filter_record_transformer
-Dưới đây là một ví dụ mà sử dụng `filter_record_transformer` plugin để thêm/sửa/xóa các event.	
+Dưới đây là một ví dụ mà sử dụng `filter_record_transformer` plugin để thêm/sửa/xóa các event.  
 ```
 <filter syslog_ssh_disconnect>
     @type record_transformer
@@ -289,8 +289,8 @@ Ngoài ra, đối với các log phức tạp hoặc các log do người dùng 
 Ta có ví dụ sau:
 ```
 <parse>
-	@type regexp
-	expression /^(?<action>[^\|]*)\|(?<appCode>[^\|]*)\|(?<timestamp>[^\|]* [^\|]*)\|(?<userName>[^\|]*)\|(?<ipRemote>[^\|]*)\|(?<path>[^\|]*)\|(?<uri>[^\|]*)\|(?<param>[^\|]*)\|(?<className>[^\|]*)\|(?<duration>[^\|]*)\|(?<descriptionStart>[^\|]*)\|(?<requestId>[^\|]*)\|(?<requestClientId>[^\|]*)?$/
+  @type regexp
+  expression /^(?<action>[^\|]*)\|(?<appCode>[^\|]*)\|(?<timestamp>[^\|]* [^\|]*)\|(?<userName>[^\|]*)\|(?<ipRemote>[^\|]*)\|(?<path>[^\|]*)\|(?<uri>[^\|]*)\|(?<param>[^\|]*)\|(?<className>[^\|]*)\|(?<duration>[^\|]*)\|(?<descriptionStart>[^\|]*)\|(?<requestId>[^\|]*)\|(?<requestClientId>[^\|]*)?$/
 </parse>
 ```
 
@@ -359,15 +359,68 @@ sẽ được parse thành:
 
 ## 9. Tìm hiểu về Buffer Plugins
 
+### Tổng quan 
+Buffer plugin được sử dụng trong output plugin, luồng event log sẽ tạm thời được lưu vào trong buffer trước khi chuyển đến output.
 
-### Tổng quan (Phần này quan trọng vì cần để tuning performace sau này)
+Một buffer về cơ bản là một tập các `chunk`. Một `chunk` là một tập hợp các event log, các chunk này có thể đươc lưu trên [buf_file](https://docs.fluentd.org/v1.0/articles/buf_file) hoặc [buf_memory](https://docs.fluentd.org/v1.0/articles/buf_memory). Có thể coi một chunk như một lightweight container chứa các events. Nếu một chunk đầy thì nó sẽ đươc chuyển đến destination. 
 
-### buf_memory
+Buffer có hai vị trí lưu trữ chunk, đó là `stage` và `queue`. Ban đầu khi được tạo ra, chunk sẽ nằm ở stage, sau khi được lấp đầy kích thước bởi các event, chunk sẽ được chuyển qua queue. Cuối cùng, từ queue thì các event được chuyển đến destination.
 
-### buf_file
+![](./images/chunk_buffer.png)
 
+Ta xem ví dụ sau:
 
+```
+<match *_log>
+    @type copy
+    <store ignore_error>
+        @type elasticsearch
+        host elasticsearch
+        port 9200
+        logstash_format true
+        logstash_prefix example_log
+        logstash_dateformat %Y.%m.%d
+        type_name access_log
+        <buffer tag,time>
+          @type file
+          path /fluentd/data/buffer
+          timekey 60
+          chunk_limit_size 500MB
+        </buffer>
+    </store>
+    <store>
+        @type stdout
+    </store>
+</match>
+```
+Giải thích tham số:
+- `<bufffer>` section để định nghĩa một buffer.
+- `@type` quy định kiểu lưu trữ các chunk. Ví dụ trên sử dụng lưu trên file, ngoài ra có thể lưu trên memory.
+- Các chunk sẽ được nhóm theo `tag` và `time`. Khi nhóm theo `time` ta cũng cần quy định `timekey` để quy định khoảng thời gian(s) cho phép giữa các event log trong 1 chunk. Cụ thể như sau:
+    ```
+    # <buffer tag,time> timekey 60
 
-## 10. Trouble Shooting
+    11:58:01 ssh.login  {"key1":"yay","key2":100}  ------> CHUNK_A
 
-### Tối ưu hóa hiệu năng
+    11:59:13 web.access {"key1":"yay","key2":100}  --|
+                                                    |---> CHUNK_B
+    11:59:30 web.access {"key1":"yay","key2":100}  --|
+
+    12:00:01 web.access {"key1":"foo","key2":200}  ------> CHUNK_C
+
+    12:00:25 ssh.login  {"key1":"yay","key2":100}  ------> CHUNK_D
+    ```
+- `path` quy định đường dẫn tới file để lưu chunk.
+- `chunk_limit_size` xác định giới hạn kích thước của chunk.
+
+## 10. Các vấn đề gặp phải
+
+### Triển khai Fluentd với Docker
+Khi triển khai Fluentd trên docker, trong trường hợp Fluentd xử lí qúa nhiều log dẫn đến cần nhiều tài nguyên gây ảnh hưởng đến các dịch vụ khác trong hệ thống. Vì vậy ta cần lưu ý một số điểm sau:
+- Giới hạn memory cho container cài Fluentd
+- Restart mode là alway
+```
+  restart: always
+  mem_limit: 268435456  #256MB
+```
+
