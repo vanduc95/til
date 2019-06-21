@@ -1,14 +1,14 @@
 import argparse
 import itertools
+import logging
 import os
-import subprocess
 import time
-import yaml
 
+import yaml
 from prometheus_client import start_http_server, REGISTRY
 from prometheus_client.core import GaugeMetricFamily
 
-FILE_PATHS = ['/var/log/syslog', '/var/log/auth.log']
+logging.basicConfig(level=logging.DEBUG)
 
 
 class FileCollector(object):
@@ -21,6 +21,7 @@ class FileCollector(object):
                 'file_size_bytes',
                 'Size of file',
                 labels=['path_file']),
+
             'last_modified_file_seconds': GaugeMetricFamily(
                 'last_modified_file_seconds',
                 'Last modified time of file',
@@ -28,39 +29,30 @@ class FileCollector(object):
         }
 
         for path in self.config['file_paths']:
-            metrics['file_size_bytes'].add_metric([path],
-                                                  float(get_file_size_bytes(path)))
-            metrics['last_modified_file_seconds'].add_metric([path],
-                                                             float(get_last_modified_file(path)))
-        # yield metrics
+            metrics['file_size_bytes'].add_metric(
+                labels=[path], value=get_file_size_bytes(path)
+            )
+            metrics['last_modified_file_seconds'].add_metric(
+                labels=[path], value=get_last_modified_file(path)
+            )
         return itertools.chain(metrics.values())
 
 
-def get_file_size_bytes(file_path):
-    command = ['du', '-b', file_path]
-    pipeline = ['cut', '-f1']
+def get_file_size_bytes(path_file):
     try:
-        p1 = subprocess.Popen(command, stdout=subprocess.PIPE)
-        p2 = subprocess.Popen(pipeline, stdin=p1.stdout,
-                              stdout=subprocess.PIPE)
-        p1.stdout.close()
-    except subprocess.CalledProcessError as e:
-        print(e)
-    return p2.communicate()[0].decode("utf-8")
+        file_size = os.path.getsize(path_file)
+        return file_size
+    except Exception as exc:
+        # logging.exception(exc)
+        pass
 
-
-def get_last_modified_file(file_path):
-    command = ['stat', '-c', '%Y', file_path]
-    return get_output(command)
-
-
-def get_output(command):
+def get_last_modified_file(path_file):
     try:
-        output = subprocess.check_output(command, stderr=subprocess.DEVNULL)
-    except subprocess.CalledProcessError as e:
-        return None
-    return output.decode("utf-8")
-
+        mod_time_since_epoch = os.path.getmtime(path_file)
+        return mod_time_since_epoch
+    except Exception as exc:
+        # logging.exception(exc)
+        pass
 
 def parse_args():
     parser = argparse.ArgumentParser(
@@ -73,17 +65,25 @@ def parse_args():
         help='Path to configuration file',
         default='config.yml',
     )
-
     parser.add_argument(
-        '-p', '--port',
+        '--port',
         metavar='port',
         required=False,
         type=int,
         help='Listen to this port',
-        default=int(os.environ.get('VIRTUAL_PORT', '9999'))
+        default=9999
     )
 
     return parser.parse_args()
+
+
+def parse_yml(config_path):
+    # Load configuration
+    with open(config_path, 'r') as stream:
+        try:
+            return yaml.safe_load(stream)
+        except yaml.YAMLError as exc:
+            logging.exception(exc)
 
 
 def main():
@@ -92,21 +92,18 @@ def main():
         port = int(args.port)
         config_path = args.config_path
 
-        # Load configuration.
-        with open(config_path) as handle:
-            config = yaml.safe_load(handle)
+        config = parse_yml(config_path)
 
-        config = {}
-        config['file_paths'] = ['/var/log/syslog', '/var/log/auth.log']
         REGISTRY.register(FileCollector(config))
         start_http_server(port)
-        print("Serving at port: {}".format(port))
+        print("Listening on :{}".format(port))
         while True:
-            time.sleep(1)
+            time.sleep(2)
     except KeyboardInterrupt:
-        print(" Interrupted")
+        print("Interrupted")
         exit(0)
 
 
 if __name__ == '__main__':
     main()
+
