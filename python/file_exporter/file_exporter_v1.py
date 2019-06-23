@@ -1,58 +1,69 @@
 import argparse
-import itertools
 import logging
 import os
 import time
 
 import yaml
-from prometheus_client import start_http_server, REGISTRY
+from prometheus_client import CollectorRegistry
+from prometheus_client import start_http_server
 from prometheus_client.core import GaugeMetricFamily
 
 logging.basicConfig(level=logging.DEBUG)
 
 
-class FileCollector(object):
+class FileSizeCollector(object):
     def __init__(self, config):
         self.config = config
 
     def collect(self):
-        metrics = {
-            'file_size_bytes': GaugeMetricFamily(
-                'file_size_bytes',
-                'Size of file',
-                labels=['path_file']),
-
-            'last_modified_file_seconds': GaugeMetricFamily(
-                'last_modified_file_seconds',
-                'Last modified time of file',
-                labels=['path_file']),
-        }
+        file_size_metric = GaugeMetricFamily(
+            'file_size_bytes',
+            'Size of file',
+            labels=['path_file'])
 
         for path in self.config['file_paths']:
-            metrics['file_size_bytes'].add_metric(
-                labels=[path], value=get_file_size_bytes(path)
-            )
-            metrics['last_modified_file_seconds'].add_metric(
-                labels=[path], value=get_last_modified_file(path)
-            )
-        return itertools.chain(metrics.values())
+            value = self.get_file_size_bytes(path)
+            if value is not None:
+                file_size_metric.add_metric(
+                    labels=[path], value=value
+                )
+
+        yield file_size_metric
+
+    def get_file_size_bytes(self, file_path):
+        try:
+            file_size = os.path.getsize(file_path)
+            return file_size
+        except Exception as exc:
+            logging.error(exc)
 
 
-def get_file_size_bytes(path_file):
-    try:
-        file_size = os.path.getsize(path_file)
-        return file_size
-    except Exception as exc:
-        # logging.exception(exc)
-        pass
+class LastModifiedCollector(object):
+    def __init__(self, config):
+        self.config = config
 
-def get_last_modified_file(path_file):
-    try:
-        mod_time_since_epoch = os.path.getmtime(path_file)
-        return mod_time_since_epoch
-    except Exception as exc:
-        # logging.exception(exc)
-        pass
+    def collect(self):
+        last_modified_metric = GaugeMetricFamily(
+            'last_modified_file_seconds',
+            'Last modified time of file',
+            labels=['path_file'])
+
+        for path in self.config['file_paths']:
+            value = self.get_last_modified_file(path)
+            if value is not None:
+                last_modified_metric.add_metric(
+                    labels=[path], value=value
+                )
+
+        yield last_modified_metric
+
+    def get_last_modified_file(self, file_path):
+        try:
+            mod_time_since_epoch = os.path.getmtime(file_path)
+            return mod_time_since_epoch
+        except Exception as exc:
+            logging.error(exc)
+
 
 def parse_args():
     parser = argparse.ArgumentParser(
@@ -83,7 +94,7 @@ def parse_yml(config_path):
         try:
             return yaml.safe_load(stream)
         except yaml.YAMLError as exc:
-            logging.exception(exc)
+            logging.error(exc)
 
 
 def main():
@@ -94,16 +105,22 @@ def main():
 
         config = parse_yml(config_path)
 
-        REGISTRY.register(FileCollector(config))
-        start_http_server(port)
+        registry = CollectorRegistry()
+        registry.register(FileSizeCollector(config))
+        registry.register(LastModifiedCollector(config))
+        start_http_server(port, registry=registry)
+
+        # REGISTRY.register(FileSizeCollector(config))
+        # REGISTRY.register(LastModifiedCollector(config))
+        # start_http_server(port)
+
         print("Listening on :{}".format(port))
         while True:
-            time.sleep(2)
+            time.sleep(5)
     except KeyboardInterrupt:
-        print("Interrupted")
+        logging.info("Interrupted")
         exit(0)
 
 
 if __name__ == '__main__':
     main()
-
