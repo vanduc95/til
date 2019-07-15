@@ -1,0 +1,35 @@
+[
+    {
+        "services_code": "VTN_CNTT_MSS_096",
+        "services_name": "VOFFICE 2.0",
+        "module_code": "VTN_CNTT_MSS_096_095",
+        "module_name": "ELASTICSEARCH_204_9201",
+        "ip_server": "10.60.94.204",
+        "path_type": "LOG_START_PATH",
+        "path": "/var/log",
+        "file_name": "syslog",
+        "user_manager": "ducnv41"
+    },
+    {
+        "services_code": "VTN_CNTT_MSS_096",
+        "services_name": "VOFFICE 2.0",
+        "module_code": "VTN_CNTT_MSS_096_097",
+        "module_name": "ELASTICSEARCH_204_9203",
+        "ip_server": "10.60.94.204",
+        "path_type": "LOG_START_PATH",
+        "path": "/var/log",
+        "file_name": "auth.log",
+        "user_manager": "ducnv41"
+    },
+    {
+        "services_code": "VTN_CNTT_MSS_096",
+        "services_name": "VOFFICE 2.0",
+        "module_code": "VTN_CNTT_MSS_096_098",
+        "module_name": "ELASTICSEARCH_204_9204",
+        "ip_server": "10.60.94.204",
+        "path_type": "LOG_START_PATH",
+        "path": "/home/ducnv/file-exporter",
+        "file_name": "null",
+        "user_manager": "ducnv41"
+    }
+]

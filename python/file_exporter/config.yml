@@ -1,3 +1,0 @@
-file_paths:
-  - /var/log/auth.log
-  - /var/log/syslog
