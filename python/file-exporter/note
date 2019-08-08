@@ -1,0 +1,52 @@
+Note:
+- Có 2 loại file: fix tên hoặc hoặc đuôi ngày tháng năm.
+- không quản lí tất cả các file trong thư mục, chỉ quản lý theo file quy định
+- file tồn không tồn tại quá lâu trong thư mục (database) --> sau khi xử lý xong cần được move tới chỗ khác .
+- Những path_type cần quản lí: LOG_START_PATH, QUEUE_PATH, LOG_PATH
+
+- QUEUE_PATH sẽ có file_name bằng null. Đây là nơi chứa file tồn.
+- File tồn có thể check theo định dạng, nếu không check all. (gồm theo thời gian hoặc theo số lượng)
+
+
+**
+- Thời gian không có file mới trong thư mục ( chậm cập nhật file trong thư mục):
+    find path_log -printf '%T+ %p\n' | sort -nr |head -n 1
+    lwe_last_create_file_seconds(path="", file_name="")  time
+
+-----------
+1. Process Increase log size
+- Toc do tang truong dung luong file log cua ung dung
+lwe_file_size_bytes{file_name="syslog",module_code="VTN_CNTT_MSS_096_095",path="/var/log",service_name="VOFFICE 2.0",user_manager="ducnv41"} 63222.0
+
+2. Process update log
+- Thoi gian cham cap nhat file log cua ung dung
+lwe_file_last_modified_seconds{file_name="syslog",module_code="VTN_CNTT_MSS_096_095",path="/var/log",service_name="VOFFICE 2.0",user_manager="ducnv41"} 1.565257201017012e+09
+
+3. Process file increase over threshold
+- Toc do tang truong so luong file trong thu muc
+lwe_directory_number_file{module_code="VTN_CNTT_MSS_096_095",path="/var/log",service_name="VOFFICE 2.0",user_manager="ducnv41"} 68.0
+
+4. Process file not update time
+- Thoi gian cham cap nhat file trong thu muc
+lwe_directory_last_modified_seconds{module_code="VTN_CNTT_MSS_096_095",path="/var/log",service_name="VOFFICE 2.0",user_manager="ducnv41"} 1.5652456425990677e+09
+lwe_file_last_created_seconds{file_name="/var/log/syslog",module_code="VTN_CNTT_MSS_096_095",path="/var/log",service_name="VOFFICE 2.0",user_manager="ducnv41"} 1.565257201017012e+09
+
+5. Process file exists by time
+- Ton file trong thu muc theo thoi gian
+
+
+6. Process file exists by total
+- Ton file trong thu muc theo so luong
+
+
+7. Process log size
+- Dung luong max cua file log cho phep
+lwe_file_size_bytes{file_name="syslog",module_code="VTN_CNTT_MSS_096_095",path="/var/log",service_name="VOFFICE 2.0",user_manager="ducnv41"} 63222.0
+
+
+
+
+
+
+
+

@@ -28,7 +28,7 @@
         "module_name": "ELASTICSEARCH_204_9204",
         "ip_server": "10.60.94.204",
         "path_type": "LOG_START_PATH",
-        "path": "/home/ducnv/file-exporter",
+        "path": "/home/ducnv/file-exporter/test",
         "file_name": "null",
         "user_manager": "ducnv41"
     }

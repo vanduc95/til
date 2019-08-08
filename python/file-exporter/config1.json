@@ -1,0 +1,102 @@
+[
+    {
+        "services_code": "VTN_CNTT_MSS_029",
+        "services_name": "NIMS_VN",
+        "module_code": "VTN_CNTT_MSS_029_246",
+        "module_name": "WS_CD_BCCS2_166_8866",
+        "ip_server": "10.60.7.166",
+        "path_type": "LOG_START_PATH",
+        "path": "/u01/cntt_nims/ws_cd/infra8866/logs",
+        "file_name": "catalina.out"
+    },
+    {
+        "services_code": "VTN_CNTT_MSS_029",
+        "services_name": "NIMS_VN",
+        "module_code": "VTN_CNTT_MSS_029_247",
+        "module_name": "WS_CD_BCCS2_166_8877",
+        "ip_server": "10.60.7.166",
+        "path_type": "LOG_START_PATH",
+        "path": "/u01/cntt_nims/ws_cd/infra8877/logs",
+        "file_name": "catalina.out"
+    },
+    {
+        "services_code": "VTN_CNTT_MSS_029",
+        "services_name": "NIMS_VN",
+        "module_code": "VTN_CNTT_MSS_029_258",
+        "module_name": "web 166 9006",
+        "ip_server": "10.60.7.166",
+        "path_type": "LOG_START_PATH",
+        "path": "/u01/cntt_nims/nims9006/logs",
+        "file_name": "catalina.out"
+    },
+    {
+        "services_code": "VTN_CNTT_MSS_029",
+        "services_name": "NIMS_VN",
+        "module_code": "VTN_CNTT_MSS_029_243",
+        "module_name": "web_166_9003",
+        "ip_server": "10.60.7.166",
+        "path_type": "LOG_START_PATH",
+        "path": "/u01/cntt_nims/nims9003/logs",
+        "file_name": "catalina.out"
+    },
+    {
+        "services_code": "VTN_CNTT_MSS_029",
+        "services_name": "NIMS_VN",
+        "module_code": "VTN_CNTT_MSS_029_233",
+        "module_name": "web_166_9009",
+        "ip_server": "10.60.7.166",
+        "path_type": "LOG_START_PATH",
+        "path": "/u01/cntt_nims/nims9009/logs",
+        "file_name": "catalina.out"
+    },
+    {
+        "services_code": "VTN_CNTT_BSS_117",
+        "services_name": "Vsmart",
+        "module_code": "VTN_CNTT_BSS_117_143",
+        "module_name": "QLCTKT_8999_166",
+        "ip_server": "10.60.7.166",
+        "path_type": "LOG_START_PATH",
+        "path": "/u01/smartphone_kt/QLCTKT_ANDROID/QLCTKT_8999/logs",
+        "file_name": "catalina.out"
+    },
+    {
+        "services_code": "VTN_CNTT_BSS_117",
+        "services_name": "Vsmart",
+        "module_code": "VTN_CNTT_BSS_117_137",
+        "module_name": "QLCTKT_8099_166",
+        "ip_server": "10.60.7.166",
+        "path_type": "LOG_START_PATH",
+        "path": "/u01/smartphone_kt/QLCTKT_ANDROID/QLCTKT_8099/logs",
+        "file_name": "catalina.out"
+    },
+    {
+        "services_code": "VTN_CNTT_BSS_117",
+        "services_name": "Vsmart",
+        "module_code": "VTN_CNTT_BSS_117_139",
+        "module_name": "QLCTKT_8399_166",
+        "ip_server": "10.60.7.166",
+        "path_type": "LOG_START_PATH",
+        "path": "/u01/smartphone_kt/QLCTKT_ANDROID/QLCTKT_8399/logs",
+        "file_name": "catalina.out"
+    },
+    {
+        "services_code": "VTN_CNTT_BSS_117",
+        "services_name": "Vsmart",
+        "module_code": "VTN_CNTT_BSS_117_138",
+        "module_name": "QLCTKT_8299_166",
+        "ip_server": "10.60.7.166",
+        "path_type": "LOG_START_PATH",
+        "path": "/u01/smartphone_kt/QLCTKT_ANDROID/QLCTKT_8299/logs",
+        "file_name": "catalina.out"
+    },
+    {
+        "services_code": "VTN_CNTT_BSS_117",
+        "services_name": "Vsmart",
+        "module_code": "VTN_CNTT_BSS_117_140",
+        "module_name": "QLCTKT_8599_166",
+        "ip_server": "10.60.7.166",
+        "path_type": "LOG_START_PATH",
+        "path": "/u01/smartphone_kt/QLCTKT_ANDROID/QLCTKT_8599/logs",
+        "file_name": "catalina.out"
+    }
+]
