@@ -23,20 +23,22 @@ class FileSizeCollector(object):
         file_size_metric = GaugeMetricFamily(
             'lwe_file_size_bytes',
             'Size of file',
-            labels=['service_name', 'module_code', 'path', 'file_name', 'user_manager'])
+            labels=['service_name', 'module_code', 'path', 'file_name', 'user_manager', 'path_type'])
 
         for info in config:
-            file_path = '{}/{}'.format(info['path'], info['file_name'])
-            value = self.get_file_size_bytes(file_path)
-            if value is not None:
-                file_size_metric.add_metric(
-                    labels=[
-                        info['services_name'],
-                        info['module_code'],
-                        info['path'],
-                        info['file_name'],
-                        info['user_manager']
-                    ], value=value)
+            if info['file_name'] != 'null':
+                file_path = '{}/{}'.format(info['path'], info['file_name'])
+                value = self.get_file_size_bytes(file_path)
+                if value is not None:
+                    file_size_metric.add_metric(
+                        labels=[
+                            info['services_name'],
+                            info['module_code'],
+                            info['path'],
+                            info['file_name'],
+                            info['user_manager'],
+                            info['path_type']
+                        ], value=value)
 
         yield file_size_metric
 
@@ -74,20 +76,22 @@ class FileLastModifiedCollector(object):
         file_last_modified_metric = GaugeMetricFamily(
             'lwe_file_last_modified_seconds',
             'Last modified time of file',
-            labels=['service_name', 'module_code', 'path', 'file_name', 'user_manager'])
+            labels=['service_name', 'module_code', 'path', 'file_name', 'user_manager', 'path_type'])
 
         for info in config:
-            file_path = '{}/{}'.format(info['path'], info['file_name'])
-            value = self.get_file_last_modified(file_path)
-            if value is not None:
-                file_last_modified_metric.add_metric(
-                    labels=[
-                        info['services_name'],
-                        info['module_code'],
-                        info['path'],
-                        info['file_name'],
-                        info['user_manager']
-                    ], value=value)
+            if info['file_name'] != 'null':
+                file_path = '{}/{}'.format(info['path'], info['file_name'])
+                value = self.get_file_last_modified(file_path)
+                if value is not None:
+                    file_last_modified_metric.add_metric(
+                        labels=[
+                            info['services_name'],
+                            info['module_code'],
+                            info['path'],
+                            info['file_name'],
+                            info['user_manager'],
+                            info['path_type']
+                        ], value=value)
 
         yield file_last_modified_metric
 
@@ -108,7 +112,7 @@ class NumberFileDirectoryCollector(object):
         directory_number_file_metric = GaugeMetricFamily(
             'lwe_directory_number_file',
             'Number of files in a directory',
-            labels=['service_name', 'module_code', 'path', 'user_manager'])
+            labels=['service_name', 'module_code', 'path', 'user_manager', 'path_type'])
 
         for info in config:
             directory_path = info['path']
@@ -119,7 +123,8 @@ class NumberFileDirectoryCollector(object):
                         info['services_name'],
                         info['module_code'],
                         info['path'],
-                        info['user_manager']
+                        info['user_manager'],
+                        info['path_type']
                     ], value=value)
 
         yield directory_number_file_metric
@@ -139,7 +144,7 @@ class DirectoryLastModifiedCollector(object):
         directory_last_modified_metric = GaugeMetricFamily(
             'lwe_directory_last_modified_seconds',
             'Last modified time of directory',
-            labels=['service_name', 'module_code', 'path', 'user_manager'])
+            labels=['service_name', 'module_code', 'path', 'user_manager', 'path_type'])
 
         for info in config:
             directory_path = info['path']
@@ -150,7 +155,8 @@ class DirectoryLastModifiedCollector(object):
                         info['services_name'],
                         info['module_code'],
                         info['path'],
-                        info['user_manager']
+                        info['user_manager'],
+                        info['path_type']
                     ], value=value)
 
         yield directory_last_modified_metric
@@ -172,7 +178,7 @@ class FileLastCreatedCollector(object):
         file_last_modified_metric = GaugeMetricFamily(
             'lwe_file_last_created_seconds',
             'Time of file created last in directory ',
-            labels=['service_name', 'module_code', 'path', 'file_name', 'user_manager'])
+            labels=['service_name', 'module_code', 'path', 'file_name', 'user_manager', 'path_type'])
 
         for info in config:
             directory_path = info['path']
@@ -184,7 +190,8 @@ class FileLastCreatedCollector(object):
                         info['module_code'],
                         info['path'],
                         lasted_file,
-                        info['user_manager']
+                        info['user_manager'],
+                        info['path_type']
                     ], value=value)
 
         yield file_last_modified_metric
