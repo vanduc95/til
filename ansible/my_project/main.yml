@@ -64,8 +64,7 @@
 
 
 
-- hosts: test
+- hosts: localhost
   roles:
-#    - {role: ntp, tags: ['ntp','a']}
-    - {role: php, tags: ['php','a']}
-    - mysql
+    # - {role: php, tags: ['php','a']}
+    - test

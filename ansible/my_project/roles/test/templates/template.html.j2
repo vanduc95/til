@@ -10,3 +10,11 @@
         </ul>
 	</body>
 </html>
+
+{% for host in groups['vm'] %}
+  {{ hostvars[inventory_hostname].ansible_hostname }}
+{% endfor %}
+
+{{ enable_prometheus_rabbitmq_exporter }}
+
+{{ enable_prometheus }}

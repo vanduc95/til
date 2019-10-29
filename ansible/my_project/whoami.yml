@@ -1,6 +1,6 @@
 - name: show return value of command module
   hosts: localhost
-  gather_facts: True
+  gather_facts: False
 
   vars:
     enabled_services: keystone, glance, nova, neutron, cinder, heat, gnocchi
@@ -9,8 +9,14 @@
     #   command: whoami
     #   # register: login
     
-    # - debug: msg="{{ ansible_hostname }} is result of command whoami"
+    - debug: msg="{{ hostvars[inventory_hostname].ansible_hostname }}"
     # - debug: "msg='The debug module will print a message: neat, eh?'"
 
     # - debug: var=hostvars[inventory_hostname]['ansible_enp0s3']['ipv4']['address']
     - debug: msg="{{ ansible_default_ipv4.address}} is result of command whoami"
+
+    - debug: msg="{{ ansible_facts.wlp2s0.ipv4.address }}"
+
+    # - debug: var=ansible_facts
+
+

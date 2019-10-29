@@ -1,0 +1,39 @@
+- name: Find snmp config files for switch
+  local_action:
+    module: find
+    path: "/tmp/"
+    pattern: "snmp_exporter_switch.yml"
+  run_once: True
+  register: prometheus_snmp_exporter_switch
+  when:
+    - enable_prometheus_snmp_exporter_switch | bool
+
+- name: Copying over snmp.yml file for switch
+  copy:
+    src: "/tmp/{{ item.path | basename }}"
+    dest: "/home/ducnv/prometheus_snmp_exporter_switch/snmp.yml"
+    mode: "0755"
+  register: prometheus_snmp_exporter_switch_confs
+  with_items: "{{ prometheus_snmp_exporter_switch.files }}"
+  when:
+    # - inventory_hostname in groups['prometheus_snmp_exporter_switch']
+    - enable_prometheus_snmp_exporter_switch | bool
+    - prometheus_snmp_exporter_switch is defined and prometheus_snmp_exporter_switch.files | length > 0
+  notify:
+    - Restart prometheus-snmp-exporter-switch container
+
+- name: Recreate if not exist running containers
+  # become: true
+  docker_container:
+    name: "{{ item.value.container_name }}"
+    image: "{{ item.value.image }}"
+    volumes: "{{ item.value.volumes }}"
+    command: "{{ item.value.command }}"
+    state: "{{ item.value.state }}"
+    restart_policy: "{{ item.value.restart_policy }}"
+    privileged: "{{ item.value.privileged }}"
+    network_mode: "{{ item.value.network_mode }}"
+  when:
+    # - inventory_hostname in groups[item.value.group]
+    - item.value.enabled | bool
+  with_dict: "{{ prometheus_exporter_services }}"

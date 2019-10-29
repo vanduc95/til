@@ -1,0 +1,26 @@
+---
+prometheus_exporter_services:
+  prometheus_snmp_exporter_switch:
+    container_name: prometheus_snmp_exporter_switch
+    group: prometheus_snmp_exporter_switch
+    enabled: "{{ enable_prometheus_snmp_exporter_switch | bool }}"
+    image: "{{ prometheus_snmp_exporter_image }}"
+    privileged: "no"
+    command: 
+      - "--web.listen-address :{{ prometheus_snmp_exporter_switch_port }}"
+      - "--config.file {{ snmp_container_config_directory }}/snmp.yml"
+    volumes:
+      - "/home/ducnv/prometheus_snmp_exporter_switch/:{{ snmp_container_config_directory }}/:ro"
+      - "/etc/localtime:/etc/localtime:ro"
+    restart_policy: "unless-stopped"
+    state: "started"
+    network_mode: "host"
+    port: "{{ prometheus_snmp_exporter_switch_port }}"
+
+prometheus_node_exporter_image: "{{ docker_registry ~ '/' if docker_registry else '' }}{{ prometheus_docker_namespace }}/node-exporter:{{ prometheus_node_exporter_ver }}"
+prometheus_cadvisor_image: "{{ docker_registry ~ '/' if docker_registry else '' }}{{ prometheus_cadvisor_docker_namespace }}/cadvisor:{{ prometheus_cadvisor_ver }}"
+prometheus_snmp_exporter_image: "prom/snmp-exporter:v0.15.0"
+snmp_container_config_directory: "/etc/snmp_exporter"
+
+enable_prometheus_snmp_exporter_switch: yes
+prometheus_snmp_exporter_switch_port: 9117

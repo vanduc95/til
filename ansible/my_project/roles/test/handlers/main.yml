@@ -1,0 +1,22 @@
+---
+# restart snmp-exporter container
+- name: Restart prometheus-snmp-exporter-switch container
+  docker_container:
+    name: "prometheus_snmp_exporter_switch"
+    # image: "{{ prometheus_snmp_exporter_image }}"
+    # command: 
+    #   - "--web.listen-address :{{ prometheus_snmp_exporter_switch_port }}"
+    #   - "--config.file {{ snmp_container_config_directory }}/snmp.yml"
+    # volumes:
+    #   - "/home/ducnv/prometheus_snmp_exporter_switch/:{{ snmp_container_config_directory }}/:ro"
+    #   - "/etc/localtime:/etc/localtime:ro"
+    restart: yes
+    # restart_policy: "unless-stopped"
+    # privileged: "no"
+    # network_mode: "host"
+    # port: "{{ prometheus_snmp_exporter_switch_port }}"
+  when:
+    # - inventory_hostname in groups["prometheus_snmp_exporter_switch"]
+    - enable_prometheus_snmp_exporter_switch | bool
+    - prometheus_snmp_exporter_switch_confs.changed | bool
+  
