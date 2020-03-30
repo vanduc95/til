@@ -1,1 +1,0 @@
-test ansible_host=10.240.202.185 ansible_port=8922 ansible_user=root ansible_ssh_pass=Viettel@123
