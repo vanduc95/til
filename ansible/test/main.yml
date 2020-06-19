@@ -10,5 +10,22 @@
   tasks:
     - name: Ansible Template Example
       template:
-        src: filesd.j2
-        dest: filesd.json
+        src: template.j2
+        dest: /tmp/template.json
+
+    # - name: Create a data container
+    #   docker_container:
+    #     name: test
+    #     image: ubuntu:18.04
+    #     command: ls
+
+- name: Create a directory and a file
+  hosts: vm1
+  tasks:
+    - name: Create a new directory
+      file:
+        path: "/tmp/lesson1"
+        state: directory
+
+    - name: Create and write to a file
+      shell: /bin/echo 'Hello Ansible' > /tmp/lesson1/hello.txt
