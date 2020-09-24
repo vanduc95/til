@@ -1,3 +1,0 @@
-BeautifulSoup==3.2.0
-requests
-https://github.com/django/django/tarball/master
