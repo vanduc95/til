@@ -1,10 +1,11 @@
-from celery import Celery
 import time
 
+from celery import Celery
+
 app = Celery('test_celery',
-             broker='amqp://ducnv41:ducnv41@localhost/ducnv41_vhost',
-             backend='rpc://',
-             include=['test_celery.tasks'])
+             broker='amqp://guest@localhost//',
+             backend='rpc://')
+
 
 @app.task
 def longtime_add(x, y):

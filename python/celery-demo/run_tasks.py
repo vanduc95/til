@@ -1,5 +1,6 @@
-from task import longtime_add
 import time
+
+from task import longtime_add
 
 if __name__ == '__main__':
     result = longtime_add.delay(1, 2)
