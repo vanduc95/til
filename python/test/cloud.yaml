@@ -1,0 +1,13 @@
+- service: cinder
+  modules:
+    - cinder-api
+    - cinder-volume
+    - cinder-scheduler
+    - cinder-backup
+
+- service: nova
+  modules:
+    - nova-api
+    - nova-scheduler
+    - nova-ssh
+    - nova-compute
