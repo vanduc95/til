@@ -1,7 +1,7 @@
 FROM ubuntu:14.04
 
-ENV http_proxy=http://10.164.177.170:8080
-ENV https_proxy=http://10.164.177.170:8080
+ENV http_proxy=http://localhost:8080
+ENV https_proxy=http://localhost:8080
 
 RUN apt-get update && apt-get install -y firefox
 
